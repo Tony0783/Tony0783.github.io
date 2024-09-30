@@ -7,26 +7,19 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 100
-
-    - name: "Accomplishments"
-      parent: "About"
-      url: "/about/accomplishments/"
-      weight: 110
-
-    - name: "Contact"
-      parent: "About"
-      url: "/about/contact/"
-      weight: 120
-
-    - name: "Education"
-      parent: "About"
-      url: "/about/education/"
-      weight: 130
-
-    - name: "Experience"
-      parent: "About"
-      url: "/about/experience/"
-      weight: 140
+      submenu:
+        - name: "Accomplishments"
+          url: "/about/accomplishments/"
+          weight: 110
+        - name: "Contact"
+          url: "/about/contact/"
+          weight: 120
+        - name: "Education"
+          url: "/about/education/"
+          weight: 130
+        - name: "Experience"
+          url: "/about/experience/"
+          weight: 140
 
     - name: "Projects"
       url: "/projects/"

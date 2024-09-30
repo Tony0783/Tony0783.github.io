@@ -1,13 +1,11 @@
-menu:
+menus:
   main:
     - name: "Home"
       url: "/"
       weight: 1
-
     - name: "About (KR)"
       url: "/ko/about/"
       weight: 100
-
     - name: "About (EN)"
       url: "/en/about/"
       weight: 110

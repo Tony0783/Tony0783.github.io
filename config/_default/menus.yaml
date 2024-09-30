@@ -4,56 +4,46 @@ menu:
       url: "/"
       weight: 1
 
-    - name: "About (KR)"
-      url: "/ko/about/"
+    - name: "About"
+      url: "/about/"
       weight: 100
 
-    - name: "About (EN)"
-      url: "/en/about/"
-      weight: 110
-
-    - name: "Profile"
-      url: "/profile/"
+    - name: "People"
+      url: "/people/"
       weight: 200
-
-    - name: "Biography"
-      parent: "Profile"
-      url: "/profile/biography/"
-      weight: 210
-
-    - name: "Skills"
-      parent: "Profile"
-      url: "/profile/skills/"
-      weight: 220
-
-    - name: "Projects"
-      url: "/projects/"
-      weight: 300
-
-    - name: "Portfolio"
-      parent: "Projects"
-      url: "/projects/portfolio/"
-      weight: 310
-
-    - name: "Research Fields"
-      parent: "Projects"
-      url: "/projects/research-fields/"
-      weight: 320
+      submenu:
+        - name: "Professor"
+          url: "/author/박태호/"
+          weight: 210
+        - name: "Members"
+          url: "/people/"
+          weight: 220
 
     - name: "Research"
-      url: "/research/"
-      weight: 400
+      url: "/publication/"
+      weight: 300
+      submenu:
+        - name: "Publications"
+          url: "/publication/"
+          weight: 310
+        - name: "Research Fields"
+          url: "/field/"
+          weight: 320
 
-    - name: "Publications"
-      parent: "Research"
-      url: "/research/publications/"
-      weight: 410
-
-    - name: "Fields of Study"
-      parent: "Research"
-      url: "/research/fields/"
-      weight: 420
+    - name: "Inform"
+      url: "/post/"
+      weight: 600
+      submenu:
+        - name: "Notifications"
+          url: "/notification/"
+          weight: 610
+        - name: "News"
+          url: "/post/"
+          weight: 620
+        - name: "Event"
+          url: "/event/"
+          weight: 630
 
     - name: "Contact"
       url: "/contact/"
-      weight: 500
+      weight: 700

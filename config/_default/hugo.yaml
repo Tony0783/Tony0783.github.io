@@ -1,8 +1,4 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
+# 기존 설정 유지
 title: Hugo Portfolio Theme # Website name
 baseURL: 'https://example.com/' # Website URL
 
@@ -28,6 +24,35 @@ defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
+
+############################
+## MENU CONFIGURATION
+############################
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+      submenu:
+        - name: "Team"
+          url: "/about/team/"
+        - name: "History"
+          url: "/about/history/"
+    - name: "Projects"
+      url: "/projects/"
+      weight: 3
+      submenu:
+        - name: "Project 1"
+          url: "/projects/project1/"
+        - name: "Project 2"
+          url: "/projects/project2/"
+    - name: "Contact"
+      url: "/contact/"
+      weight: 4
 
 ############################
 ## ADVANCED
@@ -74,3 +99,7 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+
+services:
+  googleAnalytics:
+    id: ""  # 실제 Google Analytics ID를 입력하거나, 사용하지 않을 경우 빈 값으로 유지

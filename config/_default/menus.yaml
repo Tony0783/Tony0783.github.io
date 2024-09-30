@@ -7,19 +7,22 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 100
-      submenu:
-        - name: "Accomplishments"
-          url: "/about/accomplishments/"
-          weight: 110
-        - name: "Contact"
-          url: "/about/contact/"
-          weight: 120
-        - name: "Education"
-          url: "/about/education/"
-          weight: 130
-        - name: "Experience"
-          url: "/about/experience/"
-          weight: 140
+
+    - name: "Accomplishments"
+      url: "/about/accomplishments/"
+      weight: 110
+
+    - name: "Contact"
+      url: "/about/contact/"
+      weight: 120
+
+    - name: "Education"
+      url: "/about/education/"
+      weight: 130
+
+    - name: "Experience"
+      url: "/about/experience/"
+      weight: 140
 
     - name: "Projects"
       url: "/projects/"

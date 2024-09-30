@@ -9,5 +9,5 @@ menu:
       weight: 100
 
     - name: "About (EN)"
-      url: "/about/"
+      url: "/en/about/"
       weight: 110

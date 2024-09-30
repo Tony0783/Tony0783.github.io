@@ -1,29 +1,25 @@
-# Languages
-# Create a section for each of your site's languages.
-
 # Default language English
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  contentDir: content/en
-  title: My Portfolio
+  contentDir: content/en  # 영어 콘텐츠는 content/en 폴더에 저장
+  title: "My Portfolio"
   params:
-    description: My personal portfolio website in English.
+    description: "My personal portfolio website in English."
   menu:
     main:
-      - name: ParkTaeho
-        url: '#about'
+      - name: "Home"
+        url: '/'
         weight: 1
 
-# Second language Korean
+# Korean (한국어)
 ko:
   languageCode: ko-kr
-  contentDir: content/ko
-  title: 나의 포트폴리오
+  contentDir: content/ko  # 한국어 콘텐츠는 content/ko 폴더에 저장
+  title: "나의 포트폴리오"
   params:
-    description: 나의 개인 포트폴리오 웹사이트.
+    description: "나의 개인 포트폴리오 웹사이트."
   menu:
     main:
-      - name: 박태호
-        url: '#about'
+      - name: "홈"
+        url: '/'
         weight: 1

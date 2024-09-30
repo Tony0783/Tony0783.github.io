@@ -3,15 +3,15 @@ menu:
     - name: "Home"
       url: "/"
       weight: 1
-
+    
     - name: "About (KR)"
       url: "/ko/about"
       weight: 100
-
+    
     - name: "About (EN)"
       url: "/about/"
       weight: 110
-
+    
     - name: "Profile"
       url: "/profile/"
       weight: 200
@@ -22,7 +22,7 @@ menu:
         - name: "Skills"
           url: "/about/skills/"
           weight: 220
-
+    
     - name: "Projects"
       url: "/projects/"
       weight: 300
@@ -33,7 +33,7 @@ menu:
         - name: "Research Fields"
           url: "/projects/research-fields/"
           weight: 320
-
+    
     - name: "Inform"
       url: "/inform/"
       weight: 600
@@ -47,7 +47,7 @@ menu:
         - name: "Events"
           url: "/inform/events/"
           weight: 630
-
+    
     - name: "Contact"
       url: "/contact/"
       weight: 700

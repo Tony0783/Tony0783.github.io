@@ -8,46 +8,5 @@ menu:
       url: "/ko/about"
       weight: 100
     
-    - name: "About (EN)"
-      url: "/about/"
-      weight: 110
-    
-    - name: "Profile"
-      url: "/profile/"
-      weight: 200
-      submenu:
-        - name: "Biography"
-          url: "/about/biography/"
-          weight: 210
-        - name: "Skills"
-          url: "/about/skills/"
-          weight: 220
-    
-    - name: "Projects"
-      url: "/projects/"
-      weight: 300
-      submenu:
-        - name: "Portfolio"
-          url: "/projects/portfolio/"
-          weight: 310
-        - name: "Research Fields"
-          url: "/projects/research-fields/"
-          weight: 320
-    
-    - name: "Inform"
-      url: "/inform/"
-      weight: 600
-      submenu:
-        - name: "Notifications"
-          url: "/inform/notifications/"
-          weight: 610
-        - name: "News"
-          url: "/inform/news/"
-          weight: 620
-        - name: "Events"
-          url: "/inform/events/"
-          weight: 630
-    
-    - name: "Contact"
-      url: "/contact/"
-      weight: 700
+
+   

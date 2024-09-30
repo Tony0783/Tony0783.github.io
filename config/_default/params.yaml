@@ -14,11 +14,11 @@ appearance:
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Person  # 개인 포트폴리오의 경우
     local_business_type: ''
-    org_name: 'MacsLAB'
-    description: 'MacsLAB in Jeonbuk National Univ.'
-    twitter: 'GetResearchDev'
+    org_name: 'Taeho Park'  # 조직 이름을 박태호님의 이름으로 변경
+    description: 'Taeho Park's Portfolio'  # 포트폴리오 설명 수정
+    twitter: 'GetResearchDev'  # 트위터 핸들이 있으면 변경, 없다면 빈칸으로 두어도 됩니다.
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -44,7 +44,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Taeho Park. This work is licensed under {license}'  # 저작권 부분도 박태호님으로 변경
     license:
       enable: true
       allow_derivatives: false
@@ -71,7 +71,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/Tony0783/Tony0783.github.io'  # GitHub 리포지토리 URL 수정
     content_dir: content
     branch: main
   avatar:

@@ -2,9 +2,9 @@
 en:
   languageCode: en-us
   contentDir: content/en  # 영어 콘텐츠는 content/en 폴더에 저장
-  title: "My Portfolio"
+  title: "Taeho Park's Portfolio"  # 영어 웹사이트 제목 수정
   params:
-    description: "My personal portfolio website in English."
+    description: "Taeho Park's personal portfolio website in English."  # 영어 설명 수정
   menu:
     main:
       - name: "Home"
@@ -15,9 +15,9 @@ en:
 ko:
   languageCode: ko-kr
   contentDir: content/ko  # 한국어 콘텐츠는 content/ko 폴더에 저장
-  title: "나의 포트폴리오"
+  title: "박태호의 포트폴리오"  # 한국어 웹사이트 제목 수정
   params:
-    description: "나의 개인 포트폴리오 웹사이트."
+    description: "박태호의 개인 포트폴리오 웹사이트."  # 한국어 설명 수정
   menu:
     main:
       - name: "홈"

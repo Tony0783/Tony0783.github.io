@@ -1,56 +1,53 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    
+    - name: "About (KR)"
+      url: "ko/about"
+      weight: 100
+    
+    - name: "About (EN)"
+      url: "/about/"
+      weight: 110
+    
+    - name: "Profile"
+      url: "/profile/"
+      weight: 200
+      submenu:
+        - name: "Biography"
+          url: "/about/biography/"
+          weight: 210
+        - name: "Skills"
+          url: "/about/skills/"
+          weight: 220
 
-main:
-  # - name: Home
-  #   url: /
-  #   weight: 1
-  - name: About
-    url: about
-    weight: 100
+    - name: "Projects"
+      url: "/projects/"
+      weight: 300
+      submenu:
+        - name: "Portfolio"
+          url: "/projects/portfolio/"
+          weight: 310
+        - name: "Research Fields"
+          url: "/projects/research-fields/"
+          weight: 320
 
-  - name: Profile
-    url: profile
-    weight: 200
-  - parent: Profile
-    name: Biography
-    url: /about/biography/
-    weight: 210
-  - parent: Profile
-    name: Skills
-    url: /about/skills/
-    weight: 220
+    - name: "Inform"
+      url: "/inform/"
+      weight: 600
+      submenu:
+        - name: "Notifications"
+          url: "/inform/notifications/"
+          weight: 610
+        - name: "News"
+          url: "/inform/news/"
+          weight: 620
+        - name: "Events"
+          url: "/inform/events/"
+          weight: 630
 
-  - name: Projects
-    url: projects
-    weight: 300
-  - parent: Projects
-    name: Portfolio
-    url: /projects/portfolio/
-    weight: 310
-  - parent: Projects
-    name: Research Fields
-    url: /projects/research-fields/
-    weight: 320
-
-  - name: Inform
-    url: post
-    weight: 600
-  - parent: Inform
-    name: Notifications
-    url: /inform/notifications/
-    weight: 610
-  - parent: Inform
-    name: News
-    url: /inform/news/
-    weight: 620
-  - parent: Inform
-    name: Events
-    url: /inform/events/
-    weight: 630
-
-  - name: Contact
-    url: /contact/
-    weight: 700
+    - name: "Contact"
+      url: "/contact/"
+      weight: 700

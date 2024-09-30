@@ -27,3 +27,7 @@ menu:
       parent: "About"
       url: "/about/experience/"
       weight: 140
+
+    - name: "Projects"
+      url: "/projects/"
+      weight: 200

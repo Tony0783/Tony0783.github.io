@@ -1,13 +1,12 @@
 # Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# Create a section for each of your site's languages.
 
 # Default language English
 en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
-    title: My Portfolio
+  title: My Portfolio
   params:
     description: My personal portfolio website in English.
   menu:
@@ -15,7 +14,8 @@ en:
       - name: Park TaeHo
         url: '#about'
         weight: 1
-# Uncomment the lines below to configure your website in a second language.
+
+# Second language Korean
 ko:
   languageCode: ko-kr
   contentDir: content/ko

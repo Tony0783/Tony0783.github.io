@@ -15,35 +15,44 @@ menu:
     - name: "Profile"
       url: "/profile/"
       weight: 200
-      submenu:
-        - name: "Biography"
-          url: "/profile/biography/"
-          weight: 210
-        - name: "Skills"
-          url: "/profile/skills/"
-          weight: 220
+
+    - name: "Biography"
+      parent: "Profile"
+      url: "/profile/biography/"
+      weight: 210
+
+    - name: "Skills"
+      parent: "Profile"
+      url: "/profile/skills/"
+      weight: 220
 
     - name: "Projects"
       url: "/projects/"
       weight: 300
-      submenu:
-        - name: "Portfolio"
-          url: "/projects/portfolio/"
-          weight: 310
-        - name: "Research Fields"
-          url: "/projects/research-fields/"
-          weight: 320
+
+    - name: "Portfolio"
+      parent: "Projects"
+      url: "/projects/portfolio/"
+      weight: 310
+
+    - name: "Research Fields"
+      parent: "Projects"
+      url: "/projects/research-fields/"
+      weight: 320
 
     - name: "Research"
       url: "/research/"
       weight: 400
-      submenu:
-        - name: "Publications"
-          url: "/research/publications/"
-          weight: 410
-        - name: "Fields of Study"
-          url: "/research/fields/"
-          weight: 420
+
+    - name: "Publications"
+      parent: "Research"
+      url: "/research/publications/"
+      weight: 410
+
+    - name: "Fields of Study"
+      parent: "Research"
+      url: "/research/fields/"
+      weight: 420
 
     - name: "Contact"
       url: "/contact/"

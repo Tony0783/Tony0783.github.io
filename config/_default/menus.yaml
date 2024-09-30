@@ -5,7 +5,7 @@ menu:
       weight: 1
     
     - name: "About (KR)"
-      url: "ko/about"
+      url: "/ko/about"
       weight: 100
     
     - name: "About (EN)"

@@ -11,3 +11,40 @@ menu:
     - name: "About (EN)"
       url: "/en/about/"
       weight: 110
+
+    - name: "Profile"
+      url: "/profile/"
+      weight: 200
+      submenu:
+        - name: "Biography"
+          url: "/profile/biography/"
+          weight: 210
+        - name: "Skills"
+          url: "/profile/skills/"
+          weight: 220
+
+    - name: "Projects"
+      url: "/projects/"
+      weight: 300
+      submenu:
+        - name: "Portfolio"
+          url: "/projects/portfolio/"
+          weight: 310
+        - name: "Research Fields"
+          url: "/projects/research-fields/"
+          weight: 320
+
+    - name: "Research"
+      url: "/research/"
+      weight: 400
+      submenu:
+        - name: "Publications"
+          url: "/research/publications/"
+          weight: 410
+        - name: "Fields of Study"
+          url: "/research/fields/"
+          weight: 420
+
+    - name: "Contact"
+      url: "/contact/"
+      weight: 500

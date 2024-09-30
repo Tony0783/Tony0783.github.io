@@ -1,29 +1,8 @@
 menu:
   main:
-    - name: "Home"
-      url: "/"
-      weight: 1
-
-    - name: "About"
-      url: "/about/"
+    - name: "About (KR)"
+      url: "/ko/about/"
       weight: 100
-
-    - name: "Accomplishments"
-      url: "/about/accomplishments/"
+    - name: "About (EN)"
+      url: "/en/about/"
       weight: 110
-
-    - name: "Contact"
-      url: "/about/contact/"
-      weight: 120
-
-    - name: "Education"
-      url: "/about/education/"
-      weight: 130
-
-    - name: "Experience"
-      url: "/about/experience/"
-      weight: 140
-
-    - name: "Projects"
-      url: "/projects/"
-      weight: 200

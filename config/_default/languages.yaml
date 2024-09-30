@@ -11,7 +11,7 @@ en:
     description: My personal portfolio website in English.
   menu:
     main:
-      - name: TaeHo Park
+      - name: ParkTaeho
         url: '#about'
         weight: 1
 

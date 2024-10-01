@@ -22,17 +22,53 @@
       <h2>관심사</h2>
       <p>축구, 스키, 탁구, 게임, 달리기에 관심이 있습니다.</p>
     </section>
+    
+    <!-- 이미지 슬라이더 섹션 -->
+    <section class="slider-section" style="background-color: #fff;">
+      <h2>이미지 슬라이더</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="/images/slider1.jpg" alt="Slider Image 1">
+          </div>
+          <div class="slide">
+            <img src="/images/slider2.jpg" alt="Slider Image 2">
+          </div>
+          <div class="slide">
+            <img src="/images/slider3.jpg" alt="Slider Image 3">
+          </div>
+        </div>
+  
+        <!-- 슬라이더 네비게이션 버튼 -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+  
+    <!-- 카드 레이아웃 섹션 -->
+    <section class="cards-section" style="background-color: #f0f0f0;">
+      <h2>프로젝트 카드</h2>
+      <div class="cards-container">
+        {{ range first 9 .Pages }}
+          <div class="card">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}">Read more</a>
+          </div>
+        {{ end }}
+      </div>
+    </section>
   
   </div>
   
-  <!-- 각 섹션 스타일 적용 -->
+  <!-- 스타일 추가 -->
   <style>
   .section-container {
     width: 100%;
     margin: 0 auto;
   }
   
-  .section {
+  .section, .slider-section, .cards-section {
     padding: 40px;
     color: #333;
     text-align: center;
@@ -40,7 +76,7 @@
     border-radius: 8px;
   }
   
-  .section h2 {
+  .section h2, .slider-section h2, .cards-section h2 {
     margin-bottom: 20px;
   }
   
@@ -48,5 +84,87 @@
     font-size: 18px;
     line-height: 1.6;
   }
+  
+  /* 슬라이더 기본 스타일 */
+  .slider {
+    position: relative;
+    width: 100%;  /* 슬라이더가 페이지 너비 전체를 차지하도록 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* 슬라이더 안의 내용을 가운데 정렬 */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center; /* 이미지를 슬라이더 안에서 가운데 정렬 */
+    min-width: 100%; /* 각 슬라이드가 슬라이더 전체를 차지 */
+  }
+  
+  .slide img {
+    width: 30%; /* 이미지를 작게 조정 */
+    height: auto;
+  }
+  
+  /* 슬라이더 네비게이션 버튼 */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* 카드 레이아웃 스타일 */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
   </style>
+  
+  <!-- 슬라이더 스크립트 -->
+  <script>
+  let slideIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+  
+  document.querySelector('.prev').addEventListener('click', () => {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  });
+  
+  document.querySelector('.next').addEventListener('click', () => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlidePosition();
+  });
+  
+  function updateSlidePosition() {
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+  </script>
   

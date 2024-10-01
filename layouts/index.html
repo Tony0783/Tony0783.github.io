@@ -1,16 +1,13 @@
 {{ define "main" }}
 <div class="section-container">
 
-  <!-- 자기소개 섹션 -->
+  <!-- 자기소개 섹션: 카드 포함 -->
   <section class="intro-section" style="background-color: #f0f8ff; padding: 50px;">
     <h2>자기소개</h2>
     <p>안녕하세요, 저는 22살의 남성으로 전북대학교에 재학 중인 학생입니다.</p>
     <p>컴퓨터공학과 학번은 2020년입니다.</p>
-  </section>
 
-  <!-- 카드 섹션 -->
-  <section class="cards-section" style="background-color: #ffffff; padding: 50px;">
-    <h2>내 정보 카드</h2>
+    <!-- 내 정보 카드 3개 -->
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
 
       <!-- 1번 카드: 신상 정보 -->
@@ -37,7 +34,7 @@
     </div>
   </section>
 
-  <!-- 프로젝트 카드 섹션 (두 번째 섹션) -->
+  <!-- 두 번째 섹션: 내가 살던 곳 -->
   <section class="cards-section" style="background-color: #ffffff; padding: 50px;">
     <h2>박태호가 살던 곳</h2>
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -48,7 +45,7 @@
           {{ $link = .Params.external_link }}
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
-      
+
         <div class="card">
           {{ with .Params.featured_image }}
             <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
@@ -66,7 +63,7 @@
     </div>
   </section>
 
-  <!-- 공지사항 및 뉴스 섹션 (세 번째 섹션) -->
+  <!-- 공지사항 및 뉴스 섹션 -->
   <section class="news-section" style="background-color: #333; color: #fff; padding: 50px;">
     <h2>Notifications & News</h2>
     <div class="news-container" style="display: flex; flex-wrap: wrap; gap: 20px;">

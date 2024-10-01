@@ -1,14 +1,17 @@
 <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li>
-        <a href="/people">People</a>
-        <ul>
-          <li><a href="/author/professor">Professor</a></li>
-          <li><a href="/people/members">Members</a></li>
-        </ul>
-      </li>
+      {{ range .Site.Menus.main }}  <!-- main 메뉴를 반복하여 처리 -->
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>  <!-- 각 메뉴 항목의 이름과 URL을 출력 -->
+          {{ if .HasChildren }}  <!-- 하위 메뉴가 있으면 드롭다운 표시 -->
+          <ul>
+            {{ range .Children }}  <!-- 하위 메뉴 반복 출력 -->
+              <li><a href="{{ .URL }}">{{ .Name }}</a></li>  
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+      {{ end }}
     </ul>
   </nav>
   

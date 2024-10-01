@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- 이미지 슬라이더 (고정된 이미지 크기) -->
+<!-- 이미지 슬라이더 -->
 <div class="slider">
   <div class="slides">
     <div class="slide">
@@ -13,6 +13,10 @@
       <img src="/images/slider3.jpg" alt="Slider Image 3">
     </div>
   </div>
+
+  <!-- 슬라이더 네비게이션 버튼 -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
 </div>
 
 <!-- 카드 레이아웃 -->
@@ -31,27 +35,47 @@
 <style>
 /* 슬라이더 기본 스타일 */
 .slider {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
   min-width: 100%;
 }
 
-/* 이미지 크기 고정 */
 .slide img {
-  width: 800px; /* 고정된 가로 크기 */
-  height: 400px; /* 고정된 세로 크기 */
-  object-fit: cover; /* 이미지 비율 유지하며 크기에 맞춤 */
-  margin: 0 auto; /* 가운데 정렬 */
+  width: 100%;
+  height: auto;
 }
 
-/* 카드 레이아웃 */
+/* 슬라이더 네비게이션 버튼 */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -71,5 +95,26 @@
   margin-bottom: 10px;
 }
 </style>
+
+<!-- 슬라이더 JavaScript -->
+<script>
+let slideIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+
+document.querySelector('.prev').addEventListener('click', () => {
+  slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+  updateSlidePosition();
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+  slideIndex = (slideIndex + 1) % totalSlides;
+  updateSlidePosition();
+});
+
+function updateSlidePosition() {
+  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+</script>
 
 {{ end }}

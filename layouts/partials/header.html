@@ -1,22 +1,74 @@
-<header style="position: fixed; top: 0; width: 100%; background-color: white; z-index: 100;">
-    <nav>
-      <ul style="display: flex; list-style-type: none; padding: 10px; margin: 0;">
+<header style="position: fixed; top: 0; width: 100%; background-color: #2c2c2c; z-index: 100;">
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      
+      <!-- 로고 -->
+      <div>
+        <a href="/" style="text-decoration: none; color: white; font-size: 24px; font-weight: bold;">MacsLAB</a>
+      </div>
+      
+      <!-- 메뉴 항목 -->
+      <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
         {{ range .Site.Menus.main }}
-          <li style="margin-right: 20px;">
-            <a href="{{ .URL }}" style="text-decoration: none; color: black;" class="menu-item">{{ .Name }}</a>
+          <li style="position: relative; margin-right: 20px;">
+            <a href="{{ .URL }}" style="color: white; text-decoration: none; padding: 8px 12px; font-size: 16px;">{{ .Name }}</a>
+            
+            <!-- 서브메뉴(드롭다운) -->
+            {{ if .HasChildren }}
+              <ul style="display: none; position: absolute; background-color: #3c3c3c; list-style: none; padding: 10px; margin: 0;">
+                {{ range .Children }}
+                  <li style="padding: 5px 0;">
+                    <a href="{{ .URL }}" style="color: white; text-decoration: none;">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
           </li>
         {{ end }}
       </ul>
+      
+      <!-- 아이콘들 (검색 및 다크 모드) -->
+      <div style="display: flex; gap: 15px;">
+        <a href="/search" style="color: white; font-size: 18px;">🔍</a>
+        <a href="javascript:void(0);" onclick="toggleDarkMode()" style="color: white; font-size: 18px;">🌙</a>
+      </div>
+      
     </nav>
-</header>
-
-<script>
-  const menuItems = document.querySelectorAll('.menu-item');
+  </header>
   
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      menuItems.forEach(i => i.style.color = 'black');  // 모든 메뉴 항목을 기본값으로
-      item.style.color = 'blue';  // 클릭한 메뉴 항목을 파란색으로 변경
+  <!-- 드롭다운 메뉴 JS -->
+  <script>
+    const menuItems = document.querySelectorAll('li');
+  
+    menuItems.forEach(item => {
+      item.addEventListener('mouseover', () => {
+        const dropdown = item.querySelector('ul');
+        if (dropdown) {
+          dropdown.style.display = 'block';
+        }
+      });
+  
+      item.addEventListener('mouseout', () => {
+        const dropdown = item.querySelector('ul');
+        if (dropdown) {
+          dropdown.style.display = 'none';
+        }
+      });
     });
-  });
-</script>
+  
+    // 다크 모드 토글 기능
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+  
+  <!-- 다크 모드 CSS -->
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    body.dark-mode a {
+      color: white;
+    }
+  </style>
+  

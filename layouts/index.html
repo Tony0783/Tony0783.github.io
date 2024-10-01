@@ -4,50 +4,38 @@
   <!-- Hero 섹션 (첫 번째 섹션, 배경색: 연한 회색) -->
   <section class="hero-section" style="background-color: #f0f0f0; padding: 50px;">
     <div class="hero-content">
-      <h1>Medical AI & Computational Science (Macs) Lab</h1>
-      <p>전북대학교 의료 AI 및 계산 과학 연구실에 오신 것을 환영합니다.</p>
-      <a href="/research" class="btn-primary">See Research Fields</a>
+      <h1></h1>
+      <p>박태호의 포트폴리오에 오신 것을 환영합니다.</p>
     </div>
   </section>
 
   <!-- 프로젝트 카드 섹션 (두 번째 섹션, 배경색: 하얀색) -->
   <section class="cards-section" style="background-color: #ffffff; padding: 50px;">
-    <h2>프로젝트 카드</h2>
+    <h2>박태호가 살던 곳</h2>
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      {{ range .Pages }}
+        {{ range .Pages }}
         {{ $link := .RelPermalink }}
         {{ $target := "" }}
         {{ if .Params.external_link }}
           {{ $link = .Params.external_link }}
           {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
         {{ end }}
-
-        {{ $summary := "" }}
-        {{ if .Params.summary }}
-          {{ $summary = .Params.summary | markdownify | emojify }}
-        {{ else if .Params.abstract }}
-          {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
-        {{ else if .Summary }}
-          {{ $summary = .Summary }}
-        {{ end }}
-
-        {{ $resource := .Params.featured_image }}
-        <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
-          {{ with $resource }}
+      
+        <div class="card">
+          {{ with .Params.featured_image }}
             <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
               <img src="{{ . }}" alt="{{ .Title }}" style="width: 100%; height: auto;" loading="lazy">
             </a>
           {{ end }}
           <div class="card-text">
             <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ .Title | markdownify | emojify }}</a></h3>
-            {{ with $summary }}
+            {{ with .Summary }}
               <p>{{ . }}</p>
             {{ end }}
           </div>
         </div>
       {{ end }}
-    </div>
-  </section>
+      
 
   <!-- 공지사항 및 뉴스 섹션 (세 번째 섹션, 배경색: 짙은 회색) -->
   <section class="news-section" style="background-color: #333; color: #fff; padding: 50px;">

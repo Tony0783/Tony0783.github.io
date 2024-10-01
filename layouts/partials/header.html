@@ -1,0 +1,22 @@
+<header style="position: fixed; top: 0; width: 100%; background-color: white; z-index: 100;">
+    <nav>
+      <ul style="display: flex; list-style-type: none; padding: 10px; margin: 0;">
+        {{ range .Site.Menus.main }}
+          <li style="margin-right: 20px;">
+            <a href="{{ .URL }}" style="text-decoration: none; color: black;" class="menu-item">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+</header>
+
+<script>
+  const menuItems = document.querySelectorAll('.menu-item');
+  
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuItems.forEach(i => i.style.color = 'black');  // 모든 메뉴 항목을 기본값으로
+      item.style.color = 'blue';  // 클릭한 메뉴 항목을 파란색으로 변경
+    });
+  });
+</script>

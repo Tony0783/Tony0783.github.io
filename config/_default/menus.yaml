@@ -1,66 +1,27 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
+# config.toml
 
-main:
-  # - name: Home
-  #   url: /
-  #   weight: 1
-  - name: About
-    url: about
-    weight: 100
+[menu]
+  [[menu.main]]
+    name = "홈"
+    url = "/"
+    weight = 1
 
-  - name: People
-    url: people
-    weight: 200
-  - parent: People
-    name: Professor
-    url: /author/이경수/
-    weight: 210
-  - parent: People
-    name: Members
-    url: people
-    weight: 220
+  [[menu.main]]
+    name = "소개"
+    url = "/#intro"
+    weight = 2
 
-  - name: Research
-    url: publication
-    weight: 300
-  - parent: Research
-    name: Publications
-    url: publication
-    weight: 310
-  - parent: Research
-    name: Research Fields
-    url: field
-    weight: 320
+  [[menu.main]]
+    name = "교육 과정"
+    url = "/#education"
+    weight = 3
 
-  # - name: Projects
-  #   url: project
-  #   weight: 400
+  [[menu.main]]
+    name = "기술"
+    url = "/#skills"
+    weight = 4
 
-
-  # - name: Coursework
-  #   url: publication
-  #   weight: 500
-
-  - name: Inform
-    url: post
-    weight: 600
-  - parent: Inform
-    name: Notifications
-    url: notification
-    weight: 610
-  - parent: Inform
-    name: News
-    url: post
-    weight: 620
-  - parent: Inform
-    name: Event
-    url: event
-    weight: 630
-
-
-  - name: Contact
-    url: contact
-    weight: 700
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 5

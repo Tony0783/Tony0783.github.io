@@ -1,9 +1,8 @@
 ---
-# Leave the homepage title empty to use the site title
-title:
+title: "Home"
 date: 2024-03-25
 type: landing
-
+---
 sections:
 
   - block: features

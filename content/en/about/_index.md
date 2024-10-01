@@ -14,44 +14,29 @@ sections:
   - block: slider
     content:
       slides:
-      - title: AI
+
+      - title: <span style="font-size:90%">AI</span>
         content: 'Just opened last month!'
         align: center
         background:
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.5
           position: center
           color: '#333'
-      - title: Medical AI
+      - title: <span style="font-size:90%">Medical AI</span>
         content: Take a look at what we're working on...
         align: center
         background:
-          image:
-            filename: coders.jpg
-            filters:
-              brightness: 0.7
           position: right
           color: '#666'
-      - title: Development
+      - title: <span style="font-size:90%">Development</span>
         content: 'Share your knowledge with the group and explore exciting new topics together!'
         align: center
         background:
-          image:
-            filename: contact.jpg
-            filters:
-              brightness: 0.7
           position: center
           color: '#555'
-      - title: Mathematics
+      - title: <span style="font-size:90%">Mathematics</span>
         content: 'Just opened last month!'
         align: center
         background:
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.5
           position: center
           color: '#333'
     design:

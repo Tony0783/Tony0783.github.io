@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- 이미지 슬라이더 -->
+<!-- 이미지 슬라이더 (고정된 이미지 크기) -->
 <div class="slider">
   <div class="slides">
     <div class="slide">
@@ -37,24 +37,18 @@
 
 .slides {
   display: flex;
-  animation: slide-animation 10s infinite;
 }
 
 .slide {
   min-width: 100%;
 }
 
+/* 이미지 크기 고정 */
 .slide img {
-  width: 100%;
-  height: auto;
-}
-
-/* 슬라이더 애니메이션 */
-@keyframes slide-animation {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
+  width: 800px; /* 고정된 가로 크기 */
+  height: 400px; /* 고정된 세로 크기 */
+  object-fit: cover; /* 이미지 비율 유지하며 크기에 맞춤 */
+  margin: 0 auto; /* 가운데 정렬 */
 }
 
 /* 카드 레이아웃 */

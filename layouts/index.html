@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="cards-container">
+  {{ range first 9 .Pages }}
+    <div class="card">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Summary }}</p>
+      <a href="{{ .RelPermalink }}">Read more</a>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -34,32 +34,35 @@
     </div>
   </section>
 
-  <!-- 두 번째 섹션: 내가 살던 곳 -->
+  <!-- 두 번째 섹션: 교육 및 학습 과정 -->
   <section class="cards-section" style="background-color: #ffffff; padding: 50px;">
-    <h2>박태호가 살던 곳</h2>
+    <h2>교육 및 학습 과정</h2>
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      {{ range .Pages }}
-        {{ $link := .RelPermalink }}
-        {{ $target := "" }}
-        {{ if .Params.external_link }}
-          {{ $link = .Params.external_link }}
-          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-        {{ end }}
 
-        <div class="card">
-          {{ with .Params.featured_image }}
-            <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-              <img src="{{ . }}" alt="{{ .Title }}" style="width: 100%; height: auto;" loading="lazy">
-            </a>
-          {{ end }}
-          <div class="card-text">
-            <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ .Title | markdownify | emojify }}</a></h3>
-            {{ with .Summary }}
-              <p>{{ . }}</p>
-            {{ end }}
-          </div>
-        </div>
-      {{ end }}
+      <!-- 학습 과정 1: 웹 서비스 설계 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>웹 서비스 설계</h3>
+        <p>웹 서비스의 구조와 설계, 시스템 아키텍처에 대해 공부하고 있습니다.</p>
+      </div>
+
+      <!-- 학습 과정 2: 컴퓨터 그래픽스 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>컴퓨터 그래픽스</h3>
+        <p>컴퓨터 그래픽스의 이론과 실습을 통해 3D 모델링과 렌더링 기법을 배우고 있습니다.</p>
+      </div>
+
+      <!-- 학습 과정 3: 소프트웨어 공학 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>소프트웨어 공학</h3>
+        <p>소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론에 대해 학습 중입니다.</p>
+      </div>
+
+      <!-- 학습 과정 4: 정보 검색 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>정보 검색</h3>
+        <p>효율적인 정보 검색 시스템 설계와 관련 알고리즘을 배우고 있습니다.</p>
+      </div>
+
     </div>
   </section>
 

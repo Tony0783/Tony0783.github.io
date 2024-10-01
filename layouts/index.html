@@ -1,170 +1,41 @@
+{{ define "main" }}
 <div class="section-container">
-  
-    <!-- 섹션 1: 소개 -->
-    <section class="section" style="background-color: #f0f8ff;">
-      <h2>소개</h2>
-      <p>저는 2001년생이며, 경기도 안양에 거주하고 있습니다. 전북대학교 컴퓨터공학과 3학년 학생입니다.</p>
-    </section>
-  
-    <!-- 섹션 2: 수강 과목 -->
-    <section class="section" style="background-color: #e6e6fa;">
-      <h2>수강 과목</h2>
-      <ul>
-        <li>알고리즘</li>
-        <li>운영체제</li>
-        <li>인공지능</li>
-        <li>자료구조</li>
-      </ul>
-    </section>
-  
-    <!-- 섹션 3: 관심사 -->
-    <section class="section" style="background-color: #f5f5dc;">
-      <h2>관심사</h2>
-      <p>축구, 스키, 탁구, 게임, 달리기에 관심이 있습니다.</p>
-    </section>
-    
-    <!-- 이미지 슬라이더 섹션 -->
-    <section class="slider-section" style="background-color: #fff;">
-      <h2>이미지 슬라이더</h2>
-      <div class="slider">
-        <div class="slides">
-          <div class="slide">
-            <img src="/images/slider1.jpg" alt="Slider Image 1">
-          </div>
-          <div class="slide">
-            <img src="/images/slider2.jpg" alt="Slider Image 2">
-          </div>
-          <div class="slide">
-            <img src="/images/slider3.jpg" alt="Slider Image 3">
+  <section class="cards-section">
+    <h2>프로젝트 카드</h2>
+    <div class="cards-container">
+      {{ range .Pages }}
+        {{ $link := .RelPermalink }}
+        {{ $target := "" }}
+        {{ if .Params.external_link }}
+          {{ $link = .Params.external_link }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+
+        {{ $summary := "" }}
+        {{ if .Params.summary }}
+          {{ $summary = .Params.summary | markdownify | emojify }}
+        {{ else if .Params.abstract }}
+          {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+        {{ else if .Summary }}
+          {{ $summary = .Summary }}
+        {{ end }}
+
+        {{ $resource := .Params.featured_image }}
+        <div class="card">
+          {{ with $resource }}
+            <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+              <img src="{{ . }}" alt="{{ .Title }}" style="width: 100%; height: auto;" loading="lazy">
+            </a>
+          {{ end }}
+          <div class="card-text">
+            <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ .Title | markdownify | emojify }}</a></h3>
+            {{ with $summary }}
+              <p>{{ . }}</p>
+            {{ end }}
           </div>
         </div>
-  
-        <!-- 슬라이더 네비게이션 버튼 -->
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-      </div>
-    </section>
-  
-    <!-- 카드 레이아웃 섹션 -->
-    <section class="cards-section" style="background-color: #f0f0f0;">
-      <h2>프로젝트 카드</h2>
-      <div class="cards-container">
-        {{ range first 9 .Pages }}
-          <div class="card">
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Summary }}</p>
-            <a href="{{ .RelPermalink }}">Read more</a>
-          </div>
-        {{ end }}
-      </div>
-    </section>
-  
-  </div>
-  
-  <!-- 스타일 추가 -->
-  <style>
-  .section-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .section, .slider-section, .cards-section {
-    padding: 40px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
-  
-  .section h2, .slider-section h2, .cards-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .section p, .section ul {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  /* 슬라이더 기본 스타일 */
-  .slider {
-    position: relative;
-    width: 100%;  /* 슬라이더가 페이지 너비 전체를 차지하도록 */
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* 슬라이더 안의 내용을 가운데 정렬 */
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: center; /* 이미지를 슬라이더 안에서 가운데 정렬 */
-    min-width: 100%; /* 각 슬라이드가 슬라이더 전체를 차지 */
-  }
-  
-  .slide img {
-    width: 30%; /* 이미지를 작게 조정 */
-    height: auto;
-  }
-  
-  /* 슬라이더 네비게이션 버튼 */
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 2;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  /* 카드 레이아웃 스타일 */
-  .cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-  }
-  
-  .card {
-    padding: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-  </style>
-  
-  <!-- 슬라이더 스크립트 -->
-  <script>
-  let slideIndex = 0;
-  const slides = document.querySelector('.slides');
-  const totalSlides = slides.children.length;
-  
-  document.querySelector('.prev').addEventListener('click', () => {
-    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-    updateSlidePosition();
-  });
-  
-  document.querySelector('.next').addEventListener('click', () => {
-    slideIndex = (slideIndex + 1) % totalSlides;
-    updateSlidePosition();
-  });
-  
-  function updateSlidePosition() {
-    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-  }
-  </script>
-  
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

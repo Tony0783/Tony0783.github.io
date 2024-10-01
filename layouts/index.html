@@ -66,20 +66,29 @@
     </div>
   </section>
 
-  <!-- 공지사항 및 뉴스 섹션 -->
-  <section class="news-section" style="background-color: #333; color: #fff; padding: 50px;">
-    <h2>Notifications & News</h2>
-    <div class="news-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      {{ range .Pages }}
-        <div class="news-card" style="background-color: #444; padding: 20px; border-radius: 8px; width: 30%;">
-          {{ with .Params.featured_image }}
-            <img src="{{ . }}" alt="{{ .Title }}" style="width: 100%; height: auto;">
-          {{ end }}
-          <h3>{{ .Title | markdownify | emojify }}</h3>
-          <p>{{ .Summary }}</p>
-          <a href="{{ .RelPermalink }}" style="color: #1e90ff;">Read more</a>
-        </div>
-      {{ end }}
+  <!-- 세 번째 섹션: 성장 목표 및 학습 중인 기술 -->
+  <section class="cards-section" style="background-color: #f0f8ff; padding: 50px;">
+    <h2>성장 목표 및 학습 중인 기술</h2>
+    <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+      <!-- 학습 중인 기술 1: 프론트엔드 개발 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>프론트엔드 개발</h3>
+        <p>HTML, CSS, JavaScript를 통해 웹 페이지를 개발하는 기술을 학습 중입니다.</p>
+      </div>
+
+      <!-- 학습 중인 기술 2: 데이터 분석 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>데이터 분석</h3>
+        <p>Python을 사용하여 데이터 분석 및 시각화하는 방법을 공부하고 있습니다.</p>
+      </div>
+
+      <!-- 학습 중인 기술 3: AI 연구 -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>AI 연구</h3>
+        <p>딥러닝과 머신러닝을 사용하여 다양한 연구와 실습을 진행 중입니다.</p>
+      </div>
+
     </div>
   </section>
 

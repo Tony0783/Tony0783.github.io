@@ -36,8 +36,10 @@
 /* 슬라이더 기본 스타일 */
 .slider {
   position: relative;
-  width: 50%;
+  width: 100%;  /* 슬라이더가 페이지 너비 전체를 차지하도록 */
   overflow: hidden;
+  display: flex;
+  justify-content: center; /* 슬라이더 안의 내용을 가운데 정렬 */
 }
 
 .slides {
@@ -46,11 +48,13 @@
 }
 
 .slide {
-  min-width: 50%;
+  display: flex;
+  justify-content: center; /* 이미지를 슬라이더 안에서 가운데 정렬 */
+  min-width: 100%; /* 각 슬라이드가 슬라이더 전체를 차지 */
 }
 
 .slide img {
-  width: 50%;
+  width: 30%; /* 이미지를 작게 조정 */
   height: auto;
 }
 
@@ -91,7 +95,7 @@
 }
 
 .card-img {
-  width: 30%;
+  width: 30%;  /* 카드의 이미지 크기 */
   height: auto;
   margin-bottom: 10px;
 }
@@ -113,7 +117,7 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 function updateSlidePosition() {
-  slides.style.transform = `translateX(-${slideIndex * 30}%)`;
+  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 </script>
 

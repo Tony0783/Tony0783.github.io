@@ -1,20 +1,18 @@
-main:
-  - name: "Home"
-    url: "/"
-    weight: 1
-  - name: "About"
-    url: "/about"
-    weight: 2
-  - name: "People"
-    url: "/people"
-    weight: 3
-    children:
-      - name: "Professor"
-        url: "/author/이경수/"
-        weight: 1
-      - name: "Members"
-        url: "/people"
-        weight: 2
-  - name: "Research"
-    url: "/research"
-    weight: 4
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about"
+      weight: 2
+    - name: "People"
+      url: "/people"
+      weight: 3
+      children:
+        - name: "Professor"
+          url: "/author/professor"
+          weight: 1
+        - name: "Members"
+          url: "/people/members"
+          weight: 2

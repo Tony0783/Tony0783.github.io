@@ -1,21 +1,14 @@
-<!-- layouts/partials/navbar.html -->
-
 <nav>
     <ul>
-      {{ range .Site.Menus.main }}
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
       <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-        
-        {{ if .HasChildren }}
-        <!-- 드롭다운 메뉴 -->
+        <a href="/people">People</a>
         <ul>
-          {{ range .Children }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
+          <li><a href="/author/professor">Professor</a></li>
+          <li><a href="/people/members">Members</a></li>
         </ul>
-        {{ end }}
       </li>
-      {{ end }}
     </ul>
   </nav>
   

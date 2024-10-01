@@ -1,27 +1,20 @@
-# config.toml
+main:
+  - name: Home
+    url: /
+    weight: 1
 
-[menu]
-  [[menu.main]]
-    name = "홈"
-    url = "/"
-    weight = 1
+  - name: 소개
+    url: /#intro
+    weight: 2
 
-  [[menu.main]]
-    name = "소개"
-    url = "/#intro"
-    weight = 2
+  - name: 교육 과정
+    url: /#education
+    weight: 3
 
-  [[menu.main]]
-    name = "교육 과정"
-    url = "/#education"
-    weight = 3
+  - name: 기술
+    url: /#skills
+    weight: 4
 
-  [[menu.main]]
-    name = "기술"
-    url = "/#skills"
-    weight = 4
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact"
-    weight = 5
+  - name: Contact
+    url: /contact
+    weight: 5

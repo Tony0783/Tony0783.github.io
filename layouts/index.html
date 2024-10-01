@@ -1,11 +1,81 @@
 {{ define "main" }}
+
+<!-- 이미지 슬라이더 -->
+<div class="slider">
+  <div class="slides">
+    <div class="slide">
+      <img src="/images/slider1.jpg" alt="Slider Image 1">
+    </div>
+    <div class="slide">
+      <img src="/images/slider2.jpg" alt="Slider Image 2">
+    </div>
+    <div class="slide">
+      <img src="/images/slider3.jpg" alt="Slider Image 3">
+    </div>
+  </div>
+</div>
+
+<!-- 카드 레이아웃 -->
 <div class="cards-container">
   {{ range first 9 .Pages }}
     <div class="card">
+      <img src="{{ .Params.featured }}" alt="{{ .Title }}" class="card-img">
       <h2>{{ .Title }}</h2>
       <p>{{ .Summary }}</p>
       <a href="{{ .RelPermalink }}">Read more</a>
     </div>
   {{ end }}
 </div>
+
+<!-- 슬라이더 및 카드 스타일 -->
+<style>
+/* 슬라이더 기본 스타일 */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  animation: slide-animation 10s infinite;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* 슬라이더 애니메이션 */
+@keyframes slide-animation {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* 카드 레이아웃 */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+</style>
+
 {{ end }}

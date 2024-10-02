@@ -6,31 +6,11 @@ main:
   - name: "People"
     url: "/people"
     weight: 2
-  - parent: "People"
-    name: "Professor"
-    url: "/author/professor"
-    weight: 3
-  - parent: "People"
-    name: "Members"
-    url: "/people/members"
-    weight: 4
 
   - name: "Research"
     url: "/research"
-    weight: 5
-
-  - name: "Inform"
-    url: "/inform"
-    weight: 6
-  - parent: "Inform"
-    name: "Guidelines"
-    url: "/inform/guidelines"
-    weight: 7
-  - parent: "Inform"
-    name: "FAQ"
-    url: "/inform/faq"
-    weight: 8
+    weight: 3
 
   - name: "Contact"
     url: "/contact"
-    weight: 9
+    weight: 4

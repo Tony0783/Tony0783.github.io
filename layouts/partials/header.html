@@ -1,28 +1,16 @@
-<nav class="navbar">
-  <div class="navbar-brand">
-    <a href="/" class="navbar-item">MacsLAB</a>
-  </div>
-
-  <div class="navbar-menu">
-    <ul class="navbar-start">
+<nav>
+  <ul>
       {{ range .Site.Menus.main }}
-      <li class="navbar-item has-dropdown {{ if .HasChildren }}is-hoverable{{ end }}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <ul class="navbar-dropdown">
-          {{ range .Children }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </li>
+          <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+              {{ if .HasChildren }}
+                  <ul>
+                      {{ range .Children }}
+                          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                      {{ end }}
+                  </ul>
+              {{ end }}
+          </li>
       {{ end }}
-    </ul>
-  </div>
-
-  <!-- Optional Search and Theme Toggle icons -->
-  <div class="navbar-end">
-    <a href="/search" class="navbar-item"><i class="fa fa-search"></i></a>
-    <a href="#" class="navbar-item theme-toggle"><i class="fa fa-moon"></i></a>
-  </div>
+  </ul>
 </nav>

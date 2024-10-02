@@ -3,10 +3,10 @@ en:
     - name: "About"
       url: "/about"
       weight: 1
+
     - name: "People"
       url: "/people"
       weight: 2
-      # 하위 메뉴
       children:
         - name: "Professor"
           url: "/author/professor"
@@ -14,9 +14,11 @@ en:
         - name: "Members"
           url: "/people/members"
           weight: 4
+
     - name: "Research"
       url: "/research"
       weight: 5
+
     - name: "Contact"
       url: "/contact"
       weight: 6
@@ -26,10 +28,10 @@ ko:
     - name: "소개"
       url: "/about"
       weight: 1
+
     - name: "사람들"
       url: "/people"
       weight: 2
-      # 하위 메뉴
       children:
         - name: "교수님"
           url: "/author/professor"
@@ -37,9 +39,11 @@ ko:
         - name: "회원들"
           url: "/people/members"
           weight: 4
+
     - name: "연구"
       url: "/research"
       weight: 5
+
     - name: "연락처"
       url: "/contact"
       weight: 6

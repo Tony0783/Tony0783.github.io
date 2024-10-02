@@ -1,9 +1,13 @@
-# Default language English
 en:
-  languageCode: en-us
-  contentDir: content/en  # 영어 콘텐츠는 content/en 폴더에 저장
+  languageName: "English"
+  weight: 1
+  contentDir: "content/en"
+  languageCode: "en"
+  title: "My Site (English)"
 
-# Korean (한국어)
 ko:
-  languageCode: ko-kr
-  contentDir: content/ko  # 한국어 콘텐츠는 content/ko 폴더에 저장
+  languageName: "Korean"
+  weight: 2
+  contentDir: "content/ko"
+  languageCode: "ko"
+  title: "내 사이트 (한국어)"

@@ -1,16 +1,39 @@
-main:
-  - name: "About"
-    url: "/about"
-    weight: 1
+en:
+  main:
+    - name: "About"
+      url: "/about"
+      weight: 1
+    - name: "People"
+      url: "/people"
+      weight: 2
+      # 하위 메뉴
+      - parent: "People"
+        name: "Professor"
+        url: "/author/professor"
+        weight: 3
+    - name: "Research"
+      url: "/research"
+      weight: 4
+    - name: "Contact"
+      url: "/contact"
+      weight: 5
 
-  - name: "People"
-    url: "/people"
-    weight: 2
-
-  - name: "Research"
-    url: "/research"
-    weight: 3
-
-  - name: "Contact"
-    url: "/contact"
-    weight: 4
+ko:
+  main:
+    - name: "소개"
+      url: "/about"
+      weight: 1
+    - name: "사람들"
+      url: "/people"
+      weight: 2
+      # 하위 메뉴
+      - parent: "사람들"
+        name: "교수님"
+        url: "/author/professor"
+        weight: 3
+    - name: "연구"
+      url: "/research"
+      weight: 4
+    - name: "연락처"
+      url: "/contact"
+      weight: 5

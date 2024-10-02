@@ -1,74 +1,28 @@
-<header style="position: fixed; top: 0; width: 100%; background-color: #2c2c2c; z-index: 100;">
-    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
-      
-      <!-- 로고 -->
-      <div>
-        <a href="/" style="text-decoration: none; color: white; font-size: 24px; font-weight: bold;">MacsLAB</a>
-      </div>
-      
-      <!-- 메뉴 항목 -->
-      <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
-        {{ range .Site.Menus.main }}
-          <li style="position: relative; margin-right: 20px;">
-            <a href="{{ .URL }}" style="color: white; text-decoration: none; padding: 8px 12px; font-size: 16px;">{{ .Name }}</a>
-            
-            <!-- 서브메뉴(드롭다운) -->
-            {{ if .HasChildren }}
-              <ul style="display: none; position: absolute; background-color: #3c3c3c; list-style: none; padding: 10px; margin: 0;">
-                {{ range .Children }}
-                  <li style="padding: 5px 0;">
-                    <a href="{{ .URL }}" style="color: white; text-decoration: none;">{{ .Name }}</a>
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
-          </li>
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a href="/" class="navbar-item">MacsLAB</a>
+  </div>
+
+  <div class="navbar-menu">
+    <ul class="navbar-start">
+      {{ range .Site.Menus.main }}
+      <li class="navbar-item has-dropdown {{ if .HasChildren }}is-hoverable{{ end }}">
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <ul class="navbar-dropdown">
+          {{ range .Children }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
         {{ end }}
-      </ul>
-      
-      <!-- 아이콘들 (검색 및 다크 모드) -->
-      <div style="display: flex; gap: 15px;">
-        <a href="/search" style="color: white; font-size: 18px;">🔍</a>
-        <a href="javascript:void(0);" onclick="toggleDarkMode()" style="color: white; font-size: 18px;">🌙</a>
-      </div>
-      
-    </nav>
-  </header>
-  
-  <!-- 드롭다운 메뉴 JS -->
-  <script>
-    const menuItems = document.querySelectorAll('li');
-  
-    menuItems.forEach(item => {
-      item.addEventListener('mouseover', () => {
-        const dropdown = item.querySelector('ul');
-        if (dropdown) {
-          dropdown.style.display = 'block';
-        }
-      });
-  
-      item.addEventListener('mouseout', () => {
-        const dropdown = item.querySelector('ul');
-        if (dropdown) {
-          dropdown.style.display = 'none';
-        }
-      });
-    });
-  
-    // 다크 모드 토글 기능
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
-  
-  <!-- 다크 모드 CSS -->
-  <style>
-    body.dark-mode {
-      background-color: #121212;
-      color: white;
-    }
-    body.dark-mode a {
-      color: white;
-    }
-  </style>
-  
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <!-- Optional Search and Theme Toggle icons -->
+  <div class="navbar-end">
+    <a href="/search" class="navbar-item"><i class="fa fa-search"></i></a>
+    <a href="#" class="navbar-item theme-toggle"><i class="fa fa-moon"></i></a>
+  </div>
+</nav>

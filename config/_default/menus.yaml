@@ -19,6 +19,18 @@ main:
     url: "/research"
     weight: 5
 
+  - name: "Inform"
+    url: "/inform"
+    weight: 6
+  - parent: "Inform"
+    name: "Guidelines"
+    url: "/inform/guidelines"
+    weight: 7
+  - parent: "Inform"
+    name: "FAQ"
+    url: "/inform/faq"
+    weight: 8
+
   - name: "Contact"
     url: "/contact"
-    weight: 6
+    weight: 9

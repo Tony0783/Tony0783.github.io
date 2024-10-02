@@ -6,11 +6,6 @@ en:
     - name: "People"
       url: "/people"
       weight: 2
-      # 하위 메뉴
-      - parent: "People"
-        name: "Professor"
-        url: "/author/professor"
-        weight: 3
     - name: "Research"
       url: "/research"
       weight: 4
@@ -26,11 +21,6 @@ ko:
     - name: "사람들"
       url: "/people"
       weight: 2
-      # 하위 메뉴
-      - parent: "사람들"
-        name: "교수님"
-        url: "/author/professor"
-        weight: 3
     - name: "연구"
       url: "/research"
       weight: 4

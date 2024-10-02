@@ -7,13 +7,6 @@ en:
     - name: "People"
       url: "/people"
       weight: 2
-      children:
-        - name: "Professor"
-          url: "/author/professor"
-          weight: 3
-        - name: "Members"
-          url: "/people/members"
-          weight: 4
 
     - name: "Research"
       url: "/research"
@@ -32,13 +25,6 @@ ko:
     - name: "사람들"
       url: "/people"
       weight: 2
-      children:
-        - name: "교수님"
-          url: "/author/professor"
-          weight: 3
-        - name: "회원들"
-          url: "/people/members"
-          weight: 4
 
     - name: "연구"
       url: "/research"

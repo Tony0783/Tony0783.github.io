@@ -1,51 +1,36 @@
-menus:
-  main:
-    - name: "About"
-      url: "/about"
-      weight: 1
-    - name: "People"
-      url: "/people"
-      weight: 2
-    - name: "Research"
-      url: "/research"
-      weight: 5
-    - name: "Contact"
-      url: "/contact"
-      weight: 6
-
-languages:
-  en:
-    languageName: "English"
+main:
+  - name: "About"
+    url: "/about"
     weight: 1
-    menus:
-      main:
-        - name: "About"
-          url: "/about"
-          weight: 1
-        - name: "People"
-          url: "/people"
-          weight: 2
-        - name: "Research"
-          url: "/research"
-          weight: 5
-        - name: "Contact"
-          url: "/contact"
-          weight: 6
 
-  ko:
-    languageName: "한국어"
+  - name: "People"
+    url: "/people"
     weight: 2
-    menus:
-      main:
-        - name: "소개"
-          url: "/about"
-          weight: 1
-        - name: "사람들"
-          url: "/people"
-          weight: 2
-        - name: "연구"
-          url: "/research"
-          weight: 5
-        - name: "연락처"
-          url: "/contact"
-          weight: 6
+  - parent: "People"
+    name: "Professor"
+    url: "/author/professor"
+    weight: 3
+  - parent: "People"
+    name: "Members"
+    url: "/people/members"
+    weight: 4
+
+  - name: "Research"
+    url: "/research"
+    weight: 5
+
+  - name: "Inform"
+    url: "/inform"
+    weight: 6
+  - parent: "Inform"
+    name: "Guidelines"
+    url: "/inform/guidelines"
+    weight: 7
+  - parent: "Inform"
+    name: "FAQ"
+    url: "/inform/faq"
+    weight: 8
+
+  - name: "Contact"
+    url: "/contact"
+    weight: 9

@@ -1,51 +1,37 @@
 ---
-title: "Project"
-date: 2024-10-04
+title: "포트폴리오 소개"
+date: 2024-03-25
 type: landing
 
 sections:
   - block: features
     content:
-      title: 진행했던 프로젝트
+      title: 박태호의 포트폴리오
       text: |
-        제가 진행했던 주요 프로젝트입니다. 각 프로젝트마다 목표와 구현 과정을 간략히 설명합니다.
+        박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
 
-  # 첫 번째 프로젝트: 블로그 플랫폼 개발
   - block: features
-    id: blog-platform
+    id: features
     content:
-      title: 블로그 플랫폼 개발
-      text: |
-        사용자들이 블로그 포스트를 작성하고, 댓글을 달 수 있는 블로그 플랫폼을 개발했습니다. 
-        **기능:** 사용자 인증, 글 작성 및 편집, 댓글 기능.  
-        **주요 도전:** 실시간 댓글 기능을 구현하면서 서버와의 비동기 통신을 학습했습니다.
+      title: 포트폴리오 구성
+      text: 박태호님의 포트폴리오는 다음과 같은 항목들로 구성되어 있습니다.<br><br>
       items:
-        - name: 사용된 기술 스택
-          description: Python, Django, JavaScript, HTML/CSS
-
-  # 두 번째 프로젝트: 뉴스 기사 자동 크롤링
-  - block: features
-    id: news-crawling
-    content:
-      title: 뉴스 기사 자동 크롤링
-      text: |
-        Python과 BeautifulSoup을 활용해 뉴스 기사 데이터를 자동으로 수집하고 분석하는 시스템을 구축했습니다.
-        **기능:** 다양한 뉴스 사이트에서 기사 수집, 텍스트 분석 및 요약.
-        **주요 도전:** 여러 사이트에서 비슷한 구조로 데이터를 추출할 수 있는 크롤러 로직을 설계하는 데 집중했습니다.
-      items:
-        - name: 사용된 기술 스택
-          description: Python, BeautifulSoup, Pandas
-
-  # 세 번째 프로젝트: 할 일 관리 애플리케이션
-  - block: features
-    id: todo-app
-    content:
-      title: 할 일 관리 애플리케이션
-      text: |
-        할 일 목록을 추가하고, 삭제하며, 완료 상태를 관리할 수 있는 애플리케이션을 개발했습니다.
-        **기능:** 사용자 친화적인 UI, 할 일 추가 및 수정, 완료 상태 관리.  
-        **주요 도전:** 모바일 환경에서의 최적화를 고려하며, React Native로 애플리케이션을 제작했습니다.
-      items:
-        - name: 사용된 기술 스택
-          description: React Native, JavaScript, Node.js
+        - name: 프로젝트
+          icon: "fa-solid fa-code"
+          description: 다양한 웹 개발 프로젝트와 AI 프로젝트를 소개합니다.
+        - name: 학습 과정
+          icon: "fa-solid fa-book"
+          description: 프로그래밍 언어, 데이터 분석, AI 관련 학습 과정에 대해 다룹니다.
+        - name: 목표
+          icon: "fa-regular fa-circle-dot"
+          description: 박태호의 앞으로의 계획과 목표를 확인하세요.
+        - name: 정보
+          icon: "fa-solid fa-info"
+          description: 박태호의 연락처 및 기본적인 정보를 확인하세요.
+        - name: 깃허브
+          icon: "fa-brands fa-git"
+          description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
+        - name: 인공지능
+          icon: "fa-solid fa-brain"
+          description: 인공지능에 대한 기본적인 정보를 확인하세요.
 ---

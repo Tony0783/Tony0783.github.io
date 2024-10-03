@@ -6,6 +6,9 @@ type: landing
 sections:
   - block: features
     content:
+      title: 박태호의 연락처
+      text: |
+          박태호의 개인 연락처입니다. 이 포트폴리오에서 궁금하신 점이나 관심 있으신 내용이 있으면 아래로 연락주시면 감사드리겠습니다.
       items:
         - name: 이메일
           description: "<span style='font-size: 125%;'>qazwsx11006@naver.com</span>"

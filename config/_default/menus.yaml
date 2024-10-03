@@ -7,16 +7,16 @@ main:
     url: /information/
     weight: 2
 
-  - name: Project
-    url: /project/
+  - name: Process
+    url: /process/
     weight: 3
-  - parent: Project
+  - parent: Process
     name: Goal
-    url: /project/goal/
+    url: /process/goal/
     weight: 310
-  - parent: Project
-    name: Process
-    url: /project/process/
+  - parent: Process
+    name: Project
+    url: /process/project/
     weight: 320
 
   - name: AI

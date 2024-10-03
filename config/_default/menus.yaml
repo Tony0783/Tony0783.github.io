@@ -1,36 +1,68 @@
-main:
-  - name: "About"
-    url: "/about/"
-    weight: 1
+menu:
+  ko:
+    main:
+      - name: "소개"
+        url: "/about/"
+        weight: 1
+      - name: "사람들"
+        url: "/people"
+        weight: 2
+      - parent: "사람들"
+        name: "교수"
+        url: "/author/professor"
+        weight: 3
+      - parent: "사람들"
+        name: "회원들"
+        url: "/people/members"
+        weight: 4
+      - name: "연구"
+        url: "/research"
+        weight: 5
+      - name: "정보"
+        url: "/inform"
+        weight: 6
+      - parent: "정보"
+        name: "지침"
+        url: "/inform/guidelines"
+        weight: 7
+      - parent: "정보"
+        name: "FAQ"
+        url: "/inform/faq"
+        weight: 8
+      - name: "연락처"
+        url: "/contact"
+        weight: 9
 
-  - name: "People"
-    url: "/people"
-    weight: 2
-  - parent: "People"
-    name: "Professor"
-    url: "/author/professor"
-    weight: 3
-  - parent: "People"
-    name: "Members"
-    url: "/people/members"
-    weight: 4
-
-  - name: "Research"
-    url: "/research"
-    weight: 5
-
-  - name: "Inform"
-    url: "/inform"
-    weight: 6
-  - parent: "Inform"
-    name: "Guidelines"
-    url: "/inform/guidelines"
-    weight: 7
-  - parent: "Inform"
-    name: "FAQ"
-    url: "/inform/faq"
-    weight: 8
-
-  - name: "Contact"
-    url: "/contact"
-    weight: 9
+  en:
+    main:
+      - name: "About"
+        url: "/about/"
+        weight: 1
+      - name: "People"
+        url: "/people"
+        weight: 2
+      - parent: "People"
+        name: "Professor"
+        url: "/author/professor"
+        weight: 3
+      - parent: "People"
+        name: "Members"
+        url: "/people/members"
+        weight: 4
+      - name: "Research"
+        url: "/research"
+        weight: 5
+      - name: "Inform"
+        url: "/inform"
+        weight: 6
+      - parent: "Inform"
+        name: "Guidelines"
+        url: "/inform/guidelines"
+        weight: 7
+      - parent: "Inform"
+        name: "FAQ"
+        url: "/inform/faq"
+        weight: 8
+      - name: "Contact"
+        url: "/contact"
+        weight: 9

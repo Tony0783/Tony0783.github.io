@@ -24,7 +24,7 @@ sections:
       text: ''
       design:
         image:
-          filename: /images/profile.jpg  # 경로를 수정하여 슬래시 추가
+          filename: /images/profile.jpg  # 이미지를 절대 경로로 설정
           alt: 박태호의 프로필 사진
           style: "border-radius: 50%; max-width: 200px; margin: 0 auto;"
         text_align: center

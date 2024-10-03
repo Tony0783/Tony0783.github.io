@@ -1,5 +1,3 @@
-defaultContentLanguage: "ko"
-
 languages:
   ko:
     languageName: "Korean"
@@ -8,6 +6,7 @@ languages:
     contentDir: "content/ko"
     title: "내 사이트 (한국어)"
     menu: main
+    defaultContentLanguage: true  # 기본 언어로 설정
 
   en:
     languageName: "English"

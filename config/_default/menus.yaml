@@ -4,13 +4,13 @@ menu:
       url: "/about/"
       weight: 1
       identifier: "about-ko"
-      languages: ["ko"]
+      languages: "ko"
 
     - name: "About"
       url: "/about/"
       weight: 1
       identifier: "about-en"
-      languages: ["en"]
+      languages: "en"
 
     - name: "People"
       url: "/people"

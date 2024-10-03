@@ -16,10 +16,10 @@ sections:
     content:
       title: <span style='font-size: 150%; font-weight: bold;'>연락처</span>
       items:
-        - name: <span style='font-size: 120%;'>이메일</span>
-          description: <span style='font-size: 120%;'>qazwsx11006@naver.com</span>
-        - name: <span style='font-size: 120%;'>전화번호</span>
-          description: <span style='font-size: 120%;'>+82 010-9502-0783</span>
+        - name: 이메일
+          description: qazwsx11006@naver.com
+        - name: 전화번호
+          description: '+82 010-9502-0783'
 
   - block: features
     id: address

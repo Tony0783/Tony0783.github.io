@@ -4,13 +4,15 @@ menu:
       url: "/about/"
       weight: 1
       identifier: "about-ko"
-      languages: "ko"
+      params:
+        language: "ko"
 
     - name: "About"
       url: "/about/"
       weight: 1
       identifier: "about-en"
-      languages: "en"
+      params:
+        language: "en"
 
     - name: "People"
       url: "/people"

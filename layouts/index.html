@@ -41,8 +41,6 @@
 
   <!-- 이미지 슬라이더 섹션 -->
   <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
-    <h2>이미지 슬라이더</h2>
-
     <div class="slider-container" style="max-width: 100%; position: relative;">
       <!-- 슬라이더 이미지 -->
       <div class="slides">
@@ -58,47 +56,6 @@
       <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
     </div>
   </section>
-
-  <!-- 슬라이더 스크립트 -->
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slides img');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-
-    // 슬라이드를 보여주는 함수
-    function showSlides() {
-      slides.forEach((slide, index) => {
-        slide.style.display = 'none';
-      });
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = 'block';
-      setTimeout(showSlides, 8000); // 8초마다 슬라이드 전환
-    }
-
-    // 이전/다음 버튼 클릭 시 슬라이드를 변경하는 함수
-    function moveSlides(n) {
-      slideIndex += n;
-      if (slideIndex < 1) {
-        slideIndex = slides.length;
-      } else if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides.forEach((slide, index) => {
-        slide.style.display = 'none';
-      });
-      slides[slideIndex - 1].style.display = 'block';
-    }
-
-    prev.addEventListener('click', () => moveSlides(-1));
-    next.addEventListener('click', () => moveSlides(1));
-
-    // 슬라이더 실행
-    showSlides();
-  </script>
 
   <!-- 교육 과정 섹션 -->
   <section id="education" style="background-color: #ffffff; padding: 50px;">
@@ -125,23 +82,27 @@
     </div>
   </section>
 
-  <!-- 성장 목표 및 학습 중인 기술 -->
-  <section id="skills" style="background-color: #f0f8ff; padding: 50px;">
-    <h2>성장 목표 및 학습 중인 기술</h2>
+  <!-- 진행했던 프로젝트 섹션 -->
+  <section id="projects" style="background-color: #f0f8ff; padding: 50px;">
+    <h2>진행했던 프로젝트</h2>
 
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <!-- 학습 중인 기술 카드 -->
+      <!-- 프로젝트 카드 1: 뉴스 기사 자동 크롤링 -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>프론트엔드 개발</h3>
-        <p>HTML, CSS, JavaScript를 통해 웹 페이지를 개발하는 기술을 학습 중입니다.</p>
+        <h3>뉴스 기사 자동 크롤링 프로젝트</h3>
+        <p>Python과 BeautifulSoup을 활용해 뉴스 기사 데이터를 자동으로 수집하고 분석하는 시스템 개발.</p>
       </div>
+
+      <!-- 프로젝트 카드 2: 게시판 만들기 프로젝트 -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>데이터 분석</h3>
-        <p>Python을 사용하여 데이터 분석 및 시각화하는 방법을 공부하고 있습니다.</p>
+        <h3>게시판 만들기 프로젝트</h3>
+        <p>사용자가 게시물을 등록, 수정, 삭제할 수 있는 게시판을 구현. 사용자 인증 및 권한 관리 기능 포함.</p>
       </div>
+
+      <!-- 프로젝트 카드 3: 할 일 관리 애플리케이션 -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>AI 연구</h3>
-        <p>딥러닝과 머신러닝을 사용하여 다양한 연구와 실습을 진행 중입니다.</p>
+        <h3>할 일 관리 애플리케이션</h3>
+        <p>할 일 목록 추가, 삭제, 편집 기능이 있는 모바일 애플리케이션 개발.</p>
       </div>
     </div>
   </section>

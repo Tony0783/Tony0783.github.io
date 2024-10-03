@@ -7,17 +7,17 @@ sections:
   - block: features
     content:
       items:
-        - name: <span style="font-size: 150%;">이메일</span>
-          description: <span style="font-size: 125%;">qazwsx11006@naver.com</span>
-        - name: <span style="font-size: 150%;">전화번호</span>
-          description: <span style="font-size: 125%;">'+82 010-9502-0783'</span>
+        - name: 이메일
+          description: "<span style='font-size: 125%;'>qazwsx11006@naver.com</span>"
+        - name: 전화번호
+          description: "<span style='font-size: 125%;'>+82 010-9502-0783</span>"
 
   - block: features
     id: address
     content:
       items:
-        - name: <span style="font-size: 150%;">학교</span>
-          description: <span style="font-size: 125%;">전북대학교 공과대학 7호관 626호, 전주시, 전라북도, 54896, 대한민국</span>
+        - name: 학교
+          description: "<span style='font-size: 125%;'>전북대학교 공과대학 7호관 626호, 전주시, 전라북도, 54896, 대한민국</span>"
 
   - block: markdown
     content:

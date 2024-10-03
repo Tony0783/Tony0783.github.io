@@ -1,6 +1,6 @@
 ---
-title: 
-date: 2022-10-24
+title: Contact
+date: 2024-10-24
 
 type: landing
 
@@ -9,52 +9,53 @@ sections:
     content:
       title: Contact
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
+        Feel free to reach out to me via the contact details below or visit my GitHub profile to view my projects and contributions.
+      email: qazwsx11006@naver.com
+      phone: '+82 10-9502-0783'
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
+        street: 'Anyang, Gyeonggi Province'
+        city: 'Anyang'
+        region: 'Gyeonggi-do'
+        postcode: '00000'
+        country: South Korea
+        country_code: KR
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+        latitude: '37.3943'
+        longitude: '126.9568'
+      directions: 'You can contact me via phone, email, or visit my GitHub profile.'
       office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
+        - 'Monday to Friday 09:00 to 18:00'
+      appointment_url: 'https://github.com/Tony0783'
+      contact_links:
+        - icon: github
+          icon_pack: fab
+          name: GitHub
+          link: 'https://github.com/Tony0783'
     
-      # Automatically link email and phone or display as text?
       autolink: true
     
-      # Email form provider
       form:
         provider: netlify
-        formspree:
-          id:
         netlify:
-          # Enable CAPTCHA challenge to reduce spam?
           captcha: false
+
     design:
       columns: '1'
 
   - block: markdown
     content:
-      title:
+      title: My Location
       subtitle: ''
-      text:
+      text: |
+        <iframe
+          width="100%"
+          height="450"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=Anyang&key=AIzaSyCZRr8cQHz4SseG0buJIqACNMeYImJY0U0" allowfullscreen>
+        </iframe>
+
     design:
       columns: '1'
-      background:
       spacing:
         padding: ['20px', '0', '20px', '0']
       css_class: fullscreen

@@ -18,6 +18,9 @@
         <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
              alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
       </a>
+    {{ else }}
+      <!-- 기본 이미지가 없을 경우 대체 이미지 표시 -->
+      <img src="/static/images/default-avatar.jpg" alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 150px; margin-top: 15px;">
     {{ end }}
   
     <div class="card-text">
@@ -34,7 +37,7 @@
       </div>
       {{ end }}
   
-      <!-- 요약 정보 변수 정의 -->
+      <!-- 요약 정보가 있을 경우 처리 -->
       {{ $summary := "" }}
       {{ if $item.Params.summary }}
         {{ $summary = $item.Params.summary | markdownify | emojify }}
@@ -44,7 +47,6 @@
         {{ $summary = $item.Summary }}
       {{ end }}
   
-      <!-- 요약 정보가 있을 경우 표시 -->
       {{ with $summary }}
       <div class="article-style">
         <p>{{ . }}</p>

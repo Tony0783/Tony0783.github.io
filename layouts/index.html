@@ -39,7 +39,73 @@
     </div>
   </section>
 
+  {{ define "main" }}
+<div class="section-container">
+
+  <!-- 이미지 슬라이더 섹션 -->
+  <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
+    <h2>이미지 슬라이더</h2>
+
+    <div class="slider-container" style="max-width: 100%; position: relative;">
+      <!-- 슬라이더 이미지 -->
+      <div class="slides">
+        <img src="/images/slider1.jpg" style="width: 100%;">
+        <img src="/images/slider2.jpg" style="width: 100%;">
+        <img src="/images/slider3.jpg" style="width: 100%;">
+      </div>
+
+      <!-- 이전 버튼 -->
+      <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
+
+      <!-- 다음 버튼 -->
+      <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
+    </div>
+  </section>
+
+  <!-- 슬라이더 스크립트 -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    // 슬라이드를 보여주는 함수
+    function showSlides() {
+      slides.forEach((slide, index) => {
+        slide.style.display = 'none';
+      });
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 4000); // 4초마다 슬라이드 전환
+    }
+
+    // 이전/다음 버튼 클릭 시 슬라이드를 변경하는 함수
+    function moveSlides(n) {
+      slideIndex += n;
+      if (slideIndex < 1) {
+        slideIndex = slides.length;
+      } else if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides.forEach((slide, index) => {
+        slide.style.display = 'none';
+      });
+      slides[slideIndex - 1].style.display = 'block';
+    }
+
+    prev.addEventListener('click', () => moveSlides(-1));
+    next.addEventListener('click', () => moveSlides(1));
+
+    // 슬라이더 실행
+    showSlides();
+  </script>
   
+</div>
+{{ end }}
+
 
   <!-- 교육 과정 섹션 -->
   <section id="education" style="background-color: #ffffff; padding: 50px;">

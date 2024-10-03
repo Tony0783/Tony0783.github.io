@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About 박태호"
 date: 2024-03-25
 type: landing
 ---
@@ -8,33 +8,46 @@ sections:
 
   - block: hero
     content:
-      title: 박태호
-      image:
-        filename: "/images/profile.jpg"  # 프로필 사진 경로
-        alt: "Profile photo"
+      title: 박태호의 포트폴리오
       text: |
-        <span style="font-size:110%">전북대학교 컴퓨터공학과</span> <br>
-        <span style="font-size:100%">소속: 전북대학교 컴퓨터공학과</span> <br>
-        <span style="font-size:100%">전공: 컴퓨터공학</span> <br><br>
-        안녕하세요, 저는 전북대학교 컴퓨터공학과 학생 박태호입니다. 저는 AI 및 웹 개발 분야에 큰 관심을 갖고 연구하고 있습니다. 다양한 프로젝트를 통해 창의적인 문제 해결 능력을 키우고 있습니다.
+        박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다. 
 
     design:
       background: light
-      text_align: left
-
-  - block: features
-    id: features
-    content:
-      title: <span style="font-size:75%">About 홍길동</span>
-      text: |
-        전북대학교 컴퓨터공학과 재학 중인 박태호입니다. 다양한 소프트웨어 개발 프로젝트에 참여하면서 웹 개발, AI 기술을 연구하고 있으며, 컴퓨터공학과 관련된 다양한 학문적 성과를 이루어 나가고 있습니다. 
+      text_align: center
 
   - block: markdown
     content:
+      title: 포트폴리오 소개
+      text: |
+        <p>박태호의 포트폴리오는 다음과 같은 내용을 포함하고 있습니다:</p>
+        <ul>
+          <li>지금까지 진행했던 다양한 프로젝트</li>
+          <li>박태호의 학습 과정과 배운 내용들</li>
+          <li>앞으로의 목표와 성장 계획</li>
+          <li>자기소개 및 경력</li>
+        </ul>
+        
+        <p>이 포트폴리오를 통해 박태호가 어떤 개발 경험을 쌓았고, 앞으로 어떤 방향으로 성장하고자 하는지 확인하실 수 있습니다.</p>
+
+  - block: features
+    content:
       title: 더 알아보기
       text: |
-        <p>저의 연구 및 프로젝트에 대해 더 알아보려면 아래 링크를 참조하세요:</p>
-        <a href="/projects/" style="font-size: 18px; text-decoration: underline;">프로젝트 목록 보기 →</a>
+        아래 섹션에서 더 많은 정보를 확인하세요:
+      items:
+        - name: 프로젝트
+          icon: code
+          description: 박태호가 진행한 주요 프로젝트를 확인해 보세요.
+          url: /projects/
+        - name: 학습 과정
+          icon: book-open
+          description: 박태호가 지금까지 학습한 과정과 배운 내용을 확인하세요.
+          url: /learning/
+        - name: 목표 및 계획
+          icon: target
+          description: 앞으로의 목표와 성장 계획에 대해 알아보세요.
+          url: /goals/
 
 ---
 

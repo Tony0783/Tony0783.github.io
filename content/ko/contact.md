@@ -29,25 +29,6 @@ sections:
           icon: "fa-brands fa-github"
           description: 박태호의 GitHub에서 프로젝트를 확인하세요.
           link: 'https://github.com/Tony0783'
-        - name: 위치
-          icon: "fa-solid fa-map-marker-alt"
-          description: 지도에서 위치를 확인하세요.
 
-  - block: markdown
-    content:
-      title: My Location
-      subtitle: ''
-      text: |
-        <iframe
-          width="100%"
-          height="450"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?q=Anyang&key=AIzaSyCZRr8cQHz4SseG0buJIqACNMeYImJY0U0" allowfullscreen>
-        </iframe>
-
-    design:
-      columns: '1'
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+  # 지도 섹션을 제거하여 오류 방지
 ---

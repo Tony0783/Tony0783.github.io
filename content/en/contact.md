@@ -2,7 +2,7 @@
 title: Contact
 date: 2024-10-24
 type: landing
-layout: "landing"
+
 
 sections:
   - block: contact

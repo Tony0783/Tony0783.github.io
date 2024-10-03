@@ -1,15 +1,8 @@
 <div class="card">
     <!-- 프로필 이미지 섹션을 카드 상단에 추가 -->
-    {{ with .Resources.GetMatch "avatar.jpg" }}
-      <div class="profile-picture">
-        <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 150px; margin-top: 15px;">
-      </div>
-    {{ else }}
-      <!-- 기본 이미지 -->
-      <div class="profile-picture">
-        <img src="/static/images/default-avatar.jpg" alt="{{ .Title }}" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 150px; margin-top: 15px;">
-      </div>
-    {{ end }}
+    <div class="profile-picture">
+        <img src="/content/ko/information/avatar.jpg" alt="{{ .Title }}" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 150px; margin-top: 15px;">
+    </div>
 
     <!-- 현재 페이지 변수를 바로 사용 -->
     {{ $resource := partial "blox-core/functions/get_featured_image.html" . }}

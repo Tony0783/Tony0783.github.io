@@ -23,7 +23,7 @@ sections:
       title: 프로필 사진
       design:
         image:
-          filename: profile.jpg   # 이 경로는 페이지 번들로 content/ko/ 안에 위치한 이미지입니다.
+          filename: profile.jpg
           alt: 박태호의 프로필 사진
           style: "border-radius: 50%; display: block; max-width: 200px; margin: 0 auto;"
         text_align: center
@@ -65,3 +65,4 @@ sections:
         spacing:
           padding: ['20px', '0', '20px', '0']
         text_align: center
+---

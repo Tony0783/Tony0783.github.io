@@ -39,7 +39,7 @@ sections:
           width="100%"
           height="450"
           frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?q=35.84601324617979,127.13444961966684&key=YOUR_GOOGLE_MAPS_API_KEY" allowfullscreen>
+          src="https://www.google.com/maps/embed/v1/place?q=35.84601324617979,127.13444961966684&key=AIzaSyCZRr8cQHz4SseG0buJIqACNMeYImJY0U0" allowfullscreen>
         </iframe>
 
     design:

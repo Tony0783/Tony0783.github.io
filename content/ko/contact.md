@@ -1,18 +1,19 @@
 ---
 title: "Contact"
-date: 2024-10-24
+date: 2024-03-25
 type: landing
 
 sections:
   - block: features
     content:
-      title: Contact Information
+      title: 연락방법
       text: |
-        Feel free to reach out to me via the following contact details. You can also check out my GitHub profile for more information and projects.
+        박태호의 연락처입니다. 관심있으시거나 궁금한 내용이 생기면 아래로 연락주시면 감사드리겠습니다.
 
   - block: features
-    id: contact-info
+    id: features
     content:
+      title    content:
       title: Contact Details
       text: 여기에 제 연락처와 기본적인 정보를 확인하세요.<br><br>
       items:
@@ -29,6 +30,4 @@ sections:
           icon: "fa-brands fa-github"
           description: 박태호의 GitHub에서 프로젝트를 확인하세요.
           link: 'https://github.com/Tony0783'
-
-  # 지도 섹션을 제거하여 오류 방지
 ---

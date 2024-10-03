@@ -14,38 +14,122 @@ menu:
       params:
         language: "en"
 
+    - name: "사람들"
+      url: "/people"
+      weight: 2
+      identifier: "people-ko"
+      params:
+        language: "ko"
+
     - name: "People"
       url: "/people"
       weight: 2
+      identifier: "people-en"
+      params:
+        language: "en"
+
+    - parent: "사람들"
+      name: "교수"
+      url: "/author/professor"
+      weight: 3
+      identifier: "professor-ko"
+      params:
+        language: "ko"
 
     - parent: "People"
       name: "Professor"
       url: "/author/professor"
       weight: 3
+      identifier: "professor-en"
+      params:
+        language: "en"
+
+    - parent: "사람들"
+      name: "회원"
+      url: "/people/members"
+      weight: 4
+      identifier: "members-ko"
+      params:
+        language: "ko"
 
     - parent: "People"
       name: "Members"
       url: "/people/members"
       weight: 4
+      identifier: "members-en"
+      params:
+        language: "en"
+
+    - name: "연구"
+      url: "/research"
+      weight: 5
+      identifier: "research-ko"
+      params:
+        language: "ko"
 
     - name: "Research"
       url: "/research"
       weight: 5
+      identifier: "research-en"
+      params:
+        language: "en"
+
+    - name: "알림"
+      url: "/inform"
+      weight: 6
+      identifier: "inform-ko"
+      params:
+        language: "ko"
 
     - name: "Inform"
       url: "/inform"
       weight: 6
+      identifier: "inform-en"
+      params:
+        language: "en"
+
+    - parent: "알림"
+      name: "지침"
+      url: "/inform/guidelines"
+      weight: 7
+      identifier: "guidelines-ko"
+      params:
+        language: "ko"
 
     - parent: "Inform"
       name: "Guidelines"
       url: "/inform/guidelines"
       weight: 7
+      identifier: "guidelines-en"
+      params:
+        language: "en"
+
+    - parent: "알림"
+      name: "FAQ"
+      url: "/inform/faq"
+      weight: 8
+      identifier: "faq-ko"
+      params:
+        language: "ko"
 
     - parent: "Inform"
       name: "FAQ"
       url: "/inform/faq"
       weight: 8
+      identifier: "faq-en"
+      params:
+        language: "en"
+
+    - name: "연락처"
+      url: "/contact"
+      weight: 9
+      identifier: "contact-ko"
+      params:
+        language: "ko"
 
     - name: "Contact"
       url: "/contact"
       weight: 9
+      identifier: "contact-en"
+      params:
+        language: "en"

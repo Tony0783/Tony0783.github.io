@@ -3,6 +3,7 @@ title: Contact
 date: 2024-10-24
 type: landing
 
+
 sections:
   - block: contact
     content:
@@ -47,7 +48,7 @@ sections:
           width="100%"
           height="450"
           frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?q=Anyang&key=AIzaSyCZRr8cQHz4SseG0buJIqACNMeYImJY0U0" allowfullscreen>
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZRr8cQHz4SseG0buJIqACNMeYImJY0U0&callback=initMap"
         </iframe>
 
     design:

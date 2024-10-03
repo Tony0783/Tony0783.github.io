@@ -1,138 +1,80 @@
 ---
-title:
+title: "About 박태호"
 date: 2024-03-25
 type: landing
----
 
 sections:
 
   - block: features
     content:
-      title: <span style="font-size:75%">Medical AI & Computational Science (MACS) Lab </span>
-      text: <span style="font-size:110%">전북대학교 의료 AI 및 계산 수학 연구실 홈페이지에 오신 것을 환영합니다.</span>
+      title: 박태호의 포트폴리오
+      text: |
+        박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
 
   - block: slider
     content:
       slides:
-
-      - title: <span style="font-size:90%">AI</span>
-        content: 'Just opened last month!'
+      - title: 프로젝트
+        content: 박태호의 주요 프로젝트들을 확인하세요.
         align: center
         background:
-          position: center
           color: '#333'
-      - title: <span style="font-size:90%">Medical AI</span>
-        content: Take a look at what we're working on...
+      - title: 학습 과정
+        content: 다양한 학습 과정을 소개합니다.
         align: center
         background:
-          position: right
           color: '#666'
-      - title: <span style="font-size:90%">Development</span>
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: 목표 및 계획
+        content: 박태호의 미래 계획을 확인해 보세요.
         align: center
         background:
-          position: center
           color: '#555'
-      - title: <span style="font-size:90%">Mathematics</span>
-        content: 'Just opened last month!'
-        align: center
-        background:
-          position: center
-          color: '#333'
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '350px'
       slide_width: '50%'
-      is_fullscreen: false
-      # Automatically transition through slides?
       loop: true
-      # Duration of transition between slides (in ms)
       interval: 3000
-
-  # - block: hero
-  #   content:
-  #     title: |
-  #       <span style="font-size:75%">Medical AI & Computational Science (MACS) Lab</span>
-  #     image:
-  #       filename: welcome.jpg
-  #     text: |
-  #       <br>
-        
-  #       <span style="font-size:75%">전북대학교 의료 AI 및 계산 수학 연구실 (MACS Lab) 홈페이지에 오신 것을 환영합니다. MACS에서는 의료, 항공, 국방 분야에 AI 및 딥러닝을 활용한 연구를 수행하고 있으며, 의료 수학 및 AI 기반 연구도 함께 수행하고 있습니다. 뿐만 아니라, 풀스택 개발 및 AI를 활용한 어플리케이션 개발 등 Development & Deploy하는 실용적인 분야에도 집중하고 있습니다.</span>
-  
 
   - block: features
     id: features
     content:
-      title: <span style="font-size:75%">Lab's Interests</span>
-      text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 갖고 있습니다.<br><br><br><br>
+      title: 포트폴리오의 구성
+      text: 박태호님의 포트폴리오는 다음과 같은 항목들로 구성되어 있습니다.<br><br><br><br>
       items:
-        - name: AI
-          icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
-          icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
-          icon: medical.svg
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
-          icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
-          icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
-          icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
-
+        - name: 프로젝트
+          icon: code
+          description: 다양한 웹 개발 프로젝트와 AI 프로젝트를 소개합니다.
+        - name: 학습 과정
+          icon: book-open
+          description: 프로그래밍 언어, 데이터 분석, AI 관련 학습 과정에 대해 다룹니다.
+        - name: 목표
+          icon: target
+          description: 박태호님의 앞으로의 계획과 목표를 확인하세요.
 
   - block: collection
     content:
-      title: Notifications & News
-      subtitle:
-      text:
-      count: 2
+      title: 주요 프로젝트
+      text: |
+        박태호님이 지금까지 진행했던 프로젝트 목록입니다.
+      count: 3
       filters:
         author: ''
-        category: ''
+        category: 'projects'
         exclude_featured: false
-        publication_type: ''
-        tag: ''
       offset: 0
       order: desc
       page_type: post
     design:
       view: compact
-      columns: '2'
-
-  - block: collection
-    content:
-      title: Latest Publications
-      subtitle:
-      text:
-      count: 4
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: publication
-    design:
-      view: citation
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
+      columns: '3'
 
   - block: markdown
     content:
-      title:
-      subtitle:
+      title: 더 알아보기
       text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
+        <p>더 많은 정보는 아래 링크를 통해 확인해 보세요.</p>
+        {{% cta cta_link="./projects/" cta_text="프로젝트 보러 가기 →" %}}
     design:
       columns: '1'
+
 ---

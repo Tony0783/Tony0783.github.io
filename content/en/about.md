@@ -29,7 +29,7 @@ sections:
           icon: "fa-solid fa-info"
           description: 박태호의 연락처 및 기본적인 정보를 확인하세요.
         - name: 깃허브
-          icon: "fa-brands fa-github"  # 올바른 아이콘 이름으로 수정
+          icon: "fa-brands fa-git"  # 올바른 아이콘 이름으로 수정
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
         - name: 인공지능
           icon: "fa-solid fa-brain"  # Font Awesome 아이콘 사용

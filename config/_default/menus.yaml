@@ -1,135 +1,135 @@
-menu:
+menus:
   main:
-    - name: "소개"
+    - identifier: "about-ko"
+      name: "소개"
       url: "/about/"
       weight: 1
-      identifier: "about-ko"
       params:
         language: "ko"
 
-    - name: "About"
+    - identifier: "about-en"
+      name: "About"
       url: "/about/"
       weight: 1
-      identifier: "about-en"
       params:
         language: "en"
 
-    - name: "사람들"
+    - identifier: "people-ko"
+      name: "사람들"
       url: "/people"
       weight: 2
-      identifier: "people-ko"
       params:
         language: "ko"
 
-    - name: "People"
+    - identifier: "people-en"
+      name: "People"
       url: "/people"
       weight: 2
-      identifier: "people-en"
       params:
         language: "en"
 
-    - parent: "사람들"
+    - identifier: "professor-ko"
       name: "교수"
+      parent: "사람들"
       url: "/author/professor"
       weight: 3
-      identifier: "professor-ko"
       params:
         language: "ko"
 
-    - parent: "People"
+    - identifier: "professor-en"
       name: "Professor"
+      parent: "People"
       url: "/author/professor"
       weight: 3
-      identifier: "professor-en"
       params:
         language: "en"
 
-    - parent: "사람들"
+    - identifier: "members-ko"
       name: "회원"
+      parent: "사람들"
       url: "/people/members"
       weight: 4
-      identifier: "members-ko"
       params:
         language: "ko"
 
-    - parent: "People"
+    - identifier: "members-en"
       name: "Members"
+      parent: "People"
       url: "/people/members"
       weight: 4
-      identifier: "members-en"
       params:
         language: "en"
 
-    - name: "연구"
+    - identifier: "research-ko"
+      name: "연구"
       url: "/research"
       weight: 5
-      identifier: "research-ko"
       params:
         language: "ko"
 
-    - name: "Research"
+    - identifier: "research-en"
+      name: "Research"
       url: "/research"
       weight: 5
-      identifier: "research-en"
       params:
         language: "en"
 
-    - name: "알림"
+    - identifier: "inform-ko"
+      name: "알림"
       url: "/inform"
       weight: 6
-      identifier: "inform-ko"
       params:
         language: "ko"
 
-    - name: "Inform"
+    - identifier: "inform-en"
+      name: "Inform"
       url: "/inform"
       weight: 6
-      identifier: "inform-en"
       params:
         language: "en"
 
-    - parent: "알림"
+    - identifier: "guidelines-ko"
       name: "지침"
+      parent: "알림"
       url: "/inform/guidelines"
       weight: 7
-      identifier: "guidelines-ko"
       params:
         language: "ko"
 
-    - parent: "Inform"
+    - identifier: "guidelines-en"
       name: "Guidelines"
+      parent: "Inform"
       url: "/inform/guidelines"
       weight: 7
-      identifier: "guidelines-en"
       params:
         language: "en"
 
-    - parent: "알림"
+    - identifier: "faq-ko"
       name: "FAQ"
+      parent: "알림"
       url: "/inform/faq"
       weight: 8
-      identifier: "faq-ko"
       params:
         language: "ko"
 
-    - parent: "Inform"
+    - identifier: "faq-en"
       name: "FAQ"
+      parent: "Inform"
       url: "/inform/faq"
       weight: 8
-      identifier: "faq-en"
       params:
         language: "en"
 
-    - name: "연락처"
+    - identifier: "contact-ko"
+      name: "연락처"
       url: "/contact"
       weight: 9
-      identifier: "contact-ko"
       params:
         language: "ko"
 
-    - name: "Contact"
+    - identifier: "contact-en"
+      name: "Contact"
       url: "/contact"
       weight: 9
-      identifier: "contact-en"
       params:
         language: "en"

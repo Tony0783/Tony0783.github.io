@@ -1,36 +1,28 @@
 main:
-  - name: "About"
-    url: "/about"
+  - name: About
+    url: /about/
     weight: 1
 
-  - name: "People"
-    url: "/people"
+  - name: Information
+    url: /information/
     weight: 2
-  - parent: "People"
-    name: "Professor"
-    url: "/author/professor"
+
+  - name: Project
+    url: /project/
     weight: 3
-  - parent: "People"
-    name: "Members"
-    url: "/people/members"
+  - parent: Project
+    name: Goal
+    url: /project/goal/
+    weight: 310
+  - parent: Project
+    name: Process
+    url: /project/process/
+    weight: 320
+
+  - name: AI
+    url: /ai/
     weight: 4
 
-  - name: "Research"
-    url: "/research"
+  - name: Contact
+    url: /contact/
     weight: 5
-
-  - name: "Inform"
-    url: "/inform"
-    weight: 6
-  - parent: "Inform"
-    name: "Guidelines"
-    url: "/inform/guidelines"
-    weight: 7
-  - parent: "Inform"
-    name: "FAQ"
-    url: "/inform/faq"
-    weight: 8
-
-  - name: "Contact"
-    url: "/contact"
-    weight: 9

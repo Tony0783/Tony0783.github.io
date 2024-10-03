@@ -6,7 +6,7 @@ type: landing
 sections:
   - block: features
     content:
-      title: <span style='font-size: 200%; font-weight: bold;'>박태호의 연락처</span>
+      title: "<span style='font-size: 200%; font-weight: bold;'>박태호의 연락처</span>"
       text: |
         <p style="text-align: center; font-size: 120%;">박태호의 개인 연락처입니다. 이 포트폴리오에서 궁금하신 점이나 관심 있으신 내용이 있으면 아래로 연락주시면 감사드리겠습니다.</p>
         <br>
@@ -14,17 +14,17 @@ sections:
   - block: features
     id: features
     content:
-      title: <span style='font-size: 150%; font-weight: bold;'>연락처</span>
+      title: "<span style='font-size: 150%; font-weight: bold;'>연락처</span>"
       items:
-        - name: <span style='font-size: 120%;'>이메일</span>
-          description: <span style='font-size: 120%;'>qazwsx11006@naver.com</span>
-        - name: <span style='font-size: 120%;'>전화번호</span>
-          description: <span style='font-size: 120%;'>+82 010-9502-0783</span>
+        - name: 이메일
+          description: qazwsx11006@naver.com
+        - name: 전화번호
+          description: '+82 010-9502-0783'
 
   - block: features
     id: address
     content:
-      title: <span style='font-size: 150%; font-weight: bold;'>학교</span>
+      title: "<span style='font-size: 150%; font-weight: bold;'>학교</span>"
       text: |
         <p style="text-align: center; font-size: 120%;">전북대학교 공과대학 7호관 626호</p>
         <p style="text-align: center; font-size: 120%;">전주시, 전라북도, 54896, 대한민국</p>
@@ -32,7 +32,7 @@ sections:
 
   - block: markdown
     content:
-      title: <span style='font-size: 150%; font-weight: bold;'>지도</span>
+      title: "<span style='font-size: 150%; font-weight: bold;'>지도</span>"
       subtitle: ''
       text: |
         <iframe

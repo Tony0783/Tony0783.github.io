@@ -1,10 +1,15 @@
+# 최상위 레벨에서 기본 언어 설정
+defaultContentLanguage: "ko"
+
 languages:
   ko:
     languageName: "Korean"
     languageCode: "ko"
     contentDir: "content/ko"
+    weight: 1
 
   en:
     languageName: "English"
     languageCode: "en"
     contentDir: "content/en"
+    weight: 2

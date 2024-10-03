@@ -46,9 +46,9 @@
     <div class="slider-container" style="max-width: 100%; position: relative;">
       <!-- 슬라이더 이미지 -->
       <div class="slides">
-        <img src="/images/slider1.jpg" style="width: 100%;">
-        <img src="/images/slider2.jpg" style="width: 100%;">
-        <img src="/images/slider3.jpg" style="width: 100%;">
+        <img src="/images/slider1.jpg" style="width: 100%; height: auto; max-height: 400px;">
+        <img src="/images/slider2.jpg" style="width: 100%; height: auto; max-height: 400px;">
+        <img src="/images/slider3.jpg" style="width: 100%; height: auto; max-height: 400px;">
       </div>
 
       <!-- 이전 버튼 -->
@@ -76,7 +76,7 @@
         slideIndex = 1;
       }
       slides[slideIndex - 1].style.display = 'block';
-      setTimeout(showSlides, 4000); // 4초마다 슬라이드 전환
+      setTimeout(showSlides, 5000); // 4초마다 슬라이드 전환
     }
 
     // 이전/다음 버튼 클릭 시 슬라이드를 변경하는 함수

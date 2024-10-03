@@ -1,4 +1,8 @@
-defaultContentLanguage: "ko"
+defaultContentLanguage:
+  languageName: "Korean"
+  languageCode: "ko"
+  contentDir: "content/ko"
+  weight: 1
 
 languages:
   ko:

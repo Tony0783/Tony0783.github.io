@@ -1,18 +1,13 @@
-defaultContentLanguage:
-  languageName: "Korean"
-  languageCode: "ko"
-  contentDir: "content/ko"
+en:
+  languageName: "English"
   weight: 1
+  contentDir: "content/en"
+  languageCode: "en"
+  title: "My Site (English)"
 
-languages:
-  ko:
-    languageName: "Korean"
-    languageCode: "ko"
-    contentDir: "content/ko"
-    weight: 1
-
-  en:
-    languageName: "English"
-    languageCode: "en"
-    contentDir: "content/en"
-    weight: 2
+ko:
+  languageName: "Korean"
+  weight: 2
+  contentDir: "content/ko"
+  languageCode: "ko"
+  title: "내 사이트 (한국어)"

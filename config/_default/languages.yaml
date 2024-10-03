@@ -1,13 +1,14 @@
-en:
-  languageName: "English"
-  weight: 1
-  contentDir: "content/en"
-  languageCode: "en"
-  title: "My Site (English)"
+languages:
+  ko:
+    languageName: "Korean"
+    weight: 1
+    contentDir: "content/ko"
+    title: "내 사이트 (한국어)"
+    menu: main
 
-ko:
-  languageName: "Korean"
-  weight: 2
-  contentDir: "content/ko"
-  languageCode: "ko"
-  title: "내 사이트 (한국어)"
+  en:
+    languageName: "English"
+    weight: 2
+    contentDir: "content/en"
+    title: "My Site (English)"
+    menu: main

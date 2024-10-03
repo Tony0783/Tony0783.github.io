@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="section-container">
+  <div class="profile-picture">
+    <img src="/images/avatar.jpg" alt="Profile Picture" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 150px; margin-top: 15px;">
+  </div>
+
+  <!-- 페이지 콘텐츠 표시 -->
+  <section id="content" style="padding: 50px;">
+    <h2>{{ .Title }}</h2> <!-- 정보 페이지의 제목 표시 -->
+    <div>{{ .Content }}</div> <!-- information.md의 본문 내용 표시 -->
+  </section>
+
+  <!-- 추가 섹션들 -->
+  <section id="summary" style="background-color: #e6f7ff; padding: 50px;">
+    <h2>자기소개 요약본</h2>
+    <p><strong>전북대학교 컴퓨터공학과 졸업 예정</strong></p>
+    <!-- 추가 섹션 -->
+  </section>
+</div>
+{{ end }}

@@ -25,8 +25,9 @@ sections:
         image:
           filename: images/profile.jpg
           alt: 박태호의 프로필 사진
-          style: "border-radius: 50%; max-width: 200px; margin: 0 auto;"
+          style: "border-radius: 50%; display: block; max-width: 200px; margin: 0 auto;"
         text_align: center
+
 
   - block: features
     id: details

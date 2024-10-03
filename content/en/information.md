@@ -20,16 +20,13 @@ sections:
   - block: features
     id: profile_picture
     content:
-       - title: <span style="font-size:90%">AI</span>
-        content: <span style="font-size:90%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발<span style="font-size:90%">
-        align: center
-        background:
-          image:
-            filename: profile.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
+      title: 프로필 사진
+      design:
+        image:
+          filename: images/profile.jpg
+          alt: 박태호의 프로필 사진
+          style: "border-radius: 50%; max-width: 200px; margin: 0 auto;"
+        text_align: center
 
   - block: features
     id: details

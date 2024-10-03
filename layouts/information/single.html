@@ -3,20 +3,15 @@
 
   <!-- 왼쪽에 이미지 배치 -->
   <div class="profile-picture" style="flex: 1; text-align: center; padding-right: 20px;">
-    <img src="/images/avatar.jpg" alt="Profile Picture" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 250px; margin-top: 15px;">
+    <img src="/images/avatar.jpg" alt="Profile Picture" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 350px; margin-top: 15px;"> <!-- 이미지 크기 확대 -->
   </div>
 
   <!-- 오른쪽에 자기소개 내용 배치 -->
-  <div id="content" style="flex: 2; padding-left: 20px;">
-    <h2>{{ .Title }}</h2> <!-- 정보 페이지의 제목 표시 -->
+  <div id="content" style="flex: 2; padding-left: 20px; font-size: 1.5rem; line-height: 1.6;"> <!-- 텍스트 크기 확대 -->
+    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">{{ .Title }}</h2> <!-- 제목 크기 확대 -->
     <div>{{ .Content }}</div> <!-- information.md의 본문 내용 표시 -->
   </div>
 
 </div>
 
-<!-- 추가 섹션들 -->
-<section id="summary" style="background-color: #e6f7ff; padding: 50px;">
-  <h2>자기소개 요약본</h2>
-  <p><strong>전북대학교 컴퓨터공학과 졸업 예정</strong></p>
-</section>
 {{ end }}

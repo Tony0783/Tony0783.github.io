@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- 스타일 시트 링크 -->
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    {{ partial "navbar.html" . }}
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+        {{ block "main" . }}{{ end }} <!-- 각 페이지가 채워질 부분 -->
+    </main>
+
+    <!-- 푸터 -->
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

@@ -11,20 +11,17 @@ sections:
       text: |-
         Feel free to reach out to me via the contact details below or visit my GitHub profile to view my projects and contributions.
       email: qazwsx11006@naver.com
-      phone: '+82 10-9502-0783'
+      phone: '+82 010-9502-0783'
       address:
         street: 'Anyang, Gyeonggi Province'
         city: 'Anyang'
         region: 'Gyeonggi-do'
-        postcode: '00000'
         country: South Korea
         country_code: KR
       coordinates:
         latitude: '37.3943'
         longitude: '126.9568'
       directions: 'You can contact me via phone, email, or visit my GitHub profile.'
-      office_hours:
-        - 'Monday to Friday 09:00 to 18:00'
       appointment_url: 'https://github.com/Tony0783'
       contact_links:
         - icon: github

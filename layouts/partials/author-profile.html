@@ -12,12 +12,12 @@
     <!-- 이미지 리소스를 정의하고 처리 -->
     {{ $resource := $item.Resources.GetMatch "avatar.jpg" }}
     {{ with $resource }}
-    {{ $image := .Resize "550x" }}
-    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
-      <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-           alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
-    </a>
+      {{ $image := .Resize "550x" }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+             alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
+      </a>
     {{ end }}
   
     <div class="card-text">
@@ -34,7 +34,17 @@
       </div>
       {{ end }}
   
-      <!-- 요약 정보가 있을 경우 처리 -->
+      <!-- 요약 정보 변수 정의 -->
+      {{ $summary := "" }}
+      {{ if $item.Params.summary }}
+        {{ $summary = $item.Params.summary | markdownify | emojify }}
+      {{ else if $item.Params.abstract }}
+        {{ $summary = $item.Params.abstract | markdownify | emojify | truncate 135 }}
+      {{ else if $item.Summary }}
+        {{ $summary = $item.Summary }}
+      {{ end }}
+  
+      <!-- 요약 정보가 있을 경우 표시 -->
       {{ with $summary }}
       <div class="article-style">
         <p>{{ . }}</p>

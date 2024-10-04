@@ -22,9 +22,9 @@ sections:
         - name: 학습 과정
           icon: "fa-solid fa-book"
           description: 프로그래밍 언어, 데이터 분석, AI 관련 학습 과정에 대해 다룹니다.
-        - name: 목표
-          icon: "fa-regular fa-circle-dot"
-          description: 박태호의 앞으로의 계획과 목표를 확인하세요.
+        - name: 인공지능
+          icon: "fa-solid fa-brain"
+          description: 인공지능에 대한 기본적인 정보를 확인하세요.
         - name: 정보
           icon: "fa-solid fa-info"
           description: 박태호의 연락처 및 기본적인 정보를 확인하세요.

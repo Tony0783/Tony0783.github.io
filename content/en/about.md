@@ -1,7 +1,7 @@
 ---
 title: "Taehwo Park's Portfolio"
 date: 2024-03-25
-type: portfolio  # Referencing the template for portfolio
+type: landing 
 
 sections:
   - block: features

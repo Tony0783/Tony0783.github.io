@@ -1,7 +1,7 @@
 ---
 title: "박태호의 포트폴리오"
 date: 2024-03-25
-type: portfolio  # 템플릿에서 정보를 참조하게 변경
+type: landing 
 
 sections:
   - block: features

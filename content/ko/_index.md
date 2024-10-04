@@ -1,131 +1,79 @@
 ---
-# Leave the homepage title empty to use the site title
-title:
+title: "홈페이지"
 date: 2024-03-25
 type: landing
+
 
 sections:
 
   - block: features
     content:
-      title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
-      text: <br><span style="font-size:125%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span> <br><br>
-        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
+      title: 요약
+      text: |
+        **전북대학교 컴퓨터공학과 졸업 예정**  
+        사용 언어: **Java, C, C++, Python, JavaScript, HTML, C#**
 
+        ### 프로젝트 경험
+        - 블로그 플랫폼 개발: 댓글 기능, 검색 기능, 사용자 프로필 등록 기능 구현
+        - 할 일 목록 앱 개발: 작업 추가, 삭제, 편집 기능 구현
+
+  - block: features
+    content:
+      title: 소개
+      text: |
+        ### 개인 정보
+        **성별:** 남성  
+        **나이:** 22  
+        **학번:** 2020
+
+        ### 학교 정보
+        현재 전북대학교에서 공부 중입니다.  
+        [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/){:target="_blank"}
+
+        ### 취미
+        취미는 탁구, 스키, 게임입니다.
 
   - block: slider
     content:
       slides:
-
-      - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">Interested in MacsLAB?</span>
-        align: center
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">Join Us</span>
-          text-color: '#000'
-          url: contact
-
-      - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발</span>
-        align: center
-
-      - title: <span style="font-size:70%">Healthcare</span>
-        content: <span style="font-size:70%">의료 및 헬스케어 분야에 적용 가능한 AI 기술 개발</span>
-        align: center
-
-      - title: <span style="font-size:70%">Mathematics</span>
-        content: <span style="font-size:70%">AI와 관련된 수학 및 최적화 이론 연구</span>
-        align: center
-
-      - title: <span style="font-size:70%">Development</span>
-        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
-        align: center
-
+        - image: /static/images/slider1.jpg
+        - image: /static/images/slider2.jpg
+        - image: /static/images/slider3.jpg
     design:
       slide_height: '350px'
-      slide_width: '100px'
       is_fullscreen: false
       loop: true
       interval: 3000
-
+      arrows: true   # 이전/다음 버튼 활성화
+      autoplay: true # 자동 슬라이드 활성화
+      controls: true # 슬라이드 제어 기능
 
   - block: features
-    id: features
     content:
-      title: <span style="font-size:75%">Lab's Interests</span>
-      text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 쏟고 있습니다.<br><br><br><br>
-      items:
-        - name: 인공지능(AI)
-          icon: code-branch
-          icon_pack: fas
-          description: <span style="font-size:90%">의료 (Medical), 항공우주 (Aerospace), 컨텐츠 (Contents) 등 다양한 특성화 분야에 적응형 AI 기술 적용.</span><br><br>
-        - name: 멀티모달(Multi-modality)
-          icon: globe
-          icon_pack: fas
-          description:  <span style="font-size:90%">Vision & Language 분야의 기반 AI 기술 개발 및 관련 응용 어플리케이션에 기술 적용.</span><br><br>
-        - name: 의료수학(Medical Math)
-          icon: calculator
-          icon_pack: fas
-          description:  <span style="font-size:90%">의료 분야에 대한 통계 분석 수행 및 의료 질병에 대한 수학적인 모델링 관련 연구 수행.</span><br><br>
-        - name: 컨텐츠 (Contents)
-          icon: comment-dots
-          icon_pack: fas
-          description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
-        - name: 개발 (Development)
-          icon: laptop
-          icon_pack: fas
-          description:  <span style="font-size:90%">Full-Stack 기반의 응용 어플리케이션 개발.</span><br><br>
-        - name: 솔루션 (Solution)
-          icon: app-store-ios
-          icon_pack: fab
-          description:  <span style="font-size:90%">AI 기반기술 및 관련 어플리케이션에 적용을 통한 통합 솔루션 개발!</span><br><br>
-
-
-  - block: collection
-    content:
-      id: section-1
-      title: Notifications & News
-      subtitle:
-      text:
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
-    design:
-      view: community/custom_card
-      columns: '2'
-
-  - block: collection
-    content:
-      title: Latest Publications
-      subtitle:
-      text:
-      count: 3
-      filters:
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: publication
-    design:
-      view: community/custom_card
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
+      title: 교육 및 학습 과정
       text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
-    design:
-      columns: '1'
+        ### 웹 서비스 설계
+        웹 서비스 구조와 설계, 시스템 아키텍처를 학습 중.
+
+        ### 컴퓨터 그래픽스
+        3D 모델링과 렌더링 기법을 이론과 실습을 통해 학습 중.
+
+        ### 소프트웨어 공학
+        소프트웨어 개발 프로세스, 유지보수 및 프로젝트 관리 방법론 학습 중.
+
+        ### 정보 검색
+        효율적인 정보 검색 시스템 설계 및 관련 알고리즘 학습 중.
+
+  - block: features
+    content:
+      title: 프로젝트
+      text: |
+        ### 뉴스 기사 자동 크롤링 프로젝트
+        Python과 BeautifulSoup을 사용해 뉴스를 자동으로 수집하고 분석하는 시스템을 개발함.
+
+        ### 게시판 프로젝트
+        사용자 등록, 게시글 편집, 삭제 기능을 구현한 게시판 시스템 개발. 사용자 인증 및 권한 관리 기능 포함.
+
+        ### 할 일 목록 관리 애플리케이션
+        작업 추가, 삭제, 편집 기능을 가진 모바일 애플리케이션 개발.
 ---

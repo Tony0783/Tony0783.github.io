@@ -24,6 +24,12 @@ sections:
           description: qazwsx11006@naver.com
         - name: 전화번호
           description: '+82 010-9502-0783'
+        - name: GitHub
+          description: |
+            [박태호의 GitHub 프로필](https://github.com/Tony0783)
+        - name: LinkedIn
+          description: |
+            [박태호의 LinkedIn 프로필](https://linkedin.com/in/사용자명)
 
       design:
         font_size: '1.5rem'

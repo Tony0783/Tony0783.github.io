@@ -11,9 +11,6 @@ appearance:
   font: native
   font_size: L
 
-params:
-  homepage_type: "homepage"
-
 marketing:
   seo:
     site_type: Person  # 개인 포트폴리오의 경우

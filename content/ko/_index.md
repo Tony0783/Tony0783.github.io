@@ -1,109 +1,131 @@
 ---
-title: "Home Page"
+# Leave the homepage title empty to use the site title
+title:
 date: 2024-03-25
-type: homepage
+type: landing
+
+sections:
+
+  - block: features
+    content:
+      title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
+      text: <br><span style="font-size:125%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span> <br><br>
+        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
+
+
+  - block: slider
+    content:
+      slides:
+
+      - title: <span style="font-size:70%">Recruit</span>
+        content: <span style="font-size:70%">Interested in MacsLAB?</span>
+        align: center
+        link:
+          icon: user
+          icon_pack: fas
+          text: <span style="font-size:60%">Join Us</span>
+          text-color: '#000'
+          url: contact
+
+      - title: <span style="font-size:70%">AI</span>
+        content: <span style="font-size:70%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발</span>
+        align: center
+
+      - title: <span style="font-size:70%">Healthcare</span>
+        content: <span style="font-size:70%">의료 및 헬스케어 분야에 적용 가능한 AI 기술 개발</span>
+        align: center
+
+      - title: <span style="font-size:70%">Mathematics</span>
+        content: <span style="font-size:70%">AI와 관련된 수학 및 최적화 이론 연구</span>
+        align: center
+
+      - title: <span style="font-size:70%">Development</span>
+        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
+        align: center
+
+    design:
+      slide_height: '350px'
+      slide_width: '100px'
+      is_fullscreen: false
+      loop: true
+      interval: 3000
+
+
+  - block: features
+    id: features
+    content:
+      title: <span style="font-size:75%">Lab's Interests</span>
+      text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 쏟고 있습니다.<br><br><br><br>
+      items:
+        - name: 인공지능(AI)
+          icon: code-branch
+          icon_pack: fas
+          description: <span style="font-size:90%">의료 (Medical), 항공우주 (Aerospace), 컨텐츠 (Contents) 등 다양한 특성화 분야에 적응형 AI 기술 적용.</span><br><br>
+        - name: 멀티모달(Multi-modality)
+          icon: globe
+          icon_pack: fas
+          description:  <span style="font-size:90%">Vision & Language 분야의 기반 AI 기술 개발 및 관련 응용 어플리케이션에 기술 적용.</span><br><br>
+        - name: 의료수학(Medical Math)
+          icon: calculator
+          icon_pack: fas
+          description:  <span style="font-size:90%">의료 분야에 대한 통계 분석 수행 및 의료 질병에 대한 수학적인 모델링 관련 연구 수행.</span><br><br>
+        - name: 컨텐츠 (Contents)
+          icon: comment-dots
+          icon_pack: fas
+          description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
+        - name: 개발 (Development)
+          icon: laptop
+          icon_pack: fas
+          description:  <span style="font-size:90%">Full-Stack 기반의 응용 어플리케이션 개발.</span><br><br>
+        - name: 솔루션 (Solution)
+          icon: app-store-ios
+          icon_pack: fab
+          description:  <span style="font-size:90%">AI 기반기술 및 관련 어플리케이션에 적용을 통한 통합 솔루션 개발!</span><br><br>
+
+
+  - block: collection
+    content:
+      id: section-1
+      title: Notifications & News
+      subtitle:
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - notification
+          - post
+          - event
+    design:
+      view: community/custom_card
+      columns: '2'
+
+  - block: collection
+    content:
+      title: Latest Publications
+      subtitle:
+      text:
+      count: 3
+      filters:
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: publication
+    design:
+      view: community/custom_card
+      columns: '2'
+    advanced:
+      css_style: "text-align: center;"
+
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
+    design:
+      columns: '1'
 ---
-
-<div class="section-container">
-  
-  <!-- Summary Section -->
-  <section id="summary" style="background-color: #e6f7ff; padding: 50px;">
-    <h2>Personal Summary</h2>
-    <p><strong>Expected Graduation: Computer Science, Chonbuk National University</strong></p>
-    <p>Languages: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
-    <h3>Project Experience</h3>
-    <ul>
-      <li>Blog Platform Development: Implemented comment functionality, search feature, and user profile management.</li>
-      <li>To-Do List App Development: Developed functionality for adding, editing, and deleting tasks.</li>
-    </ul>
-  </section>
-
-  <!-- Introduction Section -->
-  <section id="intro" style="background-color: #f0f8ff; padding: 50px;">
-    <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <!-- Personal Info Card -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Personal Information</h3>
-        <p><strong>Gender:</strong> Male</p>
-        <p><strong>Age:</strong> 22</p>
-        <p><strong>Student ID:</strong> 2020</p>
-      </div>
-      <!-- University Info Card -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>University Information</h3>
-        <p>I am currently studying at Chonbuk National University.</p>
-        <p><a href="https://www.jbnu.ac.kr/kor/" target="_blank" style="color: blue;">Chonbuk National University Website</a></p>
-      </div>
-      <!-- Hobbies Card -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Hobbies</h3>
-        <p>My hobbies include table tennis, skiing, and gaming.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image Slider Section -->
-  <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
-    <div class="slider-container" style="max-width: 100%; position: relative;">
-      <!-- Slider Images -->
-      <div class="slides">
-        <img src="/images/slider1.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-        <img src="/images/slider2.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-        <img src="/images/slider3.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-        <img src="/images/slider4.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-      </div>
-      <!-- Previous Button -->
-      <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
-      <!-- Next Button -->
-      <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" style="background-color: #ffffff; padding: 50px;">
-    <h2>Education and Learning Process</h2>
-
-    <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Web Service Design</h3>
-        <p>Studying the structure and design of web services, and system architecture.</p>
-      </div>
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Computer Graphics</h3>
-        <p>Learning 3D modeling and rendering techniques through theory and practice in computer graphics.</p>
-      </div>
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Software Engineering</h3>
-        <p>Studying software development processes, maintenance, and project management methodologies.</p>
-      </div>
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Information Retrieval</h3>
-        <p>Learning about the design of efficient information retrieval systems and related algorithms.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Section -->
-  <section id="projects" style="background-color: #f0f8ff; padding: 50px;">
-    <h2>Projects</h2>
-
-    <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <!-- Project 1: News Article Crawling -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>News Article Crawling Project</h3>
-        <p>Developed a system using Python and BeautifulSoup to automatically collect and analyze news articles.</p>
-      </div>
-      <!-- Project 2: Bulletin Board Development -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>Bulletin Board Development Project</h3>
-        <p>Implemented a bulletin board where users can post, edit, and delete entries. Includes user authentication and permission management.</p>
-      </div>
-      <!-- Project 3: To-Do List App -->
-      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>To-Do List App</h3>
-        <p>Developed a mobile application with functionality for adding, deleting, and editing tasks.</p>
-      </div>
-    </div>
-  </section>
-
-</div>

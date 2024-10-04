@@ -1,15 +1,14 @@
 ---
-title: ""
+title: "포트폴리오 페이지"
 date: 2024-03-25
-type: information  # 템플릿에서 정보를 참조하게 변경
-
+type: information
+layout: "portfolio"  # 새 템플릿 지정
 sections:
   - block: features
     content:
       title: 박태호의 포트폴리오
       text: |
         박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
-
   - block: features
     id: features
     content:

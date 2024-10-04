@@ -1,7 +1,8 @@
 ---
-title: "포트폴리오 소개"
+title: "About Me"
 date: 2024-03-25
-type: landing
+type: "about"
+layout: "single"  # 템플릿 파일을 지정
 
 sections:
   - block: features

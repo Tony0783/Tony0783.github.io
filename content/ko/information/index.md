@@ -7,9 +7,11 @@ sections:
 
   - block: features
     content:
-      title: "프로필 사진"
       text: |
         <img src="/images/avatar.jpg" alt="Profile Picture" style="border-radius: 50%; width: 350px; margin-top: 15px;" loading="lazy">
+
+    design:
+      text_align: center
 
 
   - block: features
@@ -28,7 +30,6 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
         
-    design:
-      text_align: center
+
 
 ---

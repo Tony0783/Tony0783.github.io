@@ -8,9 +8,11 @@ sections:
 
   - block: features
     content:
-      title: "Profile Picture"
       text: |
         <img src="/images/avatar.jpg" alt="Profile Picture" style="border-radius: 50%; width: 350px; margin-top: 15px;" loading="lazy">
+
+    design:
+      text_align: center
 
 
   - block: features
@@ -30,7 +32,6 @@ sections:
       padding: "50px"
 
         
-    design:
-      text_align: center
+
 
 ---

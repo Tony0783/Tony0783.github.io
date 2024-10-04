@@ -31,15 +31,8 @@ sections:
         - name: 깃허브
           icon: "fa-brands fa-git"
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
-        - name: Instruction
-          icon: "fa-solid fa-file-pdf"
+        - name: 대학교
+          icon: "fa-duotone fa-solid fa-graduation-cap"  # 수정된 부분
 
-  # PDF 다운로드 섹션 추가
-  - block: markdown
-    content:
-      title: 다운로드 안내
-      text: |
-        포트폴리오 instruction이 궁금하시면 [여기](https://example.com/files/instruction.pdf){:target="_blank"}를 클릭하여 다운로드하세요.
-    design:
-      columns: '1'
+
 ---

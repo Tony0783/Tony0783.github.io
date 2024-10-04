@@ -15,7 +15,7 @@
         <ul>
           {{ range .content.items }}
             <li>
-              <i class="{{ .icon }}"></i> <strong>{{ .name }}</strong>: {{ .description }}
+              <i class="{{ .icon }}"></i> <strong>{{ .name }}</strong>: {{ .description | safeHTML }}
             </li>
           {{ end }}
         </ul>
@@ -23,18 +23,30 @@
     </section>
   {{ end }}
 
+  <!-- PDF 다운로드 섹션 추가 -->
+  <section id="download-section" style="margin-top: 50px;">
+    <h3>웹사이트 사용 지침</h3>
+    <p><a href="/files/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
+  </section>
+
 </div>
 
 <!-- PDF 다운로드 여부를 묻는 JavaScript 추가 -->
 <script>
-  document.getElementById("download-link").addEventListener("click", function(event) {
-    event.preventDefault(); // 기본 링크 이동을 막음
-    const userConfirmed = confirm("파일을 다운로드 하시겠습니까?");
-    if (userConfirmed) {
-      const a = document.createElement('a');
-      a.href = '/files/instruction.pdf';
-      a.download = 'instruction.pdf'; // 다운로드 강제
-      a.click();
+  document.addEventListener("DOMContentLoaded", function() {
+    const downloadLink = document.getElementById("download-link");
+
+    if (downloadLink) {  // 링크가 존재할 경우에만 실행
+      downloadLink.addEventListener("click", function(event) {
+        event.preventDefault(); // 기본 링크 이동을 막음
+        const userConfirmed = confirm("파일을 다운로드 하시겠습니까?");
+        if (userConfirmed) {
+          const a = document.createElement('a');
+          a.href = '/files/instruction.pdf';
+          a.download = 'instruction.pdf'; // 다운로드 강제
+          a.click();
+        }
+      });
     }
   });
 </script>

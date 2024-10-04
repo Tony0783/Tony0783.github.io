@@ -1,8 +1,8 @@
 ---
 title: "포트폴리오 페이지"
 date: 2024-03-25
-type: information
-layout: "portfolio"  # 새 템플릿 지정
+type: portfolio
+
 sections:
   - block: features
     content:

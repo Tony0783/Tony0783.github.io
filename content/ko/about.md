@@ -1,7 +1,8 @@
 ---
-title: "포트폴리오 페이지"
+title: ""
 date: 2024-03-25
-layout: "portfolio"  # 템플릿을 portfolio로 지정
+type: portfolio  # 템플릿에서 정보를 참조하게 변경
+
 sections:
   - block: features
     content:

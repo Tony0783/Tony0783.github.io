@@ -8,15 +8,14 @@
 
   <!-- 오른쪽에 자기소개 내용 배치 -->
   <div id="content" style="flex: 2; padding-left: 20px; font-size: 1.5rem; line-height: 1.6;">
-    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">{{ .Title }}</h2>
-    <div>{{ .Content }}</div> <!-- information.md의 본문 내용 표시 -->
+    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">{{ .Title }}</h2> <!-- 제목 출력 -->
+    <div>{{ .Content }}</div> <!-- 본문 내용 출력 -->
     
     <!-- PDF 다운로드 섹션 -->
     <section id="download-section" style="margin-top: 50px;">
       <h3>웹사이트 사용 지침</h3>
       <p><a href="/files/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
     </section>
-
   </div>
 
 </div>

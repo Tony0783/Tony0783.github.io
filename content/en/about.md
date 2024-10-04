@@ -1,8 +1,7 @@
 ---
-title: "About Me"
+title: ""
 date: 2024-03-25
-type: "about"
-layout: "single"  # 템플릿 파일을 지정
+type: information  # 템플릿에서 정보를 참조하게 변경
 
 sections:
   - block: features

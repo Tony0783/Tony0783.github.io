@@ -5,11 +5,27 @@
   <h1>{{ .Title }}</h1>
 
   <!-- 섹션 내용 출력 -->
-  {{ .Content | safeHTML }} <!-- about.md의 내용을 그대로 가져옵니다. -->
+  {{ range .Params.sections }}
+    <section id="{{ .id }}" style="margin-bottom: 40px;">
+      <h2>{{ .content.title }}</h2>
+      <p>{{ .content.text | safeHTML }}</p>
+
+      <!-- 섹션 항목 출력 -->
+      {{ if .content.items }}
+        <ul>
+          {{ range .content.items }}
+            <li>
+              <i class="{{ .icon }}"></i> <strong>{{ .name }}</strong>: {{ .description | safeHTML }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </section>
+  {{ end }}
 
   <!-- PDF 다운로드 섹션 추가 -->
   <section id="download-section" style="margin-top: 50px;">
-    <p>포트폴리오 instruction이 궁금하시면 <a href="/files/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
+    <p>포트폴리오 instruction이 궁금하시면<a href="/files/instruction.pdf" id="download-link"> 여기</a>를 클릭하여 다운로드하세요.</p>
   </section>
 
 </div>

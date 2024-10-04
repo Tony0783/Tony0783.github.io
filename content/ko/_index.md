@@ -91,16 +91,6 @@ sections:
           position: center
           color: '#000'
 
-      - title: <span style="font-size:70%">Development</span>
-        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
-        align: center
-        background:
-          image:
-            filename: development.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
     design:
       slide_height: '350px'
       slide_width: '100%'

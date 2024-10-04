@@ -6,9 +6,9 @@ type: landing
 sections:
   - block: features
     content:
-      title: 박태호의 연락처
+      title: Taeho Park's Contact Information
       text: |
-        박태호의 개인 연락처입니다. 이 포트폴리오에서 궁금하신 점이나 관심 있으신 내용이 있으면 아래로 연락주시면 감사드리겠습니다.
+        This is Taeho Park's personal contact information. If you have any questions or are interested in anything from this portfolio, feel free to reach out to the contact details below.
       design:
         spacing:
           padding: ['40px', '0', '40px', '0']
@@ -18,15 +18,15 @@ sections:
   - block: features
     id: contact_info
     content:
-      title: 연락처
+      title: Contact Information
       items:
-        - name: 이메일
+        - name: Email
           description: qazwsx11006@naver.com
-        - name: 전화번호
+        - name: Phone Number
           description: '+82 010-9502-0783'
         - name: GitHub
           description: |
-            [박태호의 GitHub 프로필](https://github.com/Tony0783)
+            [Taeho Park's GitHub Profile](https://github.com/Tony0783)
 
       design:
         font_size: '1.5rem'
@@ -37,10 +37,10 @@ sections:
   - block: features
     id: address
     content:
-      title: 학교
+      title: School
       items:
-        - name: 주소
-          description: 전북대학교 공과대학 7호관 626호, 전주시, 전라북도, 54896, 대한민국
+        - name: Address
+          description: College of Engineering, Building 7, Room 626, Chonbuk National University, Jeonju, Jeollabuk-do, 54896, South Korea
 
       design:
         font_size: '1.5rem'
@@ -50,7 +50,7 @@ sections:
 
   - block: markdown
     content:
-      title: 지도
+      title: Map
       subtitle: ''
       text: |
         <iframe

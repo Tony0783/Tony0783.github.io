@@ -1,35 +1,35 @@
 ---
 title: ""
 date: 2024-03-25
-type: portfolio  # 템플릿에서 정보를 참조하게 변경
+type: portfolio  # Referencing the template for information
 
 sections:
   - block: features
     content:
-      title: 박태호의 포트폴리오
+      title: Taeho Park's Portfolio
       text: |
-        박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
+        This is Taeho Park's personal portfolio. In this portfolio, I will cover my completed projects, self-introduction, learning process, and goals.
   - block: features
     id: features
     content:
-      title: 포트폴리오 구성
-      text: 박태호님의 포트폴리오는 다음과 같은 항목들로 구성되어 있습니다.<br><br>
+      title: Portfolio Structure
+      text: Taeho Park's portfolio is composed of the following sections.<br><br>
       items:
-        - name: 프로젝트
+        - name: Projects
           icon: "fa-solid fa-code"
-          description: 다양한 웹 개발 프로젝트와 AI 프로젝트를 소개합니다.
-        - name: 학습 과정
+          description: Introducing various web development and AI projects.
+        - name: Learning Process
           icon: "fa-solid fa-book"
-          description: 프로그래밍 언어, 데이터 분석, AI 관련 학습 과정에 대해 다룹니다.
-        - name: 인공지능
+          description: Covering programming languages, data analysis, and AI-related learning processes.
+        - name: Artificial Intelligence
           icon: "fa-solid fa-brain"
-          description: 인공지능에 대한 기본적인 정보를 확인하세요.
-        - name: 정보
+          description: Find basic information about artificial intelligence here.
+        - name: Information
           icon: "fa-solid fa-info"
-          description: 박태호의 연락처 및 기본적인 정보를 확인하세요.
-        - name: 깃허브
+          description: Check Taeho Park's contact details and basic information.
+        - name: GitHub
           icon: "fa-brands fa-git"
-          description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
+          description: Check out the projects Taeho Park has worked on through GitHub.
         - name: Instruction
           icon: "fa-solid fa-file-pdf"
 ---

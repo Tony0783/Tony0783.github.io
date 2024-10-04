@@ -1,25 +1,25 @@
 ---
-title: "AI 관련 뉴스"
+title: "AI-related News"
 date: 2024-10-04
 type: landing
 
-sections:    
+sections:
   - block: features
     id: ai_news
     content:
-      title: 최신 AI 뉴스 리스트
+      title: Latest AI News List
       items:
-        - name: 오픈AI 챗GPT 협업 도구 ‘캔버스’ 출격...협업툴 AI 정조준
+        - name: OpenAI's ChatGPT collaboration tool 'Canvas' launched... Targeting AI collaboration tools
           description: |
-            [뉴스 전문 보기](https://www.mk.co.kr/news/it/11131410)
+            [Read full article](https://www.mk.co.kr/news/it/11131410)
 
-        - name:  삼성전자 “전 제품에 AI 적용해 개인화 구현”
+        - name: Samsung Electronics: "Applying AI to all products to achieve personalization"
           description: |
-            [뉴스 전문 보기](https://www.etnews.com/20241004000084)
+            [Read full article](https://www.etnews.com/20241004000084)
 
-        - name: 더존비즈온, 병원에서 쓸 수 있는 '정밀 의료 AI 솔루션' 공개
+        - name: Douzone Bizon unveils 'Precision Medical AI Solution' usable in hospitals
           description: |
-            [뉴스 전문 보기](https://zdnet.co.kr/view/?no=20241004164127)
+            [Read full article](https://zdnet.co.kr/view/?no=20241004164127)
 
     design:
       spacing:

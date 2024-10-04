@@ -16,6 +16,9 @@ sections:
         ### Project Experience
         - Blog platform development: Implemented comment functionality, search feature, and user profile registration
         - To-Do List app development: Implemented functionality for adding, deleting, and editing tasks
+    design:
+      background_color: "#e6f7ff"
+      padding: "50px"
 
   - block: features
     content:
@@ -32,6 +35,9 @@ sections:
 
         ### Hobbies
         My hobbies are table tennis, skiing, and gaming.
+    design:
+      background_color: "#f0f8ff"
+      padding: "50px"
 
   - block: slider
     content:
@@ -40,10 +46,12 @@ sections:
         - image: /static/images/slider2.jpg
         - image: /static/images/slider3.jpg
     design:
-      slide_height: '350px'
+      slide_height: '1000px'
       is_fullscreen: false
       loop: true
       interval: 3000
+      arrows: true
+      autoplay: true
 
   - block: features
     content:
@@ -60,6 +68,9 @@ sections:
 
         ### Information Retrieval
         Studying the design of efficient information retrieval systems and related algorithms.
+    design:
+      background_color: "#ffffff"
+      padding: "50px"
 
   - block: features
     content:
@@ -73,5 +84,8 @@ sections:
 
         ### To-Do List Management Application
         Developed a mobile application with features for adding, deleting, and editing tasks in a to-do list.
+    design:
+      background_color: "#f0f8ff"
+      padding: "50px"
 
 ---

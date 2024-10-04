@@ -13,7 +13,7 @@ sections:
           description: |
             [Read full article](https://www.mk.co.kr/news/it/11131410)
 
-        - name: Samsung Electronics: "Applying AI to all products to achieve personalization"
+        - name: Samsung Electronics "Applying AI to all products to achieve personalization"
           description: |
             [Read full article](https://www.etnews.com/20241004000084)
 

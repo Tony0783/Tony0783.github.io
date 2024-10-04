@@ -1,8 +1,0 @@
-<div class="card" style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px;">
-  {{ if .image }}  <!-- 이미지가 있는 경우 -->
-    <img src="{{ .image }}" alt="{{ .title }}" style="width: 100%; height: auto; margin-bottom: 10px;">
-  {{ end }}
-  <h3>{{ .title }}</h3> <!-- 제목 표시 -->
-  <p>{{ .description }}</p> <!-- 설명 표시 -->
-  <a href="{{ .link }}" class="btn btn-primary">자세히 보기</a>
-</div>

@@ -115,24 +115,24 @@ sections:
 
   - block: collection
     content:
-      title: Latest Publications
+      id: section-1
+      title: Notifications & News
       count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
       offset: 0
       order: desc
-      page_type: publication
+      filters:
+        folders:
+          - notification
+          - post
+          - event
     design:
       view: community/custom_card
       columns: '2'
 
     text: |
       {{ range .Items }}
-        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "image" .Params.image "link" .RelPermalink) }}
       {{ end }}
+---
 
 ---

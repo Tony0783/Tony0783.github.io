@@ -37,7 +37,6 @@ sections:
   - block: slider
     content:
       slides:
-
       - title: <span style="font-size:70%">Recruit</span>
         content: <span style="font-size:70%">코딩</span>
         align: center
@@ -92,15 +91,11 @@ sections:
       is_fullscreen: false
       loop: true
       interval: 3000
-        
-
 
   - block: collection
     content:
       id: section-1
       title: Notifications & News
-      subtitle:
-      text:
       count: 3
       offset: 0
       order: desc
@@ -112,12 +107,16 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
+      
+    # Partial 호출
+    text: |
+      {{ range .Items }}
+        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+      {{ end }}
 
   - block: collection
     content:
       title: Latest Publications
-      subtitle:
-      text:
       count: 3
       filters:
         author: ''
@@ -131,8 +130,12 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
-    advanced:
-      css_style: "text-align: center;"
+
+    # Partial 호출
+    text: |
+      {{ range .Items }}
+        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+      {{ end }}
 
   - block: markdown
     content:

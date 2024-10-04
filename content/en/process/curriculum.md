@@ -16,17 +16,8 @@ sections:
         text_align: center
         font_size: '2rem'
 
-  - block: image
+  - block: markdown
     content:
-      title: ''
-      image:
-        filename: images/교과과정.jpg  # 이미지 파일 경로
-        alt: 교과과정 이수체계도
-        style: "max-width: 100%; height: auto; display: block; margin: 0 auto;"  # 이미지 스타일
-
-      design:
-        spacing:
-          padding: ['20px', '0', '20px', '0']
-        text_align: center
-        font_size: '1.5rem'
+      text: |
+        <img src="/images/교과과정.jpg" alt="교과과정 이수체계도" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 ---

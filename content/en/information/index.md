@@ -4,6 +4,15 @@ date: 2024-03-25
 type: landing
 
 sections:
+
+
+  - block: features
+    content:
+      title: "Profile Picture"
+      text: |
+        <img src="/images/avatar.jpg" alt="Profile Picture" style="border-radius: 50%; width: 350px; margin-top: 15px;" loading="lazy">
+
+
   - block: features
     content:
       title: "Self-Introduction"
@@ -20,11 +29,6 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
-  - block: features
-    content:
-      title: "Profile Picture"
-      text: |
-        <img src="/images/avatar.jpg" alt="Profile Picture" style="border-radius: 50%; width: 350px; margin-top: 15px;" loading="lazy">
         
     design:
       text_align: center

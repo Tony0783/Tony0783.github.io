@@ -1,11 +1,5 @@
 ---
-title: Notifications
-
-# Listing view
-view: community/custom_card
-
-# Optional header image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: 'recruitment.jpg'
+title: "Example Notification"
+summary: "이것은 예시 알림입니다."
+image: "media/oldcomputer.jpg"  # 이미지 경로
 ---

@@ -1,11 +1,4 @@
 ---
-title: News
-
-# Listing view
-view: community/custom_card
-
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+title: "Example Post"
+summary: "이것은 예시 게시물입니다."
 ---

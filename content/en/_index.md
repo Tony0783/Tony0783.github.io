@@ -1,5 +1,5 @@
 ---
-title: "Home Page"
+title: "Homepage"
 date: 2024-03-25
 type: landing
 
@@ -9,12 +9,12 @@ sections:
     content:
       title: Summary
       text: |
-        **Expected Graduate from Chonbuk National University, Computer Science Department**  
-        Languages: **Java, C, C++, Python, JavaScript, HTML, C#**
+        **Expected to graduate from Jeonbuk National University with a degree in Computer Science**  
+        Languages used: **Java, C, C++, Python, JavaScript, HTML, C#**
 
         ### Project Experience
-        - Blog platform development: Implemented comment functionality, search feature, and user profile registration
-        - To-Do List app development: Implemented functionality for adding, deleting, and editing tasks
+        - Developed a blog platform: Implemented comment functionality, search functionality, and user profile registration
+        - Developed a to-do list app: Implemented task addition, deletion, and editing functionality
     design:
       background_color: "#e6f7ff"
       padding: "50px"
@@ -29,11 +29,11 @@ sections:
         **Student ID:** 2020
 
         ### School Information
-        I am currently studying at Chonbuk National University.  
-        [Chonbuk National University Website](https://www.jbnu.ac.kr/kor/){:target="_blank"}
+        Currently studying at Jeonbuk National University.  
+        [Jeonbuk National University Website](https://www.jbnu.ac.kr/kor/){:target="_blank"}
 
         ### Hobbies
-        My hobbies are table tennis, skiing, and gaming.
+        Hobbies include table tennis, skiing, and gaming.
     design:
       background_color: "#f0f8ff"
       padding: "50px"
@@ -41,39 +41,107 @@ sections:
   - block: slider
     content:
       slides:
-        - image: /static/images/slider1.jpg
-        - image: /static/images/slider2.jpg
-        - image: /static/images/slider3.jpg
+
+      - title: <span style="font-size:70%">Recruit</span>
+        content: <span style="font-size:70%">Coding?</span>
+        align: center
+        background:
+          image:
+            filename: slider1.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+        link:
+          icon: user
+          icon_pack: fas
+          text-color: '#000'
+          url: contact
+
+      - title: <span style="font-size:70%">AI</span>
+        content: <span style="font-size:70%">AI technology development</span>
+        align: center
+        background:
+          image:
+            filename: slider2.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
+      - title: <span style="font-size:70%">Collaboration</span>
+        align: center
+        background:
+          image:
+            filename: slider3.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
+      - title: <span style="font-size:70%">University</span>
+        content: <span style="font-size:70%">University</span>
+        align: center
+        background:
+          image:
+            filename: slider4.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
     design:
-      slide_height: '1000px'
+      slide_height: '550px'
+      slide_width: '100%'
       is_fullscreen: false
       loop: true
       interval: 3000
-      arrows: true
-      autoplay: true
 
   - block: collection
     content:
-      title: Education and Learning Courses
-      subtitle: Here are some of the key courses.
+      id: section-1
+      title: Notifications & News
+      subtitle:
+      text:
       count: 3
+      offset: 0
+      order: desc
       filters:
         folders:
-          - education
-      design:
-        view: card
-        columns: '3'
+          - notification
+          - post
+          - event
+    design:
+      view: community/custom_card
+      columns: '2'
 
   - block: collection
     content:
-      title: Projects
-      subtitle: Here are some of the major projects.
+      title: Latest Publications
+      subtitle:
+      text:
       count: 3
       filters:
-        folders:
-          - projects
-      design:
-        view: card
-        columns: '3'
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: publication
+    design:
+      view: community/custom_card
+      columns: '2'
+    advanced:
+      css_style: "text-align: center;"
 
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
+    design:
+      columns: '1'
 ---

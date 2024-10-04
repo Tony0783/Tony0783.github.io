@@ -116,9 +116,9 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-a, .clickable, .page-header {
-  background-color: #4528eb; /* 기본 배경색 */
-  color: white;
+  .clickable{
+  background-color: #f1f1f1; /* 기본 배경색 */
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -128,7 +128,7 @@ a, .clickable, .page-header {
 
 /* 마우스 호버 시 색 변경 */
 a:hover, .clickable:hover, .page-header:hover {
-  background-color: #51585a; /* 호버 시 배경색 */
+  background-color: #3252df; /* 호버 시 배경색 */
 }
 
 

@@ -1,131 +1,89 @@
 ---
-# Leave the homepage title empty to use the site title
-title:
+title: "홈 페이지"
 date: 2024-03-25
 type: landing
-
-sections:
-
-  - block: features
-    content:
-      title: <span style="font-size:70%">Medical AI & Computational Science (Macs) Lab </span>
-      text: <br><span style="font-size:125%">전북대학교 의료 AI 및 계산 과학 연구실 홈페이지에 오신 것을 환영합니다.</span> <br><br>
-        {{% cta cta_link="./field/" cta_text="See Research Field →" %}}
-
-
-  - block: slider
-    content:
-      slides:
-
-      - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">Interested in MacsLAB?</span>
-        align: center
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">Join Us</span>
-          text-color: '#000'
-          url: contact
-
-      - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">의료/항공우주/컨텐츠 등 특성화 분야에 적용 가능한 AI 기술 개발</span>
-        align: center
-
-      - title: <span style="font-size:70%">Healthcare</span>
-        content: <span style="font-size:70%">의료 및 헬스케어 분야에 적용 가능한 AI 기술 개발</span>
-        align: center
-
-      - title: <span style="font-size:70%">Mathematics</span>
-        content: <span style="font-size:70%">AI와 관련된 수학 및 최적화 이론 연구</span>
-        align: center
-
-      - title: <span style="font-size:70%">Development</span>
-        content: <span style="font-size:70%">기반 기술을 활용한 Full-Stack 어플리케이션 개발</span>
-        align: center
-
-    design:
-      slide_height: '350px'
-      slide_width: '100px'
-      is_fullscreen: false
-      loop: true
-      interval: 3000
-
-
-  - block: features
-    id: features
-    content:
-      title: <span style="font-size:75%">Lab's Interests</span>
-      text: 저희 연구실에서는 다음과 같은 연구/개발 분야에 관심을 쏟고 있습니다.<br><br><br><br>
-      items:
-        - name: 인공지능(AI)
-          icon: code-branch
-          icon_pack: fas
-          description: <span style="font-size:90%">의료 (Medical), 항공우주 (Aerospace), 컨텐츠 (Contents) 등 다양한 특성화 분야에 적응형 AI 기술 적용.</span><br><br>
-        - name: 멀티모달(Multi-modality)
-          icon: globe
-          icon_pack: fas
-          description:  <span style="font-size:90%">Vision & Language 분야의 기반 AI 기술 개발 및 관련 응용 어플리케이션에 기술 적용.</span><br><br>
-        - name: 의료수학(Medical Math)
-          icon: calculator
-          icon_pack: fas
-          description:  <span style="font-size:90%">의료 분야에 대한 통계 분석 수행 및 의료 질병에 대한 수학적인 모델링 관련 연구 수행.</span><br><br>
-        - name: 컨텐츠 (Contents)
-          icon: comment-dots
-          icon_pack: fas
-          description:  <span style="font-size:90%">웹툰 및 미디어 컨텐츠와 관련된 AI 기반 기술 개발 및 고도화.</span><br><br>
-        - name: 개발 (Development)
-          icon: laptop
-          icon_pack: fas
-          description:  <span style="font-size:90%">Full-Stack 기반의 응용 어플리케이션 개발.</span><br><br>
-        - name: 솔루션 (Solution)
-          icon: app-store-ios
-          icon_pack: fab
-          description:  <span style="font-size:90%">AI 기반기술 및 관련 어플리케이션에 적용을 통한 통합 솔루션 개발!</span><br><br>
-
-
-  - block: collection
-    content:
-      id: section-1
-      title: Notifications & News
-      subtitle:
-      text:
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
-    design:
-      view: community/custom_card
-      columns: '2'
-
-  - block: collection
-    content:
-      title: Latest Publications
-      subtitle:
-      text:
-      count: 3
-      filters:
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: publication
-    design:
-      view: community/custom_card
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
-    design:
-      columns: '1'
 ---
+
+{{< section class="section-container" >}}
+
+  <!-- 추가된 자기소개 요약본 섹션 -->
+  {{< section class="summary" background-color="#e6f7ff" padding="50px" >}}
+    <h2>자기소개 요약본</h2>
+    <p><strong>전북대학교 컴퓨터공학과 졸업 예정</strong></p>
+    <p>사용 가능 언어: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
+    <h3>프로젝트 경험</h3>
+    <ul>
+      <li>블로그 플랫폼 개발: 댓글 기능, 검색 기능, 사용자 프로필 등록 기능 구현</li>
+      <li>할 일 목록 앱 개발: 할 일 추가, 삭제, 수정 기능 구현</li>
+    </ul>
+  {{< /section >}}
+
+  <!-- 자기소개 섹션 -->
+  {{< section class="intro" background-color="#f0f8ff" padding="50px" >}}
+    <div>
+      <!-- 신상 정보 -->
+      <h3>신상 정보</h3>
+      <p><strong>성별:</strong> 남</p>
+      <p><strong>나이:</strong> 22</p>
+      <p><strong>학번:</strong> 2020</p>
+
+      <!-- 학교 소개 -->
+      <h3>학교 소개</h3>
+      <p>저는 전북대학교에 재학 중입니다. <a href="https://www.jbnu.ac.kr/kor/" target="_blank" style="color: blue;">전북대학교 홈페이지</a></p>
+
+      <!-- 취미 -->
+      <h3>취미</h3>
+      <p>저의 취미는 탁구, 스키, 게임입니다.</p>
+    </div>
+  {{< /section >}}
+
+  <!-- 이미지 슬라이더 섹션 -->
+  {{< section class="slider" background-color="#f8f8f8" padding="50px" >}}
+    <div class="slider-container" style="max-width: 100%; position: relative;">
+      <!-- 슬라이더 이미지 -->
+      <div class="slides">
+        <img src="/static/images/slider1.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+        <img src="/static/images/slider2.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+        <img src="/static/images/slider3.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+      </div>
+      <!-- 이전 버튼 -->
+      <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
+      <!-- 다음 버튼 -->
+      <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
+    </div>
+  {{< /section >}}
+
+  <!-- 교육 과정 섹션 -->
+  {{< section class="education" background-color="#ffffff" padding="50px" >}}
+    <h2>교육 및 학습 과정</h2>
+    <div>
+      <h3>웹 서비스 설계</h3>
+      <p>웹 서비스의 구조와 설계, 시스템 아키텍처에 대해 공부하고 있습니다.</p>
+
+      <h3>컴퓨터 그래픽스</h3>
+      <p>컴퓨터 그래픽스의 이론과 실습을 통해 3D 모델링과 렌더링 기법을 배우고 있습니다.</p>
+
+      <h3>소프트웨어 공학</h3>
+      <p>소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론에 대해 학습 중입니다.</p>
+
+      <h3>정보 검색</h3>
+      <p>효율적인 정보 검색 시스템 설계와 관련 알고리즘을 배우고 있습니다.</p>
+    </div>
+  {{< /section >}}
+
+  <!-- 진행했던 프로젝트 섹션 -->
+  {{< section class="projects" background-color="#f0f8ff" padding="50px" >}}
+    <h2>진행했던 프로젝트</h2>
+    <div>
+      <h3>뉴스 기사 자동 크롤링 프로젝트</h3>
+      <p>Python과 BeautifulSoup을 활용해 뉴스 기사 데이터를 자동으로 수집하고 분석하는 시스템 개발.</p>
+
+      <h3>게시판 만들기 프로젝트</h3>
+      <p>사용자가 게시물을 등록, 수정, 삭제할 수 있는 게시판을 구현. 사용자 인증 및 권한 관리 기능 포함.</p>
+
+      <h3>할 일 관리 애플리케이션</h3>
+      <p>할 일 목록 추가, 삭제, 편집 기능이 있는 모바일 애플리케이션 개발.</p>
+    </div>
+  {{< /section >}}
+
+{{< /section >}}

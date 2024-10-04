@@ -1,7 +1,7 @@
 ---
 title: "포트폴리오 페이지"
 date: 2024-03-25
-layout: "portfolio"  # 포트폴리오 템플릿 연결
+layout: "portfolio"  # 템플릿을 portfolio로 지정
 sections:
   - block: features
     content:
@@ -33,3 +33,4 @@ sections:
           icon: "fa-solid fa-file-pdf"
           description: |
             웹사이트 사용 지침을 다운로드하려면 [여기](/files/instruction.pdf)를 클릭하세요.
+---

@@ -40,7 +40,7 @@ sections:
       slides:
 
       - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">Coding?</span>
+        content: <span style="font-size:70%">Coding</span>
         align: center
         background:
           image:

@@ -39,7 +39,7 @@ sections:
       slides:
 
       - title: <span style="font-size:70%">Recruit</span>
-        content: <span style="font-size:70%">코딩?</span>
+        content: <span style="font-size:70%">코딩</span>
         align: center
         background:
           image:

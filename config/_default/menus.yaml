@@ -11,8 +11,8 @@ main:
     url: /process/
     weight: 3
   - parent: Process
-    name: Goal
-    url: /process/goal/
+    name: Curriculum
+    url: /process/curriculum/
     weight: 310
   - parent: Process
     name: Project

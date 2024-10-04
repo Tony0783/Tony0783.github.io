@@ -12,9 +12,6 @@ sections:
         **Expected to graduate from Jeonbuk National University with a degree in Computer Science**  
         Languages used: **Java, C, C++, Python, JavaScript, HTML, C#**
 
-        ### Project Experience
-        - Developed a blog platform: Implemented comment functionality, search functionality, and user profile registration
-        - Developed a to-do list app: Implemented task addition, deletion, and editing functionality
     design:
       background_color: "#e6f7ff"
       padding: "50px"

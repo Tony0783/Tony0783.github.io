@@ -11,10 +11,6 @@ sections:
       text: |
         **전북대학교 컴퓨터공학과 졸업 예정**  
         사용 언어: **Java, C, C++, Python, JavaScript, HTML, C#**
-
-        ### 프로젝트 경험
-        - 블로그 플랫폼 개발: 댓글 기능, 검색 기능, 사용자 프로필 등록 기능 구현
-        - 할 일 목록 앱 개발: 작업 추가, 삭제, 편집 기능 구현
     design:
       background_color: "#e6f7ff"
       padding: "50px"

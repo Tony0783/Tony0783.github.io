@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: "박태호의 포트폴리오"
-baseURL: 'https://tony0783.github.io/contact/' # Website URL
+baseURL = "https://tony0783.github.io/contact/"
 
 ############################
 ## LANGUAGE

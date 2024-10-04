@@ -11,6 +11,8 @@ appearance:
   font: native
   font_size: L
 
+params:
+  homepage_type: "homepage"
 
 marketing:
   seo:

@@ -1,6 +1,12 @@
 {{ define "main" }}
-<div class="container">
-  <h1>{{ .Title }}</h1>
-  <div>{{ .Content }}</div>
+<div class="homepage-container">
+  <section class="hero">
+    <h1>{{ .Title }}</h1>
+    <p>Welcome to my portfolio website!</p>
+  </section>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>{{ .Content }}</p>
+  </section>
 </div>
 {{ end }}

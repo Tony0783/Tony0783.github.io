@@ -7,11 +7,32 @@
   </div>
 
   <!-- 오른쪽에 자기소개 내용 배치 -->
-  <div id="content" style="flex: 2; padding-left: 20px; font-size: 1.5rem; line-height: 1.6;"> <!-- 텍스트 크기 확대 -->
-    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">{{ .Title }}</h2> <!-- 제목 크기 확대 -->
+  <div id="content" style="flex: 2; padding-left: 20px; font-size: 1.5rem; line-height: 1.6;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">{{ .Title }}</h2>
     <div>{{ .Content }}</div> <!-- information.md의 본문 내용 표시 -->
+    
+    <!-- PDF 다운로드 섹션 -->
+    <section id="download-section" style="margin-top: 50px;">
+      <h3>웹사이트 사용 지침</h3>
+      <p><a href="/downloads/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
+    </section>
+
   </div>
 
 </div>
+
+<!-- PDF 다운로드 여부를 묻는 JavaScript 추가 -->
+<script>
+  document.getElementById("download-link").addEventListener("click", function(event) {
+    event.preventDefault(); // 기본 링크 이동을 막음
+    const userConfirmed = confirm("파일을 다운로드 하시겠습니까?");
+    if (userConfirmed) {
+      const a = document.createElement('a');
+      a.href = '/downloads/instruction.pdf';
+      a.download = 'instruction.pdf'; // 다운로드 강제
+      a.click();
+    }
+  });
+</script>
 
 {{ end }}

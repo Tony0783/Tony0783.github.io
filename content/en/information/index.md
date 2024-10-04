@@ -1,10 +1,9 @@
 ---
 title: "Self-Introduction"
 date: 2024-03-25
-type: information  # Referencing the template for information
+type: landing
 
 sections:
-
   - block: features
     content:
       title: "Self-Introduction"

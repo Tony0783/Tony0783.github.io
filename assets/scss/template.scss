@@ -116,19 +116,16 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-/* 버튼 기본 스타일 */
-button {
+/* 헤더 기본 스타일 */
+.page-header {
   background-color: #4CAF50; /* 기본 배경색 */
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease; /* 부드러운 색 전환 */
+  padding: 10px;
+  transition: background-color 0.3s ease; /* 색상 전환 애니메이션 */
 }
 
-/* 마우스 호버 시 색 변경 */
-button:hover {
-  background-color: #45a049; /* 호버 시 배경색 */
+/* 마우스 호버 시 배경색 변경 */
+.page-header:hover {
+  background-color: #1693b9; /* 호버 시 배경색 */
 }
+

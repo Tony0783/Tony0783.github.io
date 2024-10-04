@@ -3,7 +3,6 @@ title: "Home Page"
 date: 2024-03-25
 type: landing
 
-
 sections:
 
   - block: features
@@ -53,39 +52,28 @@ sections:
       arrows: true
       autoplay: true
 
-  - block: features
+  - block: collection
     content:
       title: Education and Learning Courses
-      text: |
-        ### Web Service Design
-        Studying the structure and design of web services, and system architecture.
+      subtitle: Here are some of the key courses.
+      count: 3
+      filters:
+        folders:
+          - education
+      design:
+        view: card
+        columns: '3'
 
-        ### Computer Graphics
-        Learning 3D modeling and rendering techniques through theory and practice in computer graphics.
-
-        ### Software Engineering
-        Learning about software development processes, maintenance, and project management methodologies.
-
-        ### Information Retrieval
-        Studying the design of efficient information retrieval systems and related algorithms.
-    design:
-      background_color: "#ffffff"
-      padding: "50px"
-
-  - block: features
+  - block: collection
     content:
       title: Projects
-      text: |
-        ### News Article Auto-Crawling Project
-        Developed a system that automatically collects and analyzes news articles using Python and BeautifulSoup.
-
-        ### Bulletin Board Project
-        Implemented a bulletin board system where users can register, edit, and delete posts, including user authentication and authorization features.
-
-        ### To-Do List Management Application
-        Developed a mobile application with features for adding, deleting, and editing tasks in a to-do list.
-    design:
-      background_color: "#f0f8ff"
-      padding: "50px"
+      subtitle: Here are some of the major projects.
+      count: 3
+      filters:
+        folders:
+          - projects
+      design:
+        view: card
+        columns: '3'
 
 ---

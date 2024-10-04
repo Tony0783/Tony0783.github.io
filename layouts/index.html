@@ -1,8 +1,14 @@
 {{ define "main" }}
 <div class="section-container">
   
+  <!-- 언어 전환 아이콘 -->
+  <div style="text-align: right; padding: 10px;">
+    <a href="{{ .Lang | langURL }}" class="language-switcher">
+      <img src="/path/to/globe-icon.png" alt="Switch Language" style="cursor: pointer; width: 30px;">
+    </a>
+  </div>
 
-  <!-- 추가된 자기소개 요약본 섹션 -->
+  <!-- 한국어: 자기소개 요약본 섹션 -->
   <section id="summary" style="background-color: #e6f7ff; padding: 50px;">
     <h2>자기소개 요약본</h2>
     <p><strong>전북대학교 컴퓨터공학과 졸업 예정</strong></p>
@@ -11,6 +17,18 @@
     <ul>
       <li>블로그 플랫폼 개발: 댓글 기능, 검색 기능, 사용자 프로필 등록 기능 구현</li>
       <li>할 일 목록 앱 개발: 할 일 추가, 삭제, 수정 기능 구현</li>
+    </ul>
+  </section>
+
+  <!-- 영어: 자기소개 요약본 섹션 -->
+  <section id="summary" style="background-color: #e6f7ff; padding: 50px; display: none;">
+    <h2>Summary</h2>
+    <p><strong>Expected to graduate from Chonbuk National University, Department of Computer Science</strong></p>
+    <p>Programming Languages: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
+    <h3>Project Experience</h3>
+    <ul>
+      <li>Blog Platform Development: Implemented comment feature, search feature, and user profile registration.</li>
+      <li>To-Do List App Development: Implemented features for adding, deleting, and modifying tasks.</li>
     </ul>
   </section>
 
@@ -25,6 +43,14 @@
         <p><strong>학번:</strong> 2020</p>
       </div>
 
+      <!-- 영어: 1번 카드: Personal Information -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; display: none;">
+        <h3>Personal Information</h3>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Student ID:</strong> 2020</p>
+      </div>
+
       <!-- 2번 카드: 학교 소개 -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
         <h3>학교 소개</h3>
@@ -32,73 +58,86 @@
         <p><a href="https://www.jbnu.ac.kr/kor/" target="_blank" style="color: blue;">전북대학교 홈페이지</a></p>
       </div>
 
+      <!-- 영어: 2번 카드: School Introduction -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; display: none;">
+        <h3>School Introduction</h3>
+        <p>I am currently studying at Chonbuk National University.</p>
+        <p><a href="https://www.jbnu.ac.kr/eng/" target="_blank" style="color: blue;">Chonbuk National University Website</a></p>
+      </div>
+
       <!-- 3번 카드: 취미 -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
         <h3>취미</h3>
         <p>저의 취미는 탁구, 스키, 게임입니다.</p>
       </div>
+
+      <!-- 영어: 3번 카드: Hobbies -->
+      <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%; display: none;">
+        <h3>Hobbies</h3>
+        <p>My hobbies include table tennis, skiing, and gaming.</p>
+      </div>
     </div>
   </section>
 
-    <!-- 이미지 슬라이더 섹션 -->
-    <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
-      <div class="slider-container" style="max-width: 100%; position: relative;">
-        <!-- 슬라이더 이미지 -->
-        <div class="slides">
-          <img src="/images/slider1.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-          <img src="/images/slider2.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-          <img src="/images/slider3.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-          <img src="/images/slider4.jpg" style="width: 100%; height: auto; max-height: 1000px;">
-        </div>
-  
-        <!-- 이전 버튼 -->
-        <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
-  
-        <!-- 다음 버튼 -->
-        <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
+  <!-- 이미지 슬라이더 섹션 -->
+  <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
+    <div class="slider-container" style="max-width: 100%; position: relative;">
+      <!-- 슬라이더 이미지 -->
+      <div class="slides">
+        <img src="/images/slider1.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+        <img src="/images/slider2.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+        <img src="/images/slider3.jpg" style="width: 100%; height: auto; max-height: 1000px;">
+        <img src="/images/slider4.jpg" style="width: 100%; height: auto; max-height: 1000px;">
       </div>
-    </section>
   
-    <!-- 슬라이더 스크립트 -->
-    <script>
-      let slideIndex = 0;
-      const slides = document.querySelectorAll('.slides img');
-      const prev = document.querySelector('.prev');
-      const next = document.querySelector('.next');
+      <!-- 이전 버튼 -->
+      <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
   
-      // 슬라이드를 보여주는 함수
-      function showSlides() {
-        slides.forEach((slide, index) => {
-          slide.style.display = 'none';
-        });
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = 'block';
-        setTimeout(showSlides, 10000); // 10초마다 슬라이드 전환
+      <!-- 다음 버튼 -->
+      <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
+    </div>
+  </section>
+  
+  <!-- 슬라이더 스크립트 -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+  
+    // 슬라이드를 보여주는 함수
+    function showSlides() {
+      slides.forEach((slide) => {
+        slide.style.display = 'none';
+      });
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
       }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 10000); // 10초마다 슬라이드 전환
+    }
   
-      // 이전/다음 버튼 클릭 시 슬라이드를 변경하는 함수
-      function moveSlides(n) {
-        slideIndex += n;
-        if (slideIndex < 1) {
-          slideIndex = slides.length;
-        } else if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides.forEach((slide, index) => {
-          slide.style.display = 'none';
-        });
-        slides[slideIndex - 1].style.display = 'block';
+    // 이전/다음 버튼 클릭 시 슬라이드를 변경하는 함수
+    function moveSlides(n) {
+      slideIndex += n;
+      if (slideIndex < 1) {
+        slideIndex = slides.length;
+      } else if (slideIndex > slides.length) {
+        slideIndex = 1;
       }
+      slides.forEach((slide) => {
+        slide.style.display = 'none';
+      });
+      slides[slideIndex - 1].style.display = 'block';
+    }
   
-      prev.addEventListener('click', () => moveSlides(-1));
-      next.addEventListener('click', () => moveSlides(1));
+    prev.addEventListener('click', () => moveSlides(-1));
+    next.addEventListener('click', () => moveSlides(1));
   
-      // 슬라이더 실행
-      showSlides();
-    </script>
+    // 슬라이더 실행
+    showSlides();
+  </script>
 
   <!-- 교육 과정 섹션 -->
   <section id="education" style="background-color: #ffffff; padding: 50px;">

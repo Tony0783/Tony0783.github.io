@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "박태호의 포트폴리오"
 date: 2024-03-25
 type: portfolio  # 템플릿에서 정보를 참조하게 변경
 
@@ -9,6 +9,7 @@ sections:
       title: 박태호의 포트폴리오
       text: |
         박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
+
   - block: features
     id: features
     content:
@@ -32,4 +33,13 @@ sections:
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
         - name: Instruction
           icon: "fa-solid fa-file-pdf"
+
+  # PDF 다운로드 섹션 추가
+  - block: markdown
+    content:
+      title: 다운로드 안내
+      text: |
+        포트폴리오 instruction이 궁금하시면 [여기](https://example.com/files/instruction.pdf){:target="_blank"}를 클릭하여 다운로드하세요.
+    design:
+      columns: '1'
 ---

@@ -108,7 +108,6 @@ sections:
       view: community/custom_card
       columns: '2'
       
-    # Partial 호출
     text: |
       {{ range .Items }}
         {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
@@ -130,6 +129,7 @@ sections:
     design:
       view: community/custom_card
       columns: '2'
+
 
   - block: markdown
     content:

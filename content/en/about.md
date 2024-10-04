@@ -1,7 +1,7 @@
 ---
 title: ""
 date: 2024-03-25
-type: information  # 템플릿에서 정보를 참조하게 변경
+type: portfolio  # 템플릿에서 정보를 참조하게 변경
 
 sections:
   - block: features
@@ -32,6 +32,4 @@ sections:
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
         - name: Instruction
           icon: "fa-solid fa-file-pdf"
-          description: |
-            웹사이트 사용 지침을 다운로드하려면 [여기](/files/instruction.pdf)를 클릭하세요.
 ---

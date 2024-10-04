@@ -55,7 +55,6 @@ sections:
         link:
           icon: user
           icon_pack: fas
-          text: <span style="font-size:60%">Join Us</span>
           text-color: '#000'
           url: contact
 
@@ -92,7 +91,7 @@ sections:
           color: '#000'
 
     design:
-      slide_height: '350px'
+      slide_height: '550px'
       slide_width: '100%'
       is_fullscreen: false
       loop: true
@@ -102,25 +101,49 @@ sections:
 
   - block: collection
     content:
-      title: 교육 및 학습 과정
-      subtitle: 주요 학습 과정을 소개합니다.
+      id: section-1
+      title: Notifications & News
+      subtitle:
+      text:
       count: 3
+      offset: 0
+      order: desc
       filters:
         folders:
-          - education
-      design:
-        view: card
-        columns: '3'
+          - notification
+          - post
+          - event
+    design:
+      view: community/custom_card
+      columns: '2'
 
   - block: collection
     content:
-      title: 프로젝트
-      subtitle: 주요 프로젝트를 소개합니다.
+      title: Latest Publications
+      subtitle:
+      text:
       count: 3
       filters:
-        folders:
-          - projects
-      design:
-        view: card
-        columns: '3'
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: publication
+    design:
+      view: community/custom_card
+      columns: '2'
+    advanced:
+      css_style: "text-align: center;"
+
+  - block: markdown
+    content:
+      title:
+      subtitle:
+      text: |
+        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
+    design:
+      columns: '1'
 ---

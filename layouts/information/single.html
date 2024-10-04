@@ -3,7 +3,7 @@
 
   <!-- 왼쪽에 이미지 배치 -->
   <div class="profile-picture" style="flex: 1; text-align: center; padding-right: 20px;">
-    <img src="/images/avatar.jpg" alt="Profile Picture" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 350px; margin-top: 15px;"> <!-- 이미지 크기 확대 -->
+    <img src="/images/avatar.jpg" alt="Profile Picture" class="img-responsive" loading="lazy" style="border-radius: 50%; width: 350px; margin-top: 15px;">
   </div>
 
   <!-- 오른쪽에 자기소개 내용 배치 -->
@@ -14,7 +14,7 @@
     <!-- PDF 다운로드 섹션 -->
     <section id="download-section" style="margin-top: 50px;">
       <h3>웹사이트 사용 지침</h3>
-      <p><a href="/downloads/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
+      <p><a href="/files/instruction.pdf" id="download-link">여기</a>를 클릭하여 다운로드하세요.</p>
     </section>
 
   </div>
@@ -28,7 +28,7 @@
     const userConfirmed = confirm("파일을 다운로드 하시겠습니까?");
     if (userConfirmed) {
       const a = document.createElement('a');
-      a.href = '/downloads/instruction.pdf';
+      a.href = '/files/instruction.pdf';
       a.download = 'instruction.pdf'; // 다운로드 강제
       a.click();
     }

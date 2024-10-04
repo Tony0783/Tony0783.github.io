@@ -31,7 +31,8 @@ sections:
         - name: 깃허브
           icon: "fa-brands fa-git"
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
-        - name: 인공지능
-          icon: "fa-solid fa-brain"
-          description: 인공지능에 대한 기본적인 정보를 확인하세요.
+        - name: Instruction
+          icon: "fa-solid fa-file-pdf"
+          description: |
+            웹사이트 사용 지침을 다운로드하려면 [여기](/downloads/instruction.pdf)를 클릭하세요.
 ---

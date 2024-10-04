@@ -130,5 +130,9 @@ sections:
       view: community/custom_card
       columns: '2'
 
+    text: |
+      {{ range .Items }}
+        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+      {{ end }}
 
 ---

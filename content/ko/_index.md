@@ -131,16 +131,10 @@ sections:
       view: community/custom_card
       columns: '2'
 
-    # Partial 호출
-    text: |
-      {{ range .Items }}
-        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
-      {{ end }}
-
   - block: markdown
     content:
-      title:
-      subtitle:
+      title: Contact
+      subtitle: Join Us
       text: |
         {{% cta cta_link="./contact/" cta_text="Join team →" %}}
     design:

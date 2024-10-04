@@ -131,12 +131,4 @@ sections:
       columns: '2'
 
 
-  - block: markdown
-    content:
-      title: Contact
-      subtitle: Join Us
-      text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
-    design:
-      columns: '1'
 ---

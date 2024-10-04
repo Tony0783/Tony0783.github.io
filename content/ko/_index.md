@@ -1,104 +1,109 @@
 ---
-title: "홈 페이지"
+title: "Home Page"
 date: 2024-03-25
 type: landing
 ---
 
-{{< section class="section-container" >}}
-
-  <!-- 추가된 자기소개 요약본 섹션 -->
-  {{< section class="summary" background-color="#e6f7ff" padding="50px" >}}
-    <h2>자기소개 요약본</h2>
-    <p><strong>전북대학교 컴퓨터공학과 졸업 예정</strong></p>
-    <p>사용 가능 언어: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
-    <h3>프로젝트 경험</h3>
+<div class="section-container">
+  
+  <!-- Summary Section -->
+  <section id="summary" style="background-color: #e6f7ff; padding: 50px;">
+    <h2>Personal Summary</h2>
+    <p><strong>Expected Graduation: Computer Science, Chonbuk National University</strong></p>
+    <p>Languages: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
+    <h3>Project Experience</h3>
     <ul>
-      <li>블로그 플랫폼 개발: 댓글 기능, 검색 기능, 사용자 프로필 등록 기능 구현</li>
-      <li>할 일 목록 앱 개발: 할 일 추가, 삭제, 수정 기능 구현</li>
+      <li>Blog Platform Development: Implemented comment functionality, search feature, and user profile management.</li>
+      <li>To-Do List App Development: Developed functionality for adding, editing, and deleting tasks.</li>
     </ul>
-  {{< /section >}}
+  </section>
 
-  <!-- 자기소개 섹션 -->
-  {{< section class="intro" background-color="#f0f8ff" padding="50px" >}}
+  <!-- Introduction Section -->
+  <section id="intro" style="background-color: #f0f8ff; padding: 50px;">
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
-      <!-- 신상 정보 카드 -->
+      <!-- Personal Info Card -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>신상 정보</h3>
-        <p><strong>성별:</strong> 남</p>
-        <p><strong>나이:</strong> 22</p>
-        <p><strong>학번:</strong> 2020</p>
+        <h3>Personal Information</h3>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Student ID:</strong> 2020</p>
       </div>
-      <!-- 학교 소개 카드 -->
+      <!-- University Info Card -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>학교 소개</h3>
-        <p>저는 전북대학교에 재학 중입니다.</p>
-        <p><a href="https://www.jbnu.ac.kr/kor/" target="_blank" style="color: blue;">전북대학교 홈페이지</a></p>
+        <h3>University Information</h3>
+        <p>I am currently studying at Chonbuk National University.</p>
+        <p><a href="https://www.jbnu.ac.kr/kor/" target="_blank" style="color: blue;">Chonbuk National University Website</a></p>
       </div>
-      <!-- 취미 카드 -->
+      <!-- Hobbies Card -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>취미</h3>
-        <p>저의 취미는 탁구, 스키, 게임입니다.</p>
+        <h3>Hobbies</h3>
+        <p>My hobbies include table tennis, skiing, and gaming.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
-  <!-- 이미지 슬라이더 섹션 -->
-  {{< section class="slider" background-color="#f8f8f8" padding="50px" >}}
+  <!-- Image Slider Section -->
+  <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
     <div class="slider-container" style="max-width: 100%; position: relative;">
-      <!-- 슬라이더 이미지 -->
+      <!-- Slider Images -->
       <div class="slides">
         <img src="/images/slider1.jpg" style="width: 100%; height: auto; max-height: 1000px;">
         <img src="/images/slider2.jpg" style="width: 100%; height: auto; max-height: 1000px;">
         <img src="/images/slider3.jpg" style="width: 100%; height: auto; max-height: 1000px;">
         <img src="/images/slider4.jpg" style="width: 100%; height: auto; max-height: 1000px;">
       </div>
-      <!-- 이전 버튼 -->
+      <!-- Previous Button -->
       <a class="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10094;</a>
-      <!-- 다음 버튼 -->
+      <!-- Next Button -->
       <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
     </div>
-  {{< /section >}}
+  </section>
 
-  <!-- 교육 과정 섹션 -->
-  {{< section class="education" background-color="#ffffff" padding="50px" >}}
-    <h2>교육 및 학습 과정</h2>
+  <!-- Education Section -->
+  <section id="education" style="background-color: #ffffff; padding: 50px;">
+    <h2>Education and Learning Process</h2>
+
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>웹 서비스 설계</h3>
-        <p>웹 서비스의 구조와 설계, 시스템 아키텍처에 대해 공부하고 있습니다.</p>
+        <h3>Web Service Design</h3>
+        <p>Studying the structure and design of web services, and system architecture.</p>
       </div>
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>컴퓨터 그래픽스</h3>
-        <p>컴퓨터 그래픽스의 이론과 실습을 통해 3D 모델링과 렌더링 기법을 배우고 있습니다.</p>
+        <h3>Computer Graphics</h3>
+        <p>Learning 3D modeling and rendering techniques through theory and practice in computer graphics.</p>
       </div>
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>소프트웨어 공학</h3>
-        <p>소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론에 대해 학습 중입니다.</p>
+        <h3>Software Engineering</h3>
+        <p>Studying software development processes, maintenance, and project management methodologies.</p>
       </div>
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>정보 검색</h3>
-        <p>효율적인 정보 검색 시스템 설계와 관련 알고리즘을 배우고 있습니다.</p>
+        <h3>Information Retrieval</h3>
+        <p>Learning about the design of efficient information retrieval systems and related algorithms.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
-  <!-- 진행했던 프로젝트 섹션 -->
-  {{< section class="projects" background-color="#f0f8ff" padding="50px" >}}
-    <h2>진행했던 프로젝트</h2>
+  <!-- Project Section -->
+  <section id="projects" style="background-color: #f0f8ff; padding: 50px;">
+    <h2>Projects</h2>
+
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <!-- Project 1: News Article Crawling -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>뉴스 기사 자동 크롤링 프로젝트</h3>
-        <p>Python과 BeautifulSoup을 활용해 뉴스 기사 데이터를 자동으로 수집하고 분석하는 시스템 개발.</p>
+        <h3>News Article Crawling Project</h3>
+        <p>Developed a system using Python and BeautifulSoup to automatically collect and analyze news articles.</p>
       </div>
+      <!-- Project 2: Bulletin Board Development -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>게시판 만들기 프로젝트</h3>
-        <p>사용자가 게시물을 등록, 수정, 삭제할 수 있는 게시판을 구현. 사용자 인증 및 권한 관리 기능 포함.</p>
+        <h3>Bulletin Board Development Project</h3>
+        <p>Implemented a bulletin board where users can post, edit, and delete entries. Includes user authentication and permission management.</p>
       </div>
+      <!-- Project 3: To-Do List App -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
-        <h3>할 일 관리 애플리케이션</h3>
-        <p>할 일 목록 추가, 삭제, 편집 기능이 있는 모바일 애플리케이션 개발.</p>
+        <h3>To-Do List App</h3>
+        <p>Developed a mobile application with functionality for adding, deleting, and editing tasks.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
-{{< /section >}}
+</div>

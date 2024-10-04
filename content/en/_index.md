@@ -4,10 +4,10 @@ date: 2024-03-25
 type: landing
 ---
 
-{{< section class="section-container" >}}
-
+<div class="section-container">
+  
   <!-- Summary Section -->
-  {{< section class="summary" background-color="#e6f7ff" padding="50px" >}}
+  <section id="summary" style="background-color: #e6f7ff; padding: 50px;">
     <h2>Personal Summary</h2>
     <p><strong>Expected Graduation: Computer Science, Chonbuk National University</strong></p>
     <p>Languages: <strong>Java, C, C++, Python, JavaScript, HTML, C#</strong></p>
@@ -16,10 +16,10 @@ type: landing
       <li>Blog Platform Development: Implemented comment functionality, search feature, and user profile management.</li>
       <li>To-Do List App Development: Developed functionality for adding, editing, and deleting tasks.</li>
     </ul>
-  {{< /section >}}
+  </section>
 
   <!-- Introduction Section -->
-  {{< section class="intro" background-color="#f0f8ff" padding="50px" >}}
+  <section id="intro" style="background-color: #f0f8ff; padding: 50px;">
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
       <!-- Personal Info Card -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
@@ -40,10 +40,10 @@ type: landing
         <p>My hobbies include table tennis, skiing, and gaming.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
   <!-- Image Slider Section -->
-  {{< section class="slider" background-color="#f8f8f8" padding="50px" >}}
+  <section id="slider" style="background-color: #f8f8f8; padding: 50px;">
     <div class="slider-container" style="max-width: 100%; position: relative;">
       <!-- Slider Images -->
       <div class="slides">
@@ -57,11 +57,12 @@ type: landing
       <!-- Next Button -->
       <a class="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 18px; padding: 16px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); color: white;">&#10095;</a>
     </div>
-  {{< /section >}}
+  </section>
 
   <!-- Education Section -->
-  {{< section class="education" background-color="#ffffff" padding="50px" >}}
+  <section id="education" style="background-color: #ffffff; padding: 50px;">
     <h2>Education and Learning Process</h2>
+
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
         <h3>Web Service Design</h3>
@@ -80,11 +81,12 @@ type: landing
         <p>Learning about the design of efficient information retrieval systems and related algorithms.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
   <!-- Project Section -->
-  {{< section class="projects" background-color="#f0f8ff" padding="50px" >}}
+  <section id="projects" style="background-color: #f0f8ff; padding: 50px;">
     <h2>Projects</h2>
+
     <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
       <!-- Project 1: News Article Crawling -->
       <div class="card" style="border: 1px solid #ddd; padding: 20px; width: 30%;">
@@ -102,6 +104,6 @@ type: landing
         <p>Developed a mobile application with functionality for adding, deleting, and editing tasks.</p>
       </div>
     </div>
-  {{< /section >}}
+  </section>
 
-{{< /section >}}
+</div>

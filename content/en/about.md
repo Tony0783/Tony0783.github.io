@@ -34,5 +34,5 @@ sections:
         - name: Instruction
           icon: "fa-solid fa-file-pdf"
           description: |
-            웹사이트 사용 지침을 다운로드하려면 [여기](/downloads/instruction.pdf)를 클릭하세요.
+            웹사이트 사용 지침을 다운로드하려면 [여기](/files/instruction.pdf)를 클릭하세요.
 ---

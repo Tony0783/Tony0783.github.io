@@ -1,21 +1,19 @@
 ---
-title: "프로젝트 소개"
+title: "포트폴리오 소개"
 date: 2024-03-25
 type: landing
 
 sections:
   - block: features
     content:
-      title: 박태호의 프로젝트 포트폴리오
+      title: 박태호의 포트폴리오
       text: |
-        박태호님의 주요 프로젝트들을 소개합니다. 각 프로젝트의 상세 설명을 통해 구현한 기술들을 확인할 수 있습니다.
+        박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트들을 소개합니다.
 
   - block: features
-    id: project_overview
+    id: project_list
     content:
-      title: 주요 프로젝트
-      text: |
-        박태호님이 수행한 대표적인 프로젝트들입니다.
+      title: 프로젝트 리스트
       items:
         - name: 블로그 플랫폼 개발
           image: images/blog_platform.jpg
@@ -31,8 +29,52 @@ sections:
             Flutter를 활용하여 사용자가 할 일을 추가, 수정, 삭제할 수 있는 모바일 애플리케이션을 개발했습니다. Firebase와 연동하여 데이터를 실시간으로 관리할 수 있으며, 사용자 인증 기능도 구현되었습니다.
 
     design:
-      layout: vertical  # 세로로 나열되도록 설정
       spacing:
-        padding: ['20px', '0', '20px', '0']
+        padding: ['40px', '0', '40px', '0']
+        gap: '40px'
+      layout: list
+      layout_style: flex
+      list_layout: vertical
+
+    css_class: vertical-projects  # CSS 클래스를 추가해 flexbox 스타일 적용
+
 ---
 
+<style>
+  .vertical-projects .items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vertical-projects .items > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .vertical-projects .items img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .vertical-projects .items h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .vertical-projects .items p {
+    font-size: 16px;
+    text-align: center;
+  }
+</style>

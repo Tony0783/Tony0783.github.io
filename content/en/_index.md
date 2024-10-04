@@ -1,7 +1,7 @@
 ---
 title: "Home Page"
 date: 2024-03-25
-type: landing
+type: homepage
 ---
 
 <div class="section-container">

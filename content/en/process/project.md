@@ -36,45 +36,6 @@ sections:
       layout_style: flex
       list_layout: vertical
 
-    css_class: vertical-projects  # CSS 클래스를 추가해 flexbox 스타일 적용
 
 ---
 
-<style>
-  .vertical-projects .items {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .vertical-projects .items > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .vertical-projects .items img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .vertical-projects .items h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .vertical-projects .items p {
-    font-size: 16px;
-    text-align: center;
-  }
-</style>

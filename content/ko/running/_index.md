@@ -1,6 +1,6 @@
 ---
 title: running
-view: community/custom_compact
+view: community/custom_card
 
 banner:
   caption: ''

@@ -16,34 +16,34 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
-# 개인 정보 카드 섹션
+  # 개인 정보 카드 섹션
   - block: collection
     content:
-    title: 개인 정보
-    items:
-      - name: "개인 정보"
-        description: |
-          **성별:** 남성  
-          **나이:** 23  
-          **학번:** 2020
-      - name: "학교 정보"
-        description: |
-          전북대학교에서 공부 중입니다.  
-          [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/)
-      - name: "취미"
-        description: |
-          취미는 탁구, 스키, 게임입니다.
+      title: 개인 정보
+      items:
+        - name: "개인 정보"
+          description: |
+            **성별:** 남성  
+            **나이:** 23  
+            **학번:** 2020
+        - name: "학교 정보"
+          description: |
+            전북대학교에서 공부 중입니다.  
+            [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/)
+        - name: "취미"
+          description: |
+            취미는 탁구, 스키, 게임입니다.
     design:
-    view: custom_interactive_card
-    columns: '3'
-    background_color: "#f0f8ff"
-    padding: "50px"
-    layout: list
-    list_layout: vertical
+      view: custom_interactive_card
+      columns: '3'
+      background_color: "#f0f8ff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
     text: |
-    {{ range .Items }}
-      {{ partial "custom_interactive_card.html" (dict "title" .name "description" .description "link" .link) }}
-    {{ end }}
+      {{ range .Items }}
+        {{ partial "custom_interactive_card.html" (dict "title" .name "description" .description "link" .link) }}
+      {{ end }}
 
   # 이미지 슬라이더 섹션
   - block: slider

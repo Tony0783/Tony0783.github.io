@@ -15,6 +15,24 @@ sections:
     design:
       background_color: "#e6f7ff"
       padding: "50px"
+       # 커스텀 카드 뷰를 사용하는 섹션
+  - block: collection
+    content:
+      id: section-1
+      title: 현재 학습 중인 내용
+      count: 4
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - learning
+    design:
+      view: custom_card
+      columns: '2'
+    text: |
+      {{ range .Items }}
+        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+      {{ end }}
 
   # 개인 정보 카드 섹션
   - block: features
@@ -133,5 +151,25 @@ sections:
       padding: "50px"
       layout: list
       list_layout: vertical
+    # 다른 커스텀 카드 뷰를 사용하는 섹션
+  - block: collection
+    content:
+      id: section-2
+      title: 완료된 프로젝트
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - projects
+    design:
+      view: custom_compact
+      columns: '3'
+    text: |
+      {{ range .Items }}
+        {{ partial "custom_compact.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+      {{ end }}
+
+---
 
 ---

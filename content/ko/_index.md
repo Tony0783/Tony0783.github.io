@@ -17,7 +17,7 @@ sections:
       padding: "50px"
 
   # 개인 정보 카드 섹션
-  - block: collection
+  - block: features
     content:
       title: 개인 정보
       items:

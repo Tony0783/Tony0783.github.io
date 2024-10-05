@@ -143,9 +143,9 @@ sections:
       order: desc
       filters:
         folders:
-          - copy
-          - software
-          - service
+          - running
+          - ski
+          - game
     design:
       view: community/custom_card
       columns: '1'

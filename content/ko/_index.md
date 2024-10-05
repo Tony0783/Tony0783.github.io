@@ -135,7 +135,7 @@ sections:
 
   - block: collection
     content:
-      id: section-1 
+      id: section-2 
       count: 3
       offset: 0
       order: desc
@@ -143,6 +143,7 @@ sections:
         folders:
           - running
           - ski
+          - game
     design:
       view: community/custom_card
       columns: '1'

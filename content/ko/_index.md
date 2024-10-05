@@ -129,6 +129,7 @@ sections:
           - notification
           - post
           - event
+          - crawl
     design:
       view: community/custom_card
       columns: '1'

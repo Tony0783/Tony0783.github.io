@@ -118,7 +118,6 @@ sections:
       layout: list
       list_layout: vertical
 
-  # 알림 및 뉴스 섹션
   - block: collection
     content:
       id: section-1 
@@ -134,26 +133,16 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  # 출판물 컬렉션 섹션
   - block: collection
     content:
-      count: 10
+      id: section-1 
+      count: 3
       offset: 0
+      order: desc
       filters:
         folders:
           - running
-        tag: ''
-        category: ''
-        publication_type: ''
-        author: ''
-        featured_only: false
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-      sort_by: 'Date'
-      sort_ascending: false
     design:
       view: community/card
       columns: '1'
-      title_align: left
 ---

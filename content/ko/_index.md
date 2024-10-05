@@ -18,26 +18,21 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
-  # 개인 정보 카드 섹션
-  - block: features
+  - block: collection
     content:
-      title: 개인 정보
-      items:
-        - name: "개인 정보"
-          description: |
-            **성별:** 남성  
-            **나이:** 23  
-            **학번:** 2020
-        - name: "학교 정보"
-          description: |
-            전북대학교에서 공부 중입니다.  
-            [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/)
-        - name: "취미"
-          description: |
-            취미는 탁구, 스키, 게임입니다.
+      id: section-1 
+      count: 6
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - graphic
+          - software
+          - service
+          - crawl
     design:
-      view: custom_compact_card
-      columns: '3'
+      view: community/custom_card
+      columns: '1'
 
   # 이미지 슬라이더 섹션
   - block: slider
@@ -120,7 +115,7 @@ sections:
 
   - block: collection
     content:
-      id: section-1 
+      id: section-2 
       count: 6
       offset: 0
       order: desc
@@ -137,7 +132,7 @@ sections:
 
   - block: collection
     content:
-      id: section-2
+      id: section-3
       count: 6
       offset: 0
       order: desc

@@ -1,6 +1,4 @@
 <head>
-    <meta property="og:image" content="https://tony0783.github.io/images/kakao.jpg">
-    <meta name="twitter:image" content="https://tony0783.github.io/images/kakao.jpg">
-
-  </head>
-  
+    <meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.opengraphImage }}{{ end }}">
+    <meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.opengraphImage }}{{ end }}">
+</head>

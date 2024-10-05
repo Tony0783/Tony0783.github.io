@@ -146,5 +146,5 @@ sections:
           - game
     design:
       view: community/custom_card
-      columns: '1'
+      columns: '2'
 ---

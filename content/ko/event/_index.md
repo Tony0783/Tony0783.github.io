@@ -1,4 +1,11 @@
 ---
-title: "Example Event"
-summary: "이것은 예시 이벤트입니다."
+title: Recent & Upcoming Events
+
+# Listing view
+view: compact
+
+# Optional header image (relative to `assets/media/` folder).
+banner:
+  caption: ''
+  image: ''
 ---

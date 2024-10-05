@@ -15,44 +15,36 @@ sections:
     design:
       background_color: "#e6f7ff"
       padding: "50px"
- 
-  # 개인 정보 카드 섹션
+
+  # 개인 정보 카드 섹션 (collection으로 변경)
   - block: collection
     content:
-      id: section-1
+      id: personal_info
       title: 개인 정보
-      count : 3
-      offset: 0
-      ordere : desc
-      filters :
-        folders:
-          - learning
-    design:
-      vies: custom_card
-      columns: '2'
-      text: |
-      {{ range .Items }}
-        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
-      {{ end }}
-
       items:
         - name: "개인 정보"
           description: |
             **성별:** 남성  
             **나이:** 23  
             **학번:** 2020
+          link: ""
         - name: "학교 정보"
           description: |
             전북대학교에서 공부 중입니다.  
             [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/)
+          link: "https://www.jbnu.ac.kr/kor/"
         - name: "취미"
           description: |
             취미는 탁구, 스키, 게임입니다.
+          link: ""
     design:
-      background_color: "#f0f8ff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
+      view: custom_card
+      columns: '3'
+    text: |
+      {{ range .Items }}
+        {{ partial "custom_card.html" (dict "title" .name "description" .description "link" .link) }}
+      {{ end }}
+
 
   # 이미지 슬라이더 섹션
   - block: slider
@@ -148,23 +140,5 @@ sections:
       padding: "50px"
       layout: list
       list_layout: vertical
-    # 다른 커스텀 카드 뷰를 사용하는 섹션
-  - block: collection
-    content:
-      id: section-2
-      title: 완료된 프로젝트
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - projects
-    design:
-      view: custom_compact
-      columns: '3'
-    text: |
-      {{ range .Items }}
-        {{ partial "custom_compact.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
-      {{ end }}
 
 ---

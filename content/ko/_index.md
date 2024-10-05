@@ -17,7 +17,7 @@ sections:
       padding: "50px"
 
   # 개인 정보 카드 섹션
-  - block: features
+  - block: collection
     content:
       title: 개인 정보
       items:
@@ -34,6 +34,8 @@ sections:
           description: |
             취미는 탁구, 스키, 게임입니다.
     design:
+      view: custom_interactive_card
+      columns: '3'
       background_color: "#f0f8ff"
       padding: "50px"
       layout: list

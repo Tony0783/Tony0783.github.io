@@ -134,21 +134,40 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  - block: collection
+
+  # Put Your Section Options Here (title, background, etc.) ...
+    title: My playlist
+    subtitle: ''
+
+  # Position of this section on the page
+    weight: 40
+
     content:
-      title: Latest Publications
-      subtitle:
-      text:
-      count: 3
-      filters:
-        folders: 
-          - ski
-      offset: 0
-      order: desc
-      page_type: publication
+    # Filter content to display
+    filters:
+      # The folders to display content from
+      folders:
+        - running
+      tag: ''
+      category: ''
+      publication_type: ''
+      author: ''
+      featured_only: false
+      exclude_featured: false
+      exclude_future: false
+      exclude_past: false
+    # Choose how many pages you would like to display (0 = all pages)
+    count: 10
+    # Choose how many pages you would like to offset by
+    # Useful if you wish to show the first item in the Featured widget
+    offset: 0
+    # Field to sort by, such as Date or Title
+    sort_by: 'Date'
+    sort_ascending: false
     design:
-      view: community/custom_compact
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
+    # Choose a listing view
+    view: community/card
+    # Choose how many columns the section has. Valid values: '1' or '2'.
+    columns: '1'
+    title_align: left 
 ---

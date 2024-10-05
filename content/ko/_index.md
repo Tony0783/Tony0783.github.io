@@ -123,8 +123,5 @@ sections:
     content:
       id: personal_info
       title: 사이트 내용
-    design:
-      view: custom_card
-      columns: '3'
 
 ---

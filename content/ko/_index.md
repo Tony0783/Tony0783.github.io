@@ -135,7 +135,7 @@ sections:
       columns: '2'
 
 
-    title: My playlist
+  - block: collection
     subtitle: ''
     weight: 40
     content:

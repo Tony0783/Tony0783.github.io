@@ -1,7 +1,7 @@
 ---
 title: "Homepage"
 date: 2024-03-25
-type: page
+type: landing
 featured_image: "/images/kakao.jpg"
 
 sections:

@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: "박태호의 포트폴리오"
+title: "전북대 박태호"
 baseURL: "https://tony0783.github.io/"
 
 ############################

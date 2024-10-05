@@ -121,14 +121,13 @@ sections:
   # 알림 및 뉴스 섹션
   - block: collection
     content:
-      id: section-1
-      title: Notifications & News
+      id: section-1 
       count: 3
       offset: 0
       order: desc
       filters:
         folders:
-          - running
+          - notification
           - post
           - event
     design:
@@ -138,7 +137,6 @@ sections:
   # 출판물 컬렉션 섹션
   - block: collection
     content:
-      title: Latest Publications
       count: 10
       offset: 0
       filters:

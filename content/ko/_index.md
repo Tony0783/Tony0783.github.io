@@ -1,5 +1,5 @@
 ---
-title: "홈페이지"
+title: "전북대 박태호"
 date: 2024-03-25
 type: landing
 

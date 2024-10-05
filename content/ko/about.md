@@ -1,16 +1,12 @@
 ---
-title: "박태호의 포트폴리오"
+title: "전북대 박태호"
 date: 2024-03-25
-# 배너 이미지 설정
-type : landing
-banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'book.jpg'  
+type: landing
 
 sections:
   - block: features
     content:
-      title: 박태호의 포트폴리오
+      title: 전북대 박태호
       text: |
         박태호의 개인 포트폴리오입니다. 이 포트폴리오에서는 지금까지 진행했던 프로젝트, 자기소개, 학습 과정, 목표 등을 다룰 예정입니다.
 

@@ -135,15 +135,15 @@ sections:
 
   - block: collection
     content:
-      id: section-2 
+      id: section-1 
       count: 3
       offset: 0
       order: desc
       filters:
         folders:
-          - running
-          - ski
-          - game
+          - notification
+          - post
+          - event
     design:
       view: community/custom_card
       columns: '2'

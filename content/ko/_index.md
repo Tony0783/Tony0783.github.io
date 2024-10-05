@@ -110,11 +110,15 @@ sections:
           description: "소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론을 학습 중입니다."
         - name: "정보 검색"
           description: "효율적인 정보 검색 시스템 설계와 관련 알고리즘에 대해 배우고 있습니다."
+      title: 인공지능 논문
+      text: |
+        인공지능에 대해 더 알고싶다면 [여기](https://ettrends.etri.re.kr/ettrends/185/0905185011/35-5_123-133.pdf) 를 클릭하세요. 
     design:
       background_color: "#ffffff"
       padding: "50px"
       layout: list
       list_layout: vertical
+  
 
   # 진행할 내용 (collection 섹션 수정)
   - block: collection

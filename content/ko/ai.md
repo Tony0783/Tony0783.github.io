@@ -1,7 +1,9 @@
 ---
 title: "AI 관련 뉴스"
 date: 2024-10-04
-type: landing
+banner:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  image: 'book.jpg'  
 
 sections:    
   - block: features
@@ -28,11 +30,4 @@ sections:
       layout_style: flex
       list_layout: vertical
 
-
-  # PDF 다운로드 안내 추가
-  - block: features
-    content:
-      title: 인공지능 논문
-      text: |
-        인공지능에 대해 더 알고싶다면 [여기](https://ettrends.etri.re.kr/ettrends/185/0905185011/35-5_123-133.pdf) 를 클릭하세요. 
 ---

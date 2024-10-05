@@ -2,7 +2,10 @@
 title: "박태호의 포트폴리오"
 date: 2024-03-25
 type: landing
-featured_image: "images/book.jpg"   
+# 배너 이미지 설정
+banner:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  image: 'images/book.jpg'  # 이미지 경로 (static/images/book.jpg로 경로가 연결됨) 
 
 sections:
   - block: features

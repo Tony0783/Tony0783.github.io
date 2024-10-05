@@ -32,7 +32,11 @@ sections:
           icon: "fa-brands fa-git"
           description: 박태호의 지금까지 진행한 프로젝트를 GitHub에서 확인하세요.
         - name: 대학교
-          icon: "fa-duotone fa-solid fa-graduation-cap"  # 수정된 부분
+          icon: "fa-duotone fa-solid fa-graduation-cap"
+          description: |
+            박태호가 재학 중인 전북대학교에 대한 정보를 확인하세요. <br>
+            <a href="/pdf/university-brochure-2022.pdf" download>대학교 요람 PDF 다운로드</a>
+
 
 
 ---

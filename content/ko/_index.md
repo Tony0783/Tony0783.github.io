@@ -143,6 +143,6 @@ sections:
         folders:
           - running
     design:
-      view: community/card
+      view: community/custom_card
       columns: '1'
 ---

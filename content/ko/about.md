@@ -2,7 +2,7 @@
 title: "박태호의 포트폴리오"
 date: 2024-03-25
 # 배너 이미지 설정
-type : page
+type : post
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
   image: 'book.jpg'  

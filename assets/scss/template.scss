@@ -3,8 +3,6 @@
 
 body {
   background-color: rgb(148, 194, 224);
-  color: #d199bb; /* 텍스트 색상 */
-
 }
 
 .article-container {
@@ -37,7 +35,6 @@ body {
 
 // no navbar shadow
 .navbar {
-  color: #5fa3db; /* 텍스트 색상 */
   box-shadow: none !important; // 'important' to override dark mode box-shadow too.
 }
 

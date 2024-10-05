@@ -4,7 +4,7 @@ date: 2024-03-25
 type: landing
 featured_image: "/images/kakao.jpg"
 description: "전북대학교 박태호 포트폴리오"
-opengraphImage: "/images/kakao.jpg"
+opengraphImage: "https://tony0783.github.io/images/kakao.jpg"
 
 sections:
 

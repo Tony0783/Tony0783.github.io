@@ -1,9 +1,9 @@
 {
-  "name": "My Portfolio",
-  "short_name": "My Portfolio",
-  "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "name": "전북대 박태호 사이트 (한국어)",
+  "short_name": "전북대 박태호 사이트 (한국어)",
+  "lang": "ko",
+  "theme_color": "#1565c0",
+  "background_color": "#1565c0",
   "icons": [{
     "src": "/media/icon_hu11662094479751350503.png",
     "sizes": "192x192",

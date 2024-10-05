@@ -1,22 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ens | My Portfolio</title>
-    <link>https://example.com/en/</link>
-      <atom:link href="https://example.com/en/index.xml" rel="self" type="application/rss+xml" />
-    <description>Ens</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Sep 2024 21:01:57 +0900</lastBuildDate>
+    <title>Homepage | Park Taeho, Chonbuk National UniversitySite (English)</title>
+    <link>http://localhost:1313/en/</link>
+      <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <description>Homepage</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu11734318148517933569.png</url>
-      <title>Ens</title>
-      <link>https://example.com/en/</link>
+      <url>http://localhost:1313/media/icon_hu11734318148517933569.png</url>
+      <title>Homepage</title>
+      <link>http://localhost:1313/en/</link>
     </image>
     
     <item>
-      <title>Team</title>
-      <link>https://example.com/en/about/team/</link>
-      <pubDate>Mon, 30 Sep 2024 21:01:57 +0900</pubDate>
-      <guid>https://example.com/en/about/team/</guid>
+      <title>Contact</title>
+      <link>http://localhost:1313/en/contact/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Curriculum</title>
+      <link>http://localhost:1313/en/process/curriculum/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/process/curriculum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio Introduction</title>
+      <link>http://localhost:1313/en/process/project/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/process/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Introduction</title>
+      <link>http://localhost:1313/en/information/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taeho Park&#39;s Portfolio</title>
+      <link>http://localhost:1313/en/about/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preparing</title>
+      <link>http://localhost:1313/en/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/ai/</guid>
       <description></description>
     </item>
     

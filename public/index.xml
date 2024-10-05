@@ -1,30 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Portfolio</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-    <description>My Portfolio</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Sep 2024 21:01:57 +0900</lastBuildDate>
+    <title>전북대 박태호 | 전북대 박태호 사이트 (한국어)</title>
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <description>전북대 박태호</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ko</language><lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu11734318148517933569.png</url>
-      <title>My Portfolio</title>
-      <link>https://example.com/</link>
+      <url>http://localhost:1313/media/icon_hu11734318148517933569.png</url>
+      <title>전북대 박태호</title>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
-      <title>Team</title>
-      <link>https://example.com/en/about/team/</link>
-      <pubDate>Mon, 30 Sep 2024 21:01:57 +0900</pubDate>
-      <guid>https://example.com/en/about/team/</guid>
+      <title></title>
+      <link>http://localhost:1313/process/curriculum/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/process/curriculum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Team</title>
-      <link>https://example.com/ko/about/team/</link>
-      <pubDate>Mon, 30 Sep 2024 21:00:49 +0900</pubDate>
-      <guid>https://example.com/ko/about/team/</guid>
+      <title>연락처</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>전북대 박태호</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>포트폴리오 소개</title>
+      <link>http://localhost:1313/process/project/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/process/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Publication</title>
+      <link>http://localhost:1313/publications/example-publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/example-publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자기소개</title>
+      <link>http://localhost:1313/information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/information/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>준비중</title>
+      <link>http://localhost:1313/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/</guid>
       <description></description>
     </item>
     

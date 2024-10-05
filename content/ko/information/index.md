@@ -1,6 +1,6 @@
 ---
 title: "자기소개"
-date: 2024-03-
+date: 2024-03-25
 type: landing
 
 sections:

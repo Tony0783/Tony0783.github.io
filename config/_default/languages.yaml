@@ -1,10 +1,12 @@
 ko:
   contentDir: "content/ko"
   languageCode: "ko"
+  weight : 1
   title: "전북대 박태호 사이트 (한국어)"
 en:
   contentDir: "content/en"
   languageCode: "en"
+  weight : 2
   title: "Park Taeho, Chonbuk National UniversitySite (English)"
 
 

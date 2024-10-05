@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | My Portfolio</title>
-    <link>https://example.com/authors/</link>
-      <atom:link href="https://example.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <title>Authors | 전북대 박태호 사이트 (한국어)</title>
+    <link>http://localhost:1313/authors/</link>
+      <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ko</language>
     <image>
-      <url>https://example.com/media/icon_hu11734318148517933569.png</url>
+      <url>http://localhost:1313/media/icon_hu11734318148517933569.png</url>
       <title>Authors</title>
-      <link>https://example.com/authors/</link>
+      <link>http://localhost:1313/authors/</link>
     </image>
     
   </channel>

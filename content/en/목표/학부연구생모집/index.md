@@ -1,5 +1,5 @@
 ---
-title: Goal
+title: Career and Goals
 
 date: 2024-03-29
 ---

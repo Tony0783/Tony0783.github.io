@@ -8,9 +8,8 @@ sections:
   # Summary Section
   - block: features
     content:
-      title: Summary
       text: |
-        **Expected to graduate from Jeonbuk National University with a degree in Computer Science**  
+        **Expected to graduate from Chonbuk National University with a major in Computer Science**  
         Languages used: **Java, C, C++, Python, JavaScript, HTML, C#**
     design:
       background_color: "#e6f7ff"
@@ -21,23 +20,21 @@ sections:
     content:
       title: Personal Information
       items:
-        - name: "Personal Information"
+        - name: "Personal Info"
           description: |
             **Gender:** Male  
             **Age:** 23  
             **Student ID:** 2020
         - name: "School Information"
           description: |
-            Currently studying at Jeonbuk National University.  
-            [Jeonbuk National University Website](https://www.jbnu.ac.kr/kor/)
+            Studying at Chonbuk National University.  
+            [Chonbuk National University Website](https://www.jbnu.ac.kr/kor/)
         - name: "Hobbies"
           description: |
             Hobbies include table tennis, skiing, and gaming.
     design:
-      background_color: "#f0f8ff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
+      view: custom_compact_card
+      columns: '3'
 
   # Image Slider Section
   - block: slider
@@ -60,7 +57,7 @@ sections:
           url: contact
 
       - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">AI technology development</span>
+        content: <span style="font-size:70%">AI Technology Development</span>
         align: center
         background:
           image:
@@ -101,35 +98,36 @@ sections:
   # Learning Content Card Section
   - block: features
     content:
-      title: Current Learning Topics
+      title: Current Learning Content
       items:
         - name: "Web Service Design"
-          description: "Studying the structure and design of web services, as well as system architecture."
+          description: "Studying the structure and design of web services, including system architecture."
         - name: "Computer Graphics"
-          description: "Learning about computer graphics theory, including 3D modeling and rendering techniques."
+          description: "Learning about the theory of computer graphics, including 3D modeling and rendering techniques."
         - name: "Software Engineering"
           description: "Studying software development processes, maintenance, and project management methodologies."
         - name: "Information Retrieval"
-          description: "Learning about the design of efficient information retrieval systems and related algorithms."
+          description: "Learning about designing efficient information retrieval systems and related algorithms."
     design:
       background_color: "#ffffff"
       padding: "50px"
       layout: list
       list_layout: vertical
 
-  # Completed Projects Card Section
-  - block: features
+  # Site Content Section (collection section)
+  - block: collection
     content:
-      title: Completed Projects
+      id: site_content
+      title: Site Content
       items:
-        - name: "Blog Platform Development"
-          description: "Developed a blog platform using Django and React, including features like comments, user authentication, etc."
-        - name: "To-Do Management Application"
-          description: "Developed a mobile application using Flutter for managing to-do lists."
-        - name: "News Article Auto Crawling"
-          description: "Developed a system using Python and BeautifulSoup to automatically collect and analyze news articles."
+        - name: "Site Overview"
+          description: "Describes the main content and features of the site."
+        - name: "Learning Content"
+          description: "Summarizes materials related to the current learning process."
     design:
-      background_color: "#f8f8ff"
+      view: custom_card
+      columns: '2'
+      background_color: "#e6f7ff"
       padding: "50px"
       layout: list
       list_layout: vertical

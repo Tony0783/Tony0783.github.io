@@ -8,7 +8,6 @@ sections:
   # 요약 섹션
   - block: features
     content:
-      title: 요약
       text: |
         **전북대학교 컴퓨터공학과 졸업 예정**  
         사용 언어: **Java, C, C++, Python, JavaScript, HTML, C#**

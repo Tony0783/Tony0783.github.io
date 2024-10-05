@@ -127,8 +127,5 @@ sections:
     design:
       view: custom_card
       columns: '3'
-    text: |
-      {{ range .Items }}
-        {{ partial "custom_card.html" (dict "title" .name "description" .description "link" .link) }}
-      {{ end }}
+
 ---

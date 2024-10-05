@@ -129,35 +129,23 @@ sections:
           - notification
           - post
           - event
-          - crawl
     design:
       view: community/custom_card
       columns: '1'
 
 
   - block: collection
-    subtitle: ''
-    weight: 40
     content:
-      text: "여기에 텍스트를 추가하세요."  # 텍스트 필드 추가
+      id: section-2
+      count: 6
+      offset: 0
+      order: desc
       filters:
         folders:
           - running
-        tag: ''
-        category: ''
-        publication_type: ''
-        author: ''
-        featured_only: false
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-      count: 10
-      offset: 0
-      sort_by: 'Date'
-      sort_ascending: false
+          - ski
+          - game
     design:
-      view: community/card
+      view: community/custom_compact
       columns: '1'
-      title_align: left
-
 ---

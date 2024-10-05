@@ -109,6 +109,7 @@ extensions:
   academicons:
     enable: true
 
+  ogImage: "kakao.png"  # 여기에 경로에 있는 대표 이미지 파일을 지정
 # Citation style
 
 publications:

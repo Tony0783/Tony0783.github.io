@@ -136,16 +136,19 @@ sections:
 
   - block: collection
     content:
-      id: section-2 
+      title: Latest Publications
+      subtitle:
+      text:
       count: 3
+      filters:
+        folders: 
+          - ski
       offset: 0
       order: desc
-      filters:
-        folders:
-          - running
-          - ski
-          - game
+      page_type: publication
     design:
       view: community/custom_card
       columns: '2'
+    advanced:
+      css_style: "text-align: center;"
 ---

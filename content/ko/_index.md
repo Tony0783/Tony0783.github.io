@@ -147,7 +147,7 @@ sections:
       order: desc
       page_type: publication
     design:
-      view: community/custom_card
+      view: community/custom_compact
       columns: '2'
     advanced:
       css_style: "text-align: center;"

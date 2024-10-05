@@ -16,7 +16,7 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
-  # 개인 정보 카드 섹션
+  # 개인 정보 카드 섹션 (들여쓰기 수정)
   - block: features
     content:
       title: 개인 정보
@@ -34,14 +34,12 @@ sections:
           description: |
             취미는 탁구, 스키, 게임입니다.
     design:
-    view: custom_interactive_card
-    columns: '3'
-    background_color: "#f0f8ff"
-    padding: "50px"
-    layout: list
-    list_layout: vertical
-
-
+      view: custom_interactive_card  # 올바르게 들여쓰기 수정
+      columns: '3'
+      background_color: "#f0f8ff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
   # 이미지 슬라이더 섹션
   - block: slider
@@ -121,10 +119,22 @@ sections:
       layout: list
       list_layout: vertical
 
-  #진행할 내용
+  # 진행할 내용 (collection 섹션 수정)
   - block: collection
     content:
-      id: personal_info
+      id: site_content
       title: 사이트 내용
+      items:
+        - name: "사이트 개요"
+          description: "사이트의 주요 내용과 기능들을 설명합니다."
+        - name: "학습 내용"
+          description: "현재 학습 중인 과정과 관련된 자료를 정리합니다."
+    design:
+      view: custom_card
+      columns: '2'
+      background_color: "#e6f7ff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
 ---

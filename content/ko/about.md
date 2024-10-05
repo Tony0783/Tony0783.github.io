@@ -5,7 +5,7 @@ type: landing
 # 배너 이미지 설정
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'images/book.jpg'  # 이미지 경로 (static/images/book.jpg로 경로가 연결됨) 
+  image: 'book.jpg'  
 
 sections:
   - block: features

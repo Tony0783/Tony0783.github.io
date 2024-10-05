@@ -1,5 +1,5 @@
 ---
-title: 컴퓨터 그래픽스
+title: Computer Graphics
 
 date: 2024-03-29
 ---

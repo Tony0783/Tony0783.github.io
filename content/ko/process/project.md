@@ -25,11 +25,13 @@ sections:
           description: |
             Flutter를 활용하여 사용자가 할 일을 추가, 수정, 삭제할 수 있는 모바일 애플리케이션을 개발했습니다. Firebase와 연동하여 데이터를 실시간으로 관리할 수 있으며, 사용자 인증 기능도 구현되었습니다.
 
-    design:
-      spacing:
-        padding: ['40px', '0', '40px', '0']
-        gap: '40px'
-      layout: list
-      layout_style: flex
-      list_layout: vertical
+design:
+  spacing:
+    padding: ['40px', '0', '40px', '0']
+    gap: '40px'
+  layout: list
+  layout_style: flex
+  list_layout: vertical
+  text_align: justify  # 양쪽 정렬을 적용
+
 ---

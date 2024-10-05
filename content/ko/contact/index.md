@@ -12,7 +12,7 @@ sections:
       design:
         spacing:
           padding: ['40px', '0', '40px', '0']
-        text_align: center
+        text_align: justify
         font_size: '2rem'
 
   - block: features
@@ -32,7 +32,7 @@ sections:
         font_size: '1.5rem'
         spacing:
           padding: ['20px', '0', '20px', '0']
-        text_align: center
+        text_align: justify
 
   - block: features
     id: address
@@ -46,7 +46,7 @@ sections:
         font_size: '1.5rem'
         spacing:
           padding: ['20px', '0', '20px', '0']
-        text_align: center
+        text_align: justify
 
   - block: markdown
     content:

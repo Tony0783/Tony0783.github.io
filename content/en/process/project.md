@@ -32,4 +32,5 @@ sections:
       layout: list
       layout_style: flex
       list_layout: vertical
+      text_align: justify
 ---

@@ -1,21 +1,20 @@
 ---
-title: "Taeho Park's Portfolio"
+title: "Taeho Park, Jeonbuk National University"
 date: 2024-03-25
 type: landing
 
 sections:
   - block: features
     content:
-      title: "Taeho Park's Portfolio"
+      title: "Taeho Park, Jeonbuk National University"
       text: |
-        This is the personal portfolio of Taeho Park. In this portfolio, I will cover the projects I have worked on, my self-introduction, learning processes, and goals.
+        This is the personal portfolio of Taeho Park from Jeonbuk National University. In this portfolio, I will cover the projects I have worked on, my self-introduction, learning processes, and goals.
 
   - block: features
     id: features
     content:
       title: "Portfolio Composition"
-      text: |
-        The portfolio of Taeho Park consists of the following items:<br><br>
+      text: Taeho Park's portfolio consists of the following items:<br><br>
       items:
         - name: Projects
           icon: "fa-solid fa-code"
@@ -28,7 +27,7 @@ sections:
           description: "Check out basic information about artificial intelligence."
         - name: Information
           icon: "fa-solid fa-info"
-          description: "Check out contact information and basic information about Taeho Park."
+          description: "Check out contact information and basic details about Taeho Park."
         - name: GitHub
           icon: "fa-brands fa-git"
           description: "Check out the projects Taeho Park has worked on so far on GitHub."

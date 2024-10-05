@@ -1,13 +1,10 @@
-en:
-  languageName: "English"
-  weight: 1
-  contentDir: "content/en"
-  languageCode: "en"
-  title: "Park Taeho, Chonbuk National University Site (English)"
-
 ko:
-  languageName: "Korean"
-  weight: 2
   contentDir: "content/ko"
   languageCode: "ko"
   title: "전북대 박태호 사이트 (한국어)"
+en:
+  contentDir: "content/en"
+  languageCode: "en"
+  title: "Park Taeho, Chonbuk National UniversitySite (English)"
+
+

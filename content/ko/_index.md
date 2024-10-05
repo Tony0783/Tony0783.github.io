@@ -123,7 +123,6 @@ sections:
           - graphic
           - software
           - service
-          - crawl
     design:
       view: community/custom_card
       columns: '1'

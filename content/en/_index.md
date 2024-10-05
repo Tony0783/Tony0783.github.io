@@ -117,22 +117,35 @@ sections:
       layout: list
       list_layout: vertical
 
-  # Site Content Section (collection section)
   - block: collection
     content:
-      id: site_content
-      title: Site Content
-      items:
-        - name: "Site Overview"
-          description: "Describes the main content and features of the site."
-        - name: "Learning Content"
-          description: "Summarizes materials related to the current learning process."
+      id: section-2 
+      count: 6
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - graphic
+          - software
+          - service
     design:
-      view: custom_card
-      columns: '2'
-      background_color: "#e6f7ff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
+      view: community/custom_card
+      columns: '1'
+
+
+  - block: collection
+    content:
+      id: section-3
+      count: 6
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - running
+          - ski
+          - game
+    design:
+      view: community/custom_card
+      columns: '1'
 
 ---

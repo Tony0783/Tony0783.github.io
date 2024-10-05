@@ -1,4 +1,19 @@
 <head>
-    <meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.opengraphImage }}{{ end }}">
-    <meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.opengraphImage }}{{ end }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="https://tony0783.github.io/images/kakao.jpg">
+    <meta property="og:description" content="{{ .Params.description | default .Site.Params.siteDescription }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Params.description | default .Site.Params.siteDescription }}">
+    <meta name="twitter:image" content="https://tony0783.github.io/images/kakao.jpg">
 </head>

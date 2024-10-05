@@ -143,10 +143,10 @@ sections:
       order: desc
       filters:
         folders:
-          - running
-          - ski
-          - game
+          - graphic
+          - software
+          - service
     design:
-      view: community/card2
+      view: community/custom_card
       columns: '1'
 ---

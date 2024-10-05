@@ -23,6 +23,7 @@ params:
   siteTitle: "전북대학교 박태호"
   siteDescription: "전북대학교 박태호 포트폴리오입니다."
   siteKeywords: "전북대, 박태호, 전북대학교, 포트폴리오"
+  opengraphImage: "book.jpg"
 
 ############################
 ## ADVANCED

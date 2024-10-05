@@ -118,7 +118,7 @@ sections:
       list_layout: vertical
 
   # 진행할 내용 (collection 섹션 수정)
-  - block: collection
+  - block: features
     content:
       id: site_content
       title: 사이트 내용

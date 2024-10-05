@@ -26,10 +26,9 @@ sections:
       order: desc
       filters:
         folders:
-          - graphic
-          - software
-          - service
-          - crawl
+          - 개인정보
+          - 학교
+          - 목표
     design:
       view: community/custom_card
       columns: '1'

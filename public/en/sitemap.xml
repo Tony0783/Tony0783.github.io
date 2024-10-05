@@ -80,19 +80,6 @@
                 href="http://localhost:1313/en/information/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/about/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -127,18 +114,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/notification/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/ai/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/ai/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/publication_types/</loc>

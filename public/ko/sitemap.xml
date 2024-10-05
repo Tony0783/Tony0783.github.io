@@ -2,6 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/notification/</loc>
+    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/notification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/notification/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/notification/%ED%95%99%EB%B6%80%EC%97%B0%EA%B5%AC%EC%83%9D%EB%AA%A8%EC%A7%91/</loc>
+    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/process/curriculum/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -41,6 +57,19 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
+    <loc>http://localhost:1313/information/</loc>
+    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/information/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/information/"
+                />
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -56,16 +85,6 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/about/"
-                />
   </url><url>
     <loc>http://localhost:1313/process/project/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
@@ -79,6 +98,30 @@
                 hreflang="ko"
                 href="http://localhost:1313/process/project/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/event/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/running/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/running/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9A%A9/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9A%A9/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/event/%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/crawl/</loc>
+  </url><url>
+    <loc>http://localhost:1313/game/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ski/</loc>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
     <xhtml:link
@@ -103,22 +146,6 @@
                 hreflang="ko"
                 href="http://localhost:1313/categories/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/event/</loc>
-  </url><url>
-    <loc>http://localhost:1313/notification/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/notification/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/notification/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
   </url><url>
     <loc>http://localhost:1313/publications/example-publication/</loc>
   </url><url>
@@ -148,28 +175,6 @@
                 href="http://localhost:1313/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/information/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/information/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/information/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ai/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/ai/"
-                />
   </url>
 </urlset>

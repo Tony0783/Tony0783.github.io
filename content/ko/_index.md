@@ -124,22 +124,51 @@ sections:
       list_layout: vertical
   
 
-  # 진행할 내용 (collection 섹션 수정)
   - block: collection
     content:
-      id: site_content
-      title: 사이트 내용
-      items:
-        - name: "사이트 개요"
-          description: "사이트의 주요 내용과 기능들을 설명합니다."
-        - name: "학습 내용"
-          description: "현재 학습 중인 과정과 관련된 자료를 정리합니다."
+      id: section-1
+      title: Notifications & News
+      subtitle:
+      text:
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - notification
+          - post
+          - event
     design:
-      view: custom_card
+      view: community/custom_card
       columns: '2'
-      background_color: "#e6f7ff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
+
+    content:
+    # Filter content to display
+    filters:
+      # The folders to display content from
+      folders:
+        - running
+      tag: ''
+      category: ''
+      publication_type: ''
+      author: ''
+      featured_only: false
+      exclude_featured: false
+      exclude_future: false
+      exclude_past: false
+    # Choose how many pages you would like to display (0 = all pages)
+    count: 10
+    # Choose how many pages you would like to offset by
+    # Useful if you wish to show the first item in the Featured widget
+    offset: 0
+    # Field to sort by, such as Date or Title
+    sort_by: 'Date'
+    sort_ascending: false
+  design:
+    # Choose a listing view
+    view: community/card
+    # Choose how many columns the section has. Valid values: '1' or '2'.
+    columns: '1'
+    title_align: left
 
 ---

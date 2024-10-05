@@ -1,5 +1,11 @@
 ---
-title: "Example Notification"
-summary: "이것은 예시 알림입니다."
+title: Notifications
 
+# Listing view
+view: community/custom_card
+
+# Optional header image (relative to `assets/media/` folder).
+banner:
+  caption: ''
+  image: 'recruitment.jpg'
 ---

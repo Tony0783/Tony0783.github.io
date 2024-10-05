@@ -5,40 +5,44 @@ type: landing
 
 sections:
 
+  # Summary Section
   - block: features
     content:
       title: Summary
       text: |
         **Expected to graduate from Jeonbuk National University with a degree in Computer Science**  
         Languages used: **Java, C, C++, Python, JavaScript, HTML, C#**
-
     design:
       background_color: "#e6f7ff"
       padding: "50px"
 
+  # Personal Information Card Section
   - block: features
     content:
-      title: Introduction
-      text: |
-        ### Personal Information
-        **Gender:** Male  
-        **Age:** 22  
-        **Student ID:** 2020
-
-        ### School Information
-        Currently studying at Jeonbuk National University.  
-        [Jeonbuk National University Website](https://www.jbnu.ac.kr/kor/){:target="_blank"}
-
-        ### Hobbies
-        Hobbies include table tennis, skiing, and gaming.
+      title: Personal Information
+      items:
+        - name: "Personal Information"
+          description: |
+            **Gender:** Male  
+            **Age:** 23  
+            **Student ID:** 2020
+        - name: "School Information"
+          description: |
+            Currently studying at Jeonbuk National University.  
+            [Jeonbuk National University Website](https://www.jbnu.ac.kr/kor/)
+        - name: "Hobbies"
+          description: |
+            Hobbies include table tennis, skiing, and gaming.
     design:
       background_color: "#f0f8ff"
       padding: "50px"
+      layout: list
+      list_layout: vertical
 
+  # Image Slider Section
   - block: slider
     content:
       slides:
-
       - title: <span style="font-size:70%">Recruit</span>
         content: <span style="font-size:70%">Coding</span>
         align: center
@@ -94,51 +98,40 @@ sections:
       loop: true
       interval: 3000
 
-  - block: collection
+  # Learning Content Card Section
+  - block: features
     content:
-      id: section-1
-      title: Notifications & News
-      subtitle:
-      text:
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
+      title: Current Learning Topics
+      items:
+        - name: "Web Service Design"
+          description: "Studying the structure and design of web services, as well as system architecture."
+        - name: "Computer Graphics"
+          description: "Learning about computer graphics theory, including 3D modeling and rendering techniques."
+        - name: "Software Engineering"
+          description: "Studying software development processes, maintenance, and project management methodologies."
+        - name: "Information Retrieval"
+          description: "Learning about the design of efficient information retrieval systems and related algorithms."
     design:
-      view: community/custom_card
-      columns: '2'
+      background_color: "#ffffff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
-  - block: collection
+  # Completed Projects Card Section
+  - block: features
     content:
-      title: Latest Publications
-      subtitle:
-      text:
-      count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: publication
+      title: Completed Projects
+      items:
+        - name: "Blog Platform Development"
+          description: "Developed a blog platform using Django and React, including features like comments, user authentication, etc."
+        - name: "To-Do Management Application"
+          description: "Developed a mobile application using Flutter for managing to-do lists."
+        - name: "News Article Auto Crawling"
+          description: "Developed a system using Python and BeautifulSoup to automatically collect and analyze news articles."
     design:
-      view: community/custom_card
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
+      background_color: "#f8f8ff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./contact/" cta_text="Join team →" %}}
-    design:
-      columns: '1'
 ---

@@ -5,6 +5,7 @@ type: landing
 
 sections:
 
+  # 요약 섹션
   - block: features
     content:
       title: 요약
@@ -15,25 +16,30 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
+  # 개인 정보 카드 섹션
   - block: features
     content:
-      title: 소개
-      text: |
-        ### 개인 정보
-        **성별:** 남성  
-        **나이:** 22  
-        **학번:** 2020
-
-        ### 학교 정보
-        현재 전북대학교에서 공부 중입니다.  
-        [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/){:target="_blank"}
-
-        ### 취미
-        취미는 탁구, 스키, 게임입니다.
+      title: 개인 정보
+      items:
+        - name: "개인 정보"
+          description: |
+            **성별:** 남성  
+            **나이:** 23  
+            **학번:** 2020
+        - name: "학교 정보"
+          description: |
+            전북대학교에서 공부 중입니다.  
+            [전북대학교 웹사이트](https://www.jbnu.ac.kr/kor/)
+        - name: "취미"
+          description: |
+            취미는 탁구, 스키, 게임입니다.
     design:
       background_color: "#f0f8ff"
       padding: "50px"
+      layout: list
+      list_layout: vertical
 
+  # 이미지 슬라이더 섹션
   - block: slider
     content:
       slides:
@@ -54,7 +60,7 @@ sections:
           url: contact
 
       - title: <span style="font-size:70%">AI</span>
-        content: <span style="font-size:70%">AI 기술 개발<span style="font-size:70%">
+        content: <span style="font-size:70%">AI 기술 개발</span>
         align: center
         background:
           image:
@@ -92,47 +98,40 @@ sections:
       loop: true
       interval: 3000
 
-  - block: collection
+  # 학습 내용 카드 섹션
+  - block: features
     content:
-      id: section-1
-      title: Notifications & News
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
+      title: 현재 학습 중인 내용
+      items:
+        - name: "웹 서비스 설계"
+          description: "웹 서비스의 구조와 설계, 시스템 아키텍처에 대해 학습 중입니다."
+        - name: "컴퓨터 그래픽스"
+          description: "컴퓨터 그래픽스의 이론과 3D 모델링, 렌더링 기법을 배우고 있습니다."
+        - name: "소프트웨어 공학"
+          description: "소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론을 학습 중입니다."
+        - name: "정보 검색"
+          description: "효율적인 정보 검색 시스템 설계와 관련 알고리즘에 대해 배우고 있습니다."
     design:
-      view: community/custom_card
-      columns: '2'
-      
-    text: |
-      {{ range .Items }}
-        {{ partial "card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
-      {{ end }}
+      background_color: "#ffffff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
-  - block: collection
+  # 진행했던 프로젝트 카드 섹션
+  - block: features
     content:
-      id: section-1
-      title: Notifications & News
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
+      title: 진행했던 프로젝트
+      items:
+        - name: "블로그 플랫폼 개발"
+          description: "Django와 React를 사용해 댓글 기능, 사용자 인증 등 기능이 포함된 블로그 플랫폼을 개발했습니다."
+        - name: "할 일 관리 애플리케이션"
+          description: "Flutter를 활용하여 할 일 목록을 관리할 수 있는 모바일 앱을 개발했습니다."
+        - name: "뉴스 기사 자동 크롤링"
+          description: "Python과 BeautifulSoup을 사용해 뉴스 기사를 자동으로 수집하고 분석하는 시스템을 개발했습니다."
     design:
-      view: community/custom_card
-      columns: '2'
-
-    text: |
-      {{ range .Items }}
-        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "image" .Params.image "link" .RelPermalink) }}
-      {{ end }}
----
+      background_color: "#f8f8ff"
+      padding: "50px"
+      layout: list
+      list_layout: vertical
 
 ---

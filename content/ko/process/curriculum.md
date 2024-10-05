@@ -1,7 +1,9 @@
 ---
 title: "교과과정"
 date: 2024-03-25
-type: landing
+banner:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
+  image: 'oldcomputer.jpg'
 
 sections:
   - block: markdown

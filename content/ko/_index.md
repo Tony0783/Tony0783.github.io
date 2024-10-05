@@ -142,6 +142,7 @@ sections:
       filters:
         folders:
           - running
+          - ski
     design:
       view: community/custom_card
       columns: '1'

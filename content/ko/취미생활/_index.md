@@ -1,5 +1,5 @@
 ---
-title: running
+title: 취미생활
 view: community/custom_card
 
 banner:

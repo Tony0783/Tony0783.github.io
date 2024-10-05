@@ -146,6 +146,6 @@ sections:
           - ski
           - game
     design:
-      view: community/custom_compact
+      view: community/card2
       columns: '1'
 ---

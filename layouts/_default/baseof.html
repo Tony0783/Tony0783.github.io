@@ -4,6 +4,16 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    {{ .Content }}
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+
+    <main role="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
   </body>
 </html>

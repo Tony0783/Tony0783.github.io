@@ -15,24 +15,6 @@ sections:
     design:
       background_color: "#e6f7ff"
       padding: "50px"
-       # 커스텀 카드 뷰를 사용하는 섹션
-  - block: collection
-    content:
-      id: section-1
-      title: 현재 학습 중인 내용
-      count: 4
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - learning
-    design:
-      view: custom_card
-      columns: '2'
-    text: |
-      {{ range .Items }}
-        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
-      {{ end }}
 
   # 개인 정보 카드 섹션
   - block: features
@@ -135,27 +117,11 @@ sections:
       layout: list
       list_layout: vertical
 
-  # 진행했던 프로젝트 카드 섹션
-  - block: features
-    content:
-      title: 진행했던 프로젝트
-      items:
-        - name: "블로그 플랫폼 개발"
-          description: "Django와 React를 사용해 댓글 기능, 사용자 인증 등 기능이 포함된 블로그 플랫폼을 개발했습니다."
-        - name: "할 일 관리 애플리케이션"
-          description: "Flutter를 활용하여 할 일 목록을 관리할 수 있는 모바일 앱을 개발했습니다."
-        - name: "뉴스 기사 자동 크롤링"
-          description: "Python과 BeautifulSoup을 사용해 뉴스 기사를 자동으로 수집하고 분석하는 시스템을 개발했습니다."
-    design:
-      background_color: "#f8f8ff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
-    # 다른 커스텀 카드 뷰를 사용하는 섹션
+  # 진행했던 프로젝트 카드 섹션 (커스텀 뷰 적용)
   - block: collection
     content:
-      id: section-2
-      title: 완료된 프로젝트
+      id: section-1
+      title: 진행했던 프로젝트
       count: 3
       offset: 0
       order: desc
@@ -163,13 +129,11 @@ sections:
         folders:
           - projects
     design:
-      view: custom_compact
-      columns: '3'
+      view: custom_card
+      columns: '2'
     text: |
       {{ range .Items }}
-        {{ partial "custom_compact.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
+        {{ partial "custom_card.html" (dict "title" .Title "description" .Summary "link" .RelPermalink) }}
       {{ end }}
-
----
 
 ---

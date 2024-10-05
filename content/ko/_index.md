@@ -121,7 +121,7 @@ sections:
   - block: collection
     content:
       id: section-1 
-      count: 3
+      count: 4
       offset: 0
       order: desc
       filters:
@@ -136,7 +136,7 @@ sections:
 
   - block: collection
     content:
-      id: section-1 
+      id: section-2 
       count: 3
       offset: 0
       order: desc

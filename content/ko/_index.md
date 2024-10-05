@@ -30,7 +30,7 @@ sections:
           - 학교
           - 목표
     design:
-      view: community/custom_card
+      view: community/custom_compact
       columns: '1'
 
   # 이미지 슬라이더 섹션
@@ -90,27 +90,6 @@ sections:
       is_fullscreen: false
       loop: true
       interval: 3000
-
-  # 학습 내용 카드 섹션
-  - block: features
-    content:
-      title: 현재 학습 중인 내용
-      items:
-        - name: "웹 서비스 설계"
-          description: "웹 서비스의 구조와 설계, 시스템 아키텍처에 대해 학습 중입니다."
-        - name: "컴퓨터 그래픽스"
-          description: "컴퓨터 그래픽스의 이론과 3D 모델링, 렌더링 기법을 배우고 있습니다."
-        - name: "소프트웨어 공학"
-          description: "소프트웨어 개발 프로세스와 유지보수, 프로젝트 관리 방법론을 학습 중입니다."
-        - name: "정보 검색"
-          description: "효율적인 정보 검색 시스템 설계와 관련 알고리즘에 대해 배우고 있습니다."
-      text: |
-        인공지능에 대해 더 알고싶다면 [여기](https://ettrends.etri.re.kr/ettrends/185/0905185011/35-5_123-133.pdf) 를 클릭하세요. 
-    design:
-      background_color: "#ffffff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
 
   - block: collection
     content:

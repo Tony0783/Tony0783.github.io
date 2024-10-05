@@ -30,7 +30,7 @@ sections:
           - 학교
           - 목표
     design:
-      view: community/custom_card
+      view: community/custom_compact
       columns: '1'
 
   # Image Slider Section
@@ -105,7 +105,7 @@ sections:
           - software
           - service
     design:
-      view: community/custom_card
+      view: community/custom_card2
       columns: '1'
 
 

@@ -121,7 +121,7 @@ sections:
   - block: collection
     content:
       id: section-1 
-      count: 4
+      count: 6
       offset: 0
       order: desc
       filters:
@@ -132,7 +132,7 @@ sections:
           - crawl
     design:
       view: community/custom_card
-      columns: '2'
+      columns: '1'
 
 
   - block: collection

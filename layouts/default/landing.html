@@ -1,0 +1,8 @@
+{{ if .Params.banner }}
+  <div class="banner">
+    <img src="{{ .Params.banner.image }}" alt="Banner Image">
+    {{ if .Params.banner.caption }}
+      <p>{{ .Params.banner.caption }}</p>
+    {{ end }}
+  </div>
+{{ end }}

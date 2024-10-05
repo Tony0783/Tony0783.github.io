@@ -143,7 +143,7 @@ sections:
       order: desc
       filters:
         folders:
-          - graphic
+          - copy
           - software
           - service
     design:

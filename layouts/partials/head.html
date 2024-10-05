@@ -7,7 +7,7 @@
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="https://tony0783.github.io/images/kakao.jpg">
+    <meta property="og:image" content="{{ .Params.opengraphImage | default .Site.Params.opengraphImage }}">
     <meta property="og:description" content="{{ .Params.description | default .Site.Params.siteDescription }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
   
@@ -15,9 +15,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ .Title }}">
     <meta name="twitter:description" content="{{ .Params.description | default .Site.Params.siteDescription }}">
-    <meta name="twitter:image" content="https://tony0783.github.io/images/kakao.jpg">
-  
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <meta name="twitter:image" content="{{ .Params.opengraphImage | default .Site.Params.opengraphImage }}">
   </head>
   

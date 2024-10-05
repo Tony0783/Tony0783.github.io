@@ -6,9 +6,9 @@ type: landing
 sections:
   - block: features
     content:
-      title: 박태호의 연락처
+      title: 전북대 박태호의 연락처
       text: |
-        박태호의 개인 연락처입니다. 이 포트폴리오에서 궁금하신 점이나 관심 있으신 내용이 있으면 아래로 연락주시면 감사드리겠습니다.
+        전북대 박태호의 개인 연락처입니다. 이 포트폴리오에서 궁금하신 점이나 관심 있으신 내용이 있으면 아래로 연락주시면 감사드리겠습니다.
       design:
         spacing:
           padding: ['40px', '0', '40px', '0']
@@ -40,7 +40,7 @@ sections:
       title: 학교
       items:
         - name: 주소
-          description: 전북대학교 공과대학 7호관 626호, 전주시, 전라북도, 54896, 대한민국
+          description: 전북대 공과대학 7호관 626호, 전주시, 전라북도, 54896, 대한민국
 
       design:
         font_size: '1.5rem'

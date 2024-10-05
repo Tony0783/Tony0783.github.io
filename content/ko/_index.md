@@ -17,7 +17,7 @@ sections:
       padding: "50px"
 
   # 개인 정보 카드 섹션 (커스텀 뷰 적용)
-  - block: collection
+  - block: features
     content:
       id: personal_info
       title: 개인 정보
@@ -133,7 +133,7 @@ sections:
       list_layout: vertical
 
   # 진행했던 프로젝트 카드 섹션 (커스텀 뷰 적용)
-  - block: collection
+  - block: features
     content:
       id: projects
       title: 진행했던 프로젝트

@@ -1,7 +1,8 @@
 ---
 title: "박태호의 포트폴리오"
 date: 2024-03-25
-type: landing 
+type: landing
+featured_image: "images/book.jpg"   
 
 sections:
   - block: features

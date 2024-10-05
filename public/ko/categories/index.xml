@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories | 나의 포트폴리오</title>
+    <link>https://example.com/ko/categories/</link>
+      <atom:link href="https://example.com/ko/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ko-kr</language>
+    <image>
+      <url>https://example.com/media/icon_hu11734318148517933569.png</url>
+      <title>Categories</title>
+      <link>https://example.com/ko/categories/</link>
+    </image>
+    
+  </channel>
+</rss>

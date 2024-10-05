@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Portfolio</title>
+    <link>https://example.com/</link>
+      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>My Portfolio</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Sep 2024 21:01:57 +0900</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu11734318148517933569.png</url>
+      <title>My Portfolio</title>
+      <link>https://example.com/</link>
+    </image>
+    
+    <item>
+      <title>Team</title>
+      <link>https://example.com/en/about/team/</link>
+      <pubDate>Mon, 30 Sep 2024 21:01:57 +0900</pubDate>
+      <guid>https://example.com/en/about/team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>https://example.com/ko/about/team/</link>
+      <pubDate>Mon, 30 Sep 2024 21:00:49 +0900</pubDate>
+      <guid>https://example.com/ko/about/team/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

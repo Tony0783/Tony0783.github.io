@@ -1,10 +1,11 @@
 ---
 title: "AI 관련 뉴스"
+view: community/custom_compact
+
 banner:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
   image: 'book.jpg'
 
-# 단순화된 구조로 수정
 ai_news:
   title: "최신 AI 뉴스 리스트"
   items:

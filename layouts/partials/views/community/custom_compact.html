@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ .Title }}</h1>
+        <img src="{{ .Params.banner.image | relURL }}" alt="Banner Image">
+        <p>{{ .Params.banner.caption | markdownify }}</p>
+    </header>
+
+    <section>
+        <h2>{{ .Params.ai_news.title }}</h2>
+        <ul>
+            {{ range .Params.ai_news.items }}
+            <li>
+                <strong>{{ .name }}</strong><br>
+                <p>{{ .description | markdownify }}</p>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+</body>
+</html>

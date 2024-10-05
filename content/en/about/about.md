@@ -32,6 +32,10 @@ sections:
           icon: "fa-brands fa-git"
           description: Check out the projects taeho Park has worked on so far on GitHub.
         - name: University
-          icon: "fa-duotone fa-solid fa-graduation-cap"  
+          icon: "fa-duotone fa-solid fa-graduation-cap"
+          description: |
+          Check out information about Jeonbuk National University, where Taehho Park is currently studying. <br>
+          <a href="/pdf/university-brochure-2022.pdf" download>Download University Brochure PDF</a>
+  
 
 ---

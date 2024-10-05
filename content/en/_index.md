@@ -18,26 +18,20 @@ sections:
       background_color: "#e6f7ff"
       padding: "50px"
 
-  # Personal Information Card Section
-  - block: features
+  - block: collection
     content:
-      title: Personal Information
-      items:
-        - name: "Personal Info"
-          description: |
-            **Gender:** Male  
-            **Age:** 23  
-            **Student ID:** 2020
-        - name: "School Information"
-          description: |
-            Studying at Chonbuk National University.  
-            [Chonbuk National University Website](https://www.jbnu.ac.kr/kor/)
-        - name: "Hobbies"
-          description: |
-            Hobbies include table tennis, skiing, and gaming.
+      id: section-1 
+      count: 6
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - 개인정보
+          - 학교
+          - 목표
     design:
-      view: custom_compact_card
-      columns: '3'
+      view: community/custom_card
+      columns: '1'
 
   # Image Slider Section
   - block: slider
@@ -98,24 +92,6 @@ sections:
       loop: true
       interval: 3000
 
-  # Learning Content Card Section
-  - block: features
-    content:
-      title: Current Learning Content
-      items:
-        - name: "Web Service Design"
-          description: "Studying the structure and design of web services, including system architecture."
-        - name: "Computer Graphics"
-          description: "Learning about the theory of computer graphics, including 3D modeling and rendering techniques."
-        - name: "Software Engineering"
-          description: "Studying software development processes, maintenance, and project management methodologies."
-        - name: "Information Retrieval"
-          description: "Learning about designing efficient information retrieval systems and related algorithms."
-    design:
-      background_color: "#ffffff"
-      padding: "50px"
-      layout: list
-      list_layout: vertical
 
   - block: collection
     content:

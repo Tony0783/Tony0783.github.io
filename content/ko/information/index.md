@@ -9,9 +9,8 @@ sections:
     content:
       text: |
         <img src="/images/avatar.jpg" alt="Profile Picture" style="border-radius: 50%; width: 350px; margin-top: 15px;" loading="lazy">
-
     design:
-      text_align: center
+      text_align: justify 
 
 
   - block: features

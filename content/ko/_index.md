@@ -128,7 +128,7 @@ sections:
       order: desc
       filters:
         folders:
-          - notification
+          - running
           - post
           - event
     design:

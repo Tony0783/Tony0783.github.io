@@ -1,32 +1,34 @@
-# [Hugo Portfolio Theme](https://github.com/wowchemy/starter-hugo-portfolio-theme)
+# Taeho Park's Portfolio
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+The **Portfolio of Taeho Park** showcases projects in web development and artificial intelligence, as well as the learning processes and goals achieved during my studies.
 
-The **Hugo Portfolio Template** empowers you to easily create a portfolio website. Make it your own by choosing a color theme and grid layout!
+️This portfolio includes various **web development projects**, **AI-related research**, and an overview of my skills and accomplishments.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+![Visit Portfolio](https://tony0783.github.io/)
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+## About the Portfolio
 
-[Check out the latest demo](https://hugo-portfolio-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+This portfolio is built using the Hugo static site generator. It demonstrates various projects, learning experiences, and future goals. The site is fully customizable, and I will continue to update it with more content.
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+### Contents
+- **Projects**: Detailed descriptions of web and AI projects.
+- **Learning Process**: Overview of programming, data analysis, and AI-related learning paths.
+- **AI Information**: Basic information and insights into AI.
+- **Contact**: Contact details and additional information about me.
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## How to Run
 
-## We ask you, humbly, to support this open source movement
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/your-github-username/your-repository-name.git
+    ```
+2. Navigate to the project directory and start the Hugo server:
+    ```bash
+    cd your-repository-name
+    hugo server
+    ```
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+## Contact
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+For more information or collaboration, please visit my portfolio or contact me through [GitHub](https://github.com/tony0783) or email at `qazwsx11006@naver.com`.
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)

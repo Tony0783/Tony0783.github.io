@@ -141,9 +141,9 @@ sections:
       order: desc
       filters:
         folders:
-          - notification
-          - post
-          - event
+          - running
+          - ski
+          - game
     design:
       view: community/custom_card
       columns: '2'

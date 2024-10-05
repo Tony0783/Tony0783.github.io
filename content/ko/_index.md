@@ -126,9 +126,9 @@ sections:
       order: desc
       filters:
         folders:
-          - notification
-          - post
-          - event
+          - graphic
+          - software
+          - service
           - crawl
     design:
       view: community/custom_card

@@ -39,7 +39,7 @@ header:
     show_search: true
     highlight_active_link: false
     logo:
-      filename: "icon.png"  # 로고 이미지 경로
+      filename: "images/kakao.png"  # 로고 이미지 경로
 
 # Site footer
 

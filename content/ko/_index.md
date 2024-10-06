@@ -125,6 +125,6 @@ sections:
           - ski
           - game
     design:
-      view: community/custom_card
+      view: community/custom_card2
       columns: '1'
 ---

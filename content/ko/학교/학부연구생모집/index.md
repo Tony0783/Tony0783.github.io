@@ -1,5 +1,6 @@
 ---
-title: 학교
+title: 전북대학교
+subtitle : 박태호
 
 date: 2024-03-29
 ---

@@ -38,6 +38,8 @@ header:
     show_day_night: true
     show_search: true
     highlight_active_link: false
+    logo:
+      filename: "icon.png"  # 로고 이미지 경로
 
 # Site footer
 
@@ -108,8 +110,6 @@ extensions:
     local_backend: false
   academicons:
     enable: true
-
-  ogImage: "kakao.png"  # 여기에 경로에 있는 대표 이미지 파일을 지정
 # Citation style
 
 publications:

@@ -15,8 +15,14 @@ sections:
         **전북대학교 컴퓨터공학과 졸업 예정**  
         사용 언어: **Java, C, C++, Python, JavaScript, HTML, C#**
     design:
-      background_color: "#e6f7ff"
-      padding: "50px"
+      spacing:
+        padding: ['40px', '0', '40px', '0']
+        gap: '40px'
+      layout: list
+      layout_style: flex
+      list_layout: vertical
+      text_align: justify  # 양쪽 정렬을 적용
+
 
   - block: collection
     content:
@@ -103,7 +109,7 @@ sections:
           - software
           - service
     design:
-      view: community/custom_card2
+      view: community/custom_card
       columns: '1'
 
 

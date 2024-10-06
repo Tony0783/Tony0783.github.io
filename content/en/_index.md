@@ -14,9 +14,15 @@ sections:
       text: |
         **Expected to graduate from Chonbuk National University with a major in Computer Science**  
         Languages used: **Java, C, C++, Python, JavaScript, HTML, C#**
-    design:
-      background_color: "#e6f7ff"
-      padding: "50px"
+        design:
+      spacing:
+        padding: ['40px', '0', '40px', '0']
+        gap: '40px'
+      layout: list
+      layout_style: flex
+      list_layout: vertical
+      text_align: justify  # 양쪽 정렬을 적용
+
 
   - block: collection
     content:
@@ -28,7 +34,7 @@ sections:
         folders:
           - 개인정보
           - 학교
-          - 목표
+          - 진로 및 목표
     design:
       view: community/custom_compact
       columns: '1'

@@ -39,7 +39,10 @@ header:
     show_search: true
     highlight_active_link: false
     logo:
-      filename: "images/kakao.png"  # 로고 이미지 경로
+      filename: "logo.svg"
+    button:
+      enable: true
+      url: "/" 
 
 # Site footer
 
@@ -110,6 +113,7 @@ extensions:
     local_backend: false
   academicons:
     enable: true
+
 # Citation style
 
 publications:

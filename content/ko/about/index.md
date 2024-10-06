@@ -1,5 +1,6 @@
 ---
 title: "박태호"
+subtitle: "전북대학교"
 date: 2024-03-25
 type: landing
 

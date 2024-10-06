@@ -34,7 +34,7 @@ sections:
         folders:
           - 개인정보
           - 학교
-          - 진로 및 목표
+          - 목표
     design:
       view: community/custom_compact
       columns: '1'

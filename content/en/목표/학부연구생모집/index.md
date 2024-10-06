@@ -1,5 +1,5 @@
 ---
-title: Career and Goals
+title: Goal and Process
 
 date: 2024-03-29
 ---
